@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Structure (CE-42013)</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="../style.css">
+    <script src="../../mathjax/es5/tex-mml-chtml.js"></script>
+    </head>
+  <body>
+<div class="top">Structure (CE-42013)</div>
+<div class="container">
+
+<h3>Chapter - 5</h3>
+<h3>Cables and Arches</h3>
+
+<p><span>Notes</span></br>$$\displaylines{ T\sin\theta=\omega_0\,x\quad\quad T\cos\theta=F_H\\\\\tan\theta=\frac{dy}{dx}=\frac{\omega_0\,x}{F_H}\\\\y=\frac{\omega_0}{2\,F_H}\,x^2\quad\textsf{(Parabola equation)}\\\\y = h \;\textsf{ at }\; x = L\,,\\\\F_H=\frac{\omega_0\,L^2}{\,2\,h}\quad\quad\omega_0=\frac{2\,F_H\,h}{L^2}\\\\\frac{\omega_0}{2\,y}\,x^2=\frac{\omega_0}{2\,h}\,L^2\\\\y=\frac{h}{L^2}\,x^2\\\\\textsf{Maximum tension in the cable}\\T_{\textsf{max}}=\sqrt{F_H^2+(\omega_0\,L)^2}\\\\T_{\textsf{max}}=\omega_0\,L\;\sqrt{1+\left(\frac{L}{2\,h}\right)^2} }$$</p>
+
+<h3>Chapter - 12</h3>
+
+<h3>Moment Distribution Method</h3>
+
+<p><span>Notes</span></br>$$\displaylines{ \textsf{Moment}\Rightarrow \;\circlearrowright +\textsf{ and }\circlearrowleft -\\\textsf{FEM}\Rightarrow\textsf{last page of textbook }\\\textsf{Distribution Factor}\,(DF)=\frac{K}{\sum K}\\DF=0\textsf{ (fixed)}\\DF=1\textsf{ (pin or roller)}\\\\K=\frac{4EI}{L}\,\textsf{(Far End Fixed)}\\\\K=\frac{3EI}{L}\,\textsf{(Far End Pin or Roller)}\\\\K=\frac{2EI}{L}\\\textsf{(Symmetric Beam and Loading)}\\\\K=\frac{6EI}{L}\\\textsf{(Symmetric Beam with}\\\textsf{Antisymmetric Loading)}\\\\\sum\,\textsf{DFs of the members}\\\textsf{connected to a joint}=1\\\\\textsf{Dist}=DF\times\textsf{Total moment at the joint}\\\textsf{CO}=\frac{1}{2}\,\textsf{Dist}\quad\;\;\,\textsf{(Far End Fixed)}\\\textsf{CO}=0\quad\textsf{(Far End Pin or Roller)}\\\\
+\textsf{To find maximum moment}\,,\\\begin{align}&1.\quad \textsf{Find shear forces.}\\\\&2.\quad\textsf{Find x distance with propotional}\\&\quad\;\;\;\textsf{formula for triangles.}\\&\quad\;\;\;\textsf{For curved SFD}\,,V=0\;\textsf{in}\;\sum F_y=0\\&\quad\;\;\;\textsf{equation of the member sectioned}\\&\quad\;\;\;\textsf{at x distance.}\\\\&3.\quad\textsf{Take moment with x or L - x}\\&\quad\;\;\;\textsf{(or) calculate from SFD.}\end{align}\\\\\textsf{For sidesway}\,,\\\textsf{Assume FEM}\,,M=\frac{6EI\Delta}{L^2}=-100\circlearrowleft\\\\M_{\textsf{member}}=\sum M\,\textsf{(no sidesway)}\\\quad\quad\quad\quad+\,\frac{R}{R'}\times\sum M\,\textsf{(sidesway)}
+ }$$</p>
+
+<h3>Three-Moment Equation</h3>
+
+<p><span>Three-Moment Equation</span></br>$$\displaylines{ M_L\,\frac{L_L}{I_L}+2\,M_C\,\left(\frac{L_L}{I_L}+\frac{L_R}{I_R}\right)\\+\,M_R\,\frac{L_R}{I_R}\;=\;-\frac{L_0}{I_L}-\frac{R_0}{I_R}\\+\,6\,E\,\left[\frac{\delta_L}{L_L}-\delta_C\,\left(\frac{1}{L_L}+\frac{1}{L_R}\right)+\frac{\delta_R}{L_R}\right]\\\\
+\textsf{For point load}\;(a\ne b)\,,\\
+L_0=\frac{Pab\,(2a+b)}{L_L}\quad\; R_0=\frac{Pab\,(a+2b)}{L_R}\\\\
+\textsf{For point load}\;(a=b)\,,\\
+L_0=\frac{3PL_L^2}{8}\quad\quad R_0=\frac{3PL_R^2}{8}\\\\
+\textsf{For UD load}\,,\\
+L_0=\frac{\omega_L\,L_L^3}{4}\quad\quad R_0=\frac{\omega_R\,L_R^3}{4}
+ }$$</p>
+
+<p><span>Notes</span></br>$$\displaylines{ \textsf{Imagine fixed as a simple span with 2 rollers.}\\\textsf{No moment at pin or roller.}\\\\\textsf{Rotation}=\frac{\delta}{L} }$$</p>
+
+<h3>Portal Method</h3>
+
+<p><span>Notes</span></br>$$\displaylines{ 
+\textsf{Exterior column}\Rightarrow x\\
+\textsf{Interior column}\Rightarrow 2x
+ }$$</p>
+
+<h3>Method of Superposition</h3>
+
+<p><span>Superpostion Equation</span></br>$$\displaylines{ 
+\textsf{Consider an extra or redundant reaction.}\\
+\Delta_{b0}\Rightarrow\textsf{Deflection at b due to applied load}\\
+\delta_{bb}\Rightarrow\textsf{Deflection at b due to unit load \(X_b\) at b}\\
+\textsf{Geometric Properties of Areas}\Rightarrow\textsf{Page 703}\\
+\textsf{Deflection}\Rightarrow\textsf{Moment of area of M/EI diagram}\\
+\textsf{For M/EI diagram}\Rightarrow\textsf{Page - 331, Table 8.2}\\\\
+\textsf{Total deflection at b}\\
+\Delta_b=\Delta_{b0}+X_b\,\delta_{bb}=0\quad\quad X_b=-\,\frac{\Delta_{b0}}{\delta_{bb}}
+ }$$</p>
+
+<h3>Cantilever Method</h3>
+
+<p><span>Notes</span></br>$$\displaylines{ 
+\bar{x}=\frac{\sum\,Ax}{\sum\,A}\quad\quad I=\frac{bd^3}{12}+Ad^2\\\\
+V=\frac{Mc}{I}\\\\
+\textsf{Assume}\;A=1\,,\,b=0}$$</p>
+
+<h3>Factor Method</h3>
+
+<p><span>Notes</span></br>$$\displaylines{ 
+\textsf{Stiffness factor}\Rightarrow k=\frac{I}{L}\\\\
+\textsf{Girder factor}\Rightarrow g=\frac{\sum\,k_c}{\sum\,k}\\\\
+\textsf{Column factor}\Rightarrow c=1-g\\\\
+{\color{red}\textbf{(⚠️)}}\;\textsf{Girder moment factor}\Rightarrow\\G=\left(g+\frac{g\;\textsf{(other end)}}{2}\right)\times k\\\\
+{\color{red}\textbf{(⚠️)}}\;\textsf{Column moment factor}\Rightarrow\\C=\left(c+\frac{c\;\textsf{(other end)}}{2}\right)\times k\\\\
+\textsf{Column Shear}=\textsf{Storey Shear}\times\frac{\sum\,C_{\textsf{column}}}{\sum\,C_{\textsf{storey}}}\\\\
+\textsf{Column Moment}=\\\displaylines{\textsf{Column}\\\textsf{Shear}}\times\displaylines{\textsf{Height}\\\textsf{of Column}}\times\frac{C_{\textsf{respective}}}{\sum\,C_{\textsf{column}}}\\\\
+{\color{red}\textbf{(⚠️)}}\;\textsf{Girder Moment}=\\\sum\,\textsf{Column moments at the joint}\\\times\,\frac{G_{\textsf{respective}}}{\sum\, G\textsf{ at the joint}}\\\\
+{\color{red}\textbf{(⚠️)}}\\\color{red}\textsf{Some formulas are provided for demostration}\\\color{red}\textsf{purposes only, to help you understand the}\\\color{red}\textsf{theory easily. You don't have to write them}\\\color{red}\textsf{down in the exam book.}\\\\\large{\textsf{(OR)}}\\\\\textsf{For column moments (for each storey)}\\\phi=\frac{Hh}{\sum\,C\textsf{ for storey}}\\M=\phi\,C\\H=\textsf{storey shear}\\h=\textsf{height of column}\\\\\textsf{For girder moments (for each joint)}\\\beta=\frac{\textsf{sum of column moments at joint}}{\textsf{sum of girder moment factors at joint}}\\M=\beta\,G
+}$$</p>
+
+<h3>Method of Column Analogy</h3>
+
+<p><span>Equations</span></br>$$\displaylines{ 
+\bar{x}=\frac{\sum\,A\,x}{\sum\,A}\quad\quad I=\frac{b\,d^3}{12}+A\,d^2\\\\
+M=P\times e\\\\
+M_i\textsf{ at A}=\pm\frac{P}{A}\pm\frac{M\,y}{I}\;\textsf{(y is from CG to A)}\\\\
+M_i\textsf{ at B}=\pm\frac{P}{A}\pm\frac{M\,y}{I}\;\textsf{(y is from CG to B)}\\\\
+M_A=M_s\textsf{ at A}-M_i\textsf{ at A}\\\\
+M_B=M_s\textsf{ at B}-M_i\textsf{ at B}\\\\
+P\Rightarrow\textsf{area of M/EI diagram}\\
+A\Rightarrow\textsf{area of unit width diagram}\\
+I\Rightarrow\textsf{moment of inertia of unit width diagram}
+ }$$</p>
+
+<br>
+
+</div>
+<script>
+	document.querySelectorAll(".container span, .container h3").forEach(a => a.className = 'structure');
+</script>
+<script src="mathjax/es5/tex-mml-chtml.js"></script>
+</body>
+</html>

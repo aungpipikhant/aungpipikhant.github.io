@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>R.C. (CE-41024)</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="../style.css" />
+    <script src="../../mathjax/es5/tex-mml-chtml.js"></script>
+    </head>
+  <body>
+<div class="top">R.C. (CE-41024)</div>
+<div class="container">
+
+<p><span>Notice</span></br>$$\displaylines{ \textsf{Other formulas not included in this}\\\textsf{web page can be found in design book.} }$$</p>
+
+<p><span>Moments</span></br>$$\displaylines{ 
+\textsf{Simple beam with P on mid-length}\Rightarrow\\ M=\frac{P\,L}{4}\\\\
+\textsf{U.D Load}\Rightarrow M=\frac{\omega\,L^2}{8}=\frac{W\,L}{8}\\\\
+\textsf{Cantilever beam with P on free end}\Rightarrow\\ M=\frac{\omega\,L^2}{2}=\frac{W\,L}{2}
+ }$$</p>
+
+<h3>Chapter - 1</h3>
+
+<p><span>Notes</span></br>$$\displaylines{ A_s\Rightarrow\textsf{Table A2}\\A_c=A_g-A_s\\\\f_c\lt \frac{f_c'}{2}\Rightarrow\textsf{Elastic range}\\P=f_c\,(A_c+nA_s)\\\\f_c\gt \frac{f_c'}{2}\quad\Rightarrow\quad P=f_c\,A_c+f_s\,A_s\\\\\textsf{At Ultimate Strength,}\\P=0.85f_c'\,A_c+f_yA_s\\\\E_c=57000\,\sqrt{f_c'}\quad psi\\E_s=29\times 10^6\, psi\quad\textsf{(steel)}\\n=\frac{E_s}{E_c} }$$</p>
+
+<h3>Chapter - 3</h3>
+
+<h3>Flexural Analysis and Design of Beams</h3>
+
+<p><span>Concrete Dimensions and Steel Area to Resist a Given Moment</span></br>$$\displaylines{ \\\omega_u=1.2\,D.L+1.6\,L.L\\M_u=\frac{\omega_u\,L^2}{8}\quad\textsf{(U.D Load)}\\\phi M_n\ge M_u\quad\Rightarrow\quad\phi M_n=M_u\\M_u=\phi M_n=\phi\,\rho\, f_y\,bd^2(1-0.59\,\rho\,\frac{f_y}{f_c'})\\\textsf{Tension-controlled member}\Rightarrow\varepsilon_t\ge 0.005\\\phi =0.9\\\rho_{0.005}=0.85\,\beta_1\,\frac{f_c'}{f_y}\;\frac{\varepsilon_u}{\varepsilon_u+0.005}\\\beta_1\Rightarrow\textsf{Table A4}\\\textsf{Assume }d=1.5\,b\\\\\textsf{For beam,}\\\textsf{cover}=2.5''\quad (h\lt 18'')\\\textsf{cover}=3.5''\textsf{ (or) }4''\quad (h\ge 18'')\\h=d+\textsf{cover}\\\\A_s=\frac{M_u}{\phi\,f_y\,(d-\frac{a}{2})}\\\\a=d-\sqrt{d^2-\frac{2\,M_u}{0.765\,f_c'\,b}}\\\\\textsf{Bar No. and Number of Bars}\Rightarrow\textsf{Table A2} }$$</p>
+<p><span>Using Appendix</span></br>$$\displaylines{ \textsf{Use Appendix}\Rightarrow\textsf{Table A5}\\\rho_{\textsf{maxi}}\Rightarrow\textsf{Table A4}\\R\Rightarrow\textsf{Table A5(a/b)}\\\\M_u=\phi\,R\,bd^2\\\\R=\frac{M_u}{\phi\,bd^2}\\\\\rho\Rightarrow\textsf{Table A5(a/b)}\\\\A_s=\rho\,bd }$$</p>
+<p><span>Flexural Strength of a Given Member</span></br>$$\displaylines{ \rho=\frac{A_s}{bd}\quad\quad\rho'=\frac{A_s'}{bd}\\\rho_{\textsf{act}}\gt\rho_{\textsf{maxi}}\Rightarrow\textsf{Doubly reinforced beam}\\\\\bar{\rho}_{\textsf{cy}}=0.85\,\beta_1\,\frac{f_c'}{f_y}\,.\,\frac{d'}{d}\,.\,\frac{87000}{87000-f_y}+\rho'\\\\\rho_{\textsf{act}}\gt\bar{\rho}_{\textsf{cy}}\Rightarrow\textsf{Compression bar will yield}\\\\\bar{\rho}_{\textsf{maxi}}=\rho_{\textsf{maxi}}+\rho'\\\bar{\rho}_{\textsf{cy}}\lt\rho_{\textsf{act}}\lt\bar{\rho}_{\textsf{maxi}}\quad\textsf{(OK)}\\\\a=\frac{(A_s-A_s')\,f_y}{0.85\,f_c'\,b}\\\\c=\frac{a}{\beta_1}\\\\\textsf{Net tensile strain, }\varepsilon_t=\varepsilon_u\;\frac{d-c}{c}\\\\M_n=M_{n_1}+M_{n_2}\\M_n=A_s'\,f_y\,(d-d')+(A_s-A_s')\,f_y\;(d-\frac{a}{2}) }$$</p>
+<p><span>Design of a Doubly Reinforced Beam</span></br>$$\displaylines{ A_s=\rho\,bd\quad\quad a=\frac{A_s\,f_y}{0.85\,f_c'\,b}\quad\quad c=\frac{a}{\beta_1}\\\\\phi\,M_n=\phi\,A_s\,f_y\,(d-\frac{a}{2})\\\\M_u\gt \phi\,M_n\Rightarrow\textsf{Doubly reinforced beam}\\\\\phi\,M_n=\phi\,M_{n_1}+\phi\,M_{n_2}\\\phi\,M_{n_1}=M_u-\phi\,M_{n_2}\\\\d_{\textsf{mini}}\Rightarrow\textsf{Table 3.2 Page 16}\\\\\varepsilon_s'=\varepsilon_u\;\frac{c-d'}{c}\\\\f_s'=\varepsilon_s'\,E_s\\\\M_{n_1}=A_s'\,f_s'\,(d-d') }$$</p>
+<p><span>T-Beam</span></br>$$\displaylines{ a=\frac{A_s\,f_y}{0.85\,f_c'\,b}\\\\a\gt h_f\Rightarrow\textsf{T-Beam}\\a\le h_f\Rightarrow\textsf{Rectangular Beam}\\\\A_{sf}=\frac{0.85\,f_c'\,h_f\,(b-b_w)}{f_y}\\\\M_{n_1}=A_{sf}\,f_y\,(d-\frac{h_f}{2})\\\\a=\frac{(A_s-A_{sf})\,f_y}{0.85\,f_c'\,b_w}\\\\M_{n_2}=(A_s-A_{sf})\,f_y\,(d-\frac{a}{2})\\\\\textsf{Diameter of bar}\Rightarrow\textsf{Table A1}\\\frac{c}{d_t}\textsf{ ratios}\Rightarrow\textsf{Design book Page 13}\\\\M_d=\phi\,M_n=\phi\,(M_{n_1}+M_{n_2})\\\\\textsf{Interior (or) Midspan (or) Symmetrical T-Beam}\\\textsf{The effective flange width, b}\\
+\begin{array}{ccc}
+\begin{array}{c}
+b=b_w+16\,h_f\\
+b=\frac{\textsf{Effective span}}{4}\\
+b=\textsf{c/c spacing}
+\end{array}\quad\Bigr\}\textsf{ Smaller control}
+\end{array} }$$</p>
+
+<h3>Chapter - 4</h3>
+
+<h3>Shear and Diagonal Tension in Beams</h3>
+
+<p><span>Design of Web Reinforcement (Stirrup)</span></br>$$\displaylines{ \phi\,V_c=\phi\,2\,\sqrt{f_c'}\,b_w\,d\\\phi =0.75\textsf{ for shear}\\\\V_{u_{(d)}}\gt \phi\,V_c\\\textsf{Web reinforcement is required.}\\\\V_{u_{(d)}}=\phi\,V_c+\phi\,V_s\\\phi\,V_s\le 4\,\phi\,\sqrt{f_c'}\,b_w\,d\quad\textsf{(OK)}\\\\S_{\textsf{maxi}}\Rightarrow\textsf{Design Book Page 20}\\S_{\textsf{req:}}=\frac{\phi\,A_v\,f_{yt}\,d}{V_{u_{(d)}}-\phi\,V_c}\\\\A_v=2\,A_s\quad\textsf{(Stirrup's area)}\\\\\textsf{The first stirrup is usually placed at a}\\\textsf{distance S/2 from the support.}\\\frac{S}{2}\gt 2''\Rightarrow \frac{S}{2}=2'' }$$</p>
+
+<h3>Chapter - 5</h3>
+
+<h3>Bond, Anchorage and Development Length</h3>
+
+<p><span>Development Length in Tension</span></br>$$\displaylines{ \textsf{Simplified equation,}\\\textsf{Design Book Table 5.1 Page 25}\\\textsf{Factors}\Rightarrow\textsf{Page 24}\\\\\textsf{Bar location factor,}\\\textsf{Bottom bar}\Rightarrow\psi_t=1\\\textsf{Top bar }(d\lt 12'')\Rightarrow\psi_t=1\\\textsf{Top bar }(d\gt 12'')\Rightarrow\psi_t=1.3\\\\\textsf{Coating factor,}\\\textsf{Uncoated}\Rightarrow\psi_e=1\\\\\textsf{Bar size factor,}\\\textsf{#7 and larger}\Rightarrow\psi_s=1\\\textsf{#6 and smaller}\Rightarrow\psi_s=0.8\\\\\textsf{Normal wt. concrete}\Rightarrow\lambda =1\\\textsf{Light wt. concrete}\Rightarrow\lambda =0.75\\\\\textsf{Final }L_d=L_d\times\left(\frac{A_{s_{\textsf{req:}}}}{A_{s_{\textsf{prov:}}}}\right)\\\\\textsf{Basic equation and }K_{tr}\Rightarrow\\\textsf{Design Book Page 23}\\\\\textsf{Finding c (Smaller control)}\\\frac{\textsf{c/c spacing}}{2}\\\textsf{Side cover to bar center}\\\textsf{Top cover to bar center}=h-d\\\\A_{tr}=2\,A_s\quad\textsf{(Stirrup's area)}\\\frac{c+K_{tr}}{d_b}\ngtr 2.5 }$$</p>
+<p><span>Development of Hooked Bars in Tension</span></br>$$\displaylines{ L_{dh}=\left( \,\frac{0.02\,\psi_e\,f_y}{\lambda\,\sqrt{f_c'}}\,\right)\,d_b \\\\\textsf{Figure 5.9 and Table 5.2}\Rightarrow\\\textsf{Page 27 (Design book)}\\\\\textsf{bar size}\le \#11\\\textsf{side cover}\ge 2.5''\\\textsf{end cover}\ge 2''\\\textsf{Modification factor}=0.7\\\\\textsf{bar size}\le \#11\\\textsf{stirrup spacing along }L_{dh}\le 3d_b\\\textsf{Modification factor}=0.8\\\\\textsf{Modified }L_{dh}=L_{dh}\times (0.7\textsf{ or }0.8)\times\frac{A_{s_{\textsf{req:}}}}{A_{s_{\textsf{prov:}}}} }$$</p>
+
+<h3>Chapter - 6</h3>
+
+<h3>Serviceability</h3>
+
+<p><span>Deflection</span></br>$$\displaylines{
+f_r=7.5\,\lambda\,\sqrt{f_c'}\\f_r=7.5\,\sqrt{f_c'}\quad\textsf{(For normal wt. concrete)}\\I_g=\frac{bh^3}{12}\quad\quad M_{cr}=\frac{f_r\,I_g}{y_t}\\y_t=\frac{h}{2}\textsf{ for rectangular}\\\\M_a\gt M_{cr}\quad\textsf{(Cracks are formed)}\\\\\textsf{Moment of compression area about N.A}\\=\\\textsf{Moment of tension area about N.A}\\\\I_{cr}=\frac{bh^3}{12}+A\,k^2\\h\Rightarrow\bar{y}\quad\quad A\Rightarrow b\bar{y}\quad\quad k\Rightarrow \frac{\bar{y}}{2}\\I_e=\left(\frac{M_{cr}}{M_a}\right)^3\,I_g+\left[\,1-\left(\frac{M_{cr}}{M_a}\right)^3\,\right]\,I_{cr}\le I_g\\I_e\gt I_g\Rightarrow I_e=I_g\\\\\Delta_{i(D+L)}=\frac{5\,\omega\,L^4}{384\,E_c\,I_e}\\\\E_c=57000\,\sqrt{f_c'}\\\\\Delta_t=\lambda \Delta_i\\\lambda =2\textsf{ for longterm or sustained loads}\\\lambda =1\textsf{ for short-term or intermitted loads}\\\Delta_{\textsf{total}}=\Delta_i+\Delta_t\\\Delta_{\textsf{allowable}}\Rightarrow\textsf{Table 6.2 Page 42}\\\\\Delta_{\textsf{allowable}}\lt 
+\Delta_{\textsf{total}}\Rightarrow\textsf{There is a possibility of}\\\textsf{the partition damaged by deflection.}
+  }$$</p>
+
+<h3>Chapter - 13</h3>
+
+<h3>Analysis and Design of Slabs</h3>
+
+<p><span>Steps</span></br>$$\displaylines{ 
+(1)\;\textsf{Minimum Slab Thickness}\\h_{\textsf{mini}}\Rightarrow\textsf{Table 13.1 Page 60}\\\\(2)\;\textsf{Load on slab}\\\omega_D=1.2\times\frac{h_{\text{mini}}}{12}\times 150\\\omega_L=1.6\times L.L\\\omega_u=\omega_D+\omega_L\\\textsf{Considered unit width}=\omega_u\times 1'\\\\(3)\;\textsf{Bending Moment}\\\textsf{Simply supported}\Rightarrow M_u=\frac{\omega_u\,L^2}{8}\\\textsf{Continuous slab}\Rightarrow M_u=\omega_u\,L^2\times\textsf{coefficient}\\\textsf{Coefficients}\Rightarrow\textsf{Page 58}\\\\(4)\;\textsf{Maximum Steel Ratio}\\\rho_{0.005}\Rightarrow\textsf{Table A4}\\\\(5)\;\textsf{Determination of Slab Thickness}\\M_u=\phi\,\rho\,f_y\,bd^2\,(1-0.59\,\rho\,\frac{f_y}{f_c'})\\b=12''\\\textsf{Req: }h=d+1\\\\(6)\;\textsf{Maximum Spacing}\\S_{\textsf{maxi}}=3\,h\quad\textsf{(or)}\quad 18''\\\textsf{(Smaller control)}\\\\(7)\;\textsf{Determinataion of Steel Area}\\a=d-\sqrt{d^2-\frac{2\,M_u}{0.765\,f_c'\,b}}\\A_{s_{\textsf{mini}}}=0.0018\,bh\quad (f_y\ge 60\, ksi)\\A_{s_{\textsf{mini}}}=0.002\,bh\quad (f_y\lt 60\, ksi)\\\textsf{Req: }A_s=\frac{M_u}{\phi\,f_y\,(d-\frac{a}{2})}\\\\\textsf{Distribution Steel}\\A_s=0.0018\,bh\\\textsf{Areas of bars in slabs}\Rightarrow\textsf{Table A3}\\\\(8)\;\textsf{Check Shear}\\\textsf{For continuous,}\\V_u(d)=\frac{1.15\,\omega\,L}{2}-d\,\frac{\omega}{12}\\\textsf{For simply supported,}\\V_u(d)=\frac{\omega\,L}{2}-d\,\frac{\omega}{12}\\\textsf{Design shear strength, }\phi\,V_c=\phi\,2\,\sqrt{f_c'}\,bd\\\phi\,V_c\ge V_u(d)\quad\quad\textsf{(OK)} }$$</p><br>
+
+    </div>
+<script>
+	document.querySelectorAll(".container span, .container h3").forEach(a => a.className = 'rc');
+</script>
+<script src="mathjax/es5/tex-mml-chtml.js"></script>
+  </body>
+</html>

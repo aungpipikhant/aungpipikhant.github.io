@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Hydraulics (CE-41016)</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="../style.css">
+    <script src="../../mathjax/es5/tex-mml-chtml.js"></script>
+    </head>
+  <body>
+<div class="top">Hydraulics (CE-41016)</div>
+<div class="container">
+
+<h3>Chapter - 3+4</h3>
+
+<div class="grid-2" >
+<p><span>Total Energy</span></br>$$\displaylines{ E=y+\frac{V^2}{2g} }$$</p>
+<p><span>Discharge</span></br>$$\displaylines{ Q=AV\,,\quad q=\frac{Q}{b} }$$</p>
+</div>
+<p><span>Froud Number</span></br>$$\displaylines{ Fr=\frac{V}{\sqrt{gD}}\\Fr\gt 1\Rightarrow\textsf{supercritical flow}\\Fr\lt 1\Rightarrow\textsf{subcritical flow} }$$</p>
+<p><span>Specific Force</span></br>$$\displaylines{ F=\frac{Q^2}{gA}+\bar{z}A=\frac{Q^2}{g\,(by)}+\frac{y}{2}(by) }$$</p>
+<p><span>Notes</span></br>$$\displaylines{ \textsf{For critical flow}\Rightarrow \alpha\,\frac{V^2}{2g}=\frac{D}{2}\\\\\textsf{At critical state, rectangular channel}\\y_c=\sqrt[3]{\frac{q^2}{g}}\\\\\textsf{At critical state of flow,}\\\textsf{the specific energy is minimum.}\\\frac{dE}{dy}=0\\\\\textsf{For minimum specific force, }\frac{dF}{dy}=0\\\\\textsf{For maximum discharge, }\frac{dQ}{dy}=0\\\\E_c=y_c+\alpha\,\frac{V_c^2}{2\,g}\textsf{ for all channels} }$$</p>
+<p><span>Channels</span></br>$$\displaylines{ A=TD\quad\quad D=\frac{A}{T}\\\textsf{T = Top width}\quad\quad\textsf{P = Wetted perimeter}\\\\\textsf{For side slope z:1 (1 on z) },\\\\\textsf{Rectangular}\Rightarrow A=by\quad\;  T=b\quad\; D=y\\P=b+2y\\\\\textsf{Triangular}\Rightarrow A=\frac{1}{2}Ty\quad\quad T=2zy\\ P=2y\,\sqrt{1+z^2}\\\\\textsf{Trapezoidal}\Rightarrow A=\frac{(b+T)}{2}\;y=(b+zy)\,y\\T=b+2zy\quad\quad P=b+2y\,\sqrt{1+z^2}\\\\\textsf{Hydraulic radius, }R=\frac{A}{P} }$$</p>
+<p><span>Section Factor</span></br>$$\displaylines{ Z=A\sqrt{D}\quad\quad Z=\frac{Q_c}{\sqrt{g}} }$$</p>
+<p><span>Channel Transition</span></br>$$\displaylines{ \textsf{Contraction/Expansion}\Rightarrow E_1=E_2\\\textsf{Upward Step}\Rightarrow E_1=E_2+\Delta_z\\\textsf{Downward Step}\Rightarrow E_1=E_2 -\Delta_z\\\\\textsf{Change in depth, }\Delta y=y_2-y_1\\\\\textsf{Change in elevation}\\\textsf{Upward step}\Rightarrow (y_2+\Delta_z)-y_1\\\textsf{Downward step}\Rightarrow y_2-(y_1+\Delta_z)\\\\E_c=\frac{3}{2}y_c\quad\quad V_c=\sqrt{gy_c}\\\\\textsf{Greatest allowable contraction in}\\\textsf{width for the upstream flow,}\\E_1=E_c\\\\\textsf{Maximum allowable size of upward step}\\\textsf{for the upstream flow,}\\E_1=E_c+\Delta_{zc}\\\\y_c=\sqrt[3]{\frac{Q^2}{g\,b^2}} }$$</p>
+
+<h3>Chapter - 5</h3>
+
+<h3>Development of Uniform Flow and Its Formulas</h3>
+
+<p><span>The Manning Formula</span></br>$$\displaylines{ V=\frac{1.49}{n}\,R^{\frac{2}{3}}\,S^{\frac{1}{2}}\\n=\textsf{Manning's n} }$$</p>
+<p><span>The Chezy Formula</span></br>$$\displaylines{ V=C\sqrt{RS}\\V=\textsf{mean velocity}\\R=\textsf{hydraulic radius}\\S=\textsf{slope of energy line}\\C=\textsf{Chezy's coefficient} }$$</p>
+<p><span>The G.K Formula / Kutter's Formula</span></br>$$\displaylines{ C=\frac{41.65+\frac{0.00281}{S}+\frac{1.811}{n}}{1+(41.65+\frac{0.00281}{S})\,\frac{n}{\sqrt{R}}}\\\\n=\textsf{coefficient of roughness (Kutter's n)} }$$</p>
+<p><span>The Bazin Formula</span></br>$$\displaylines{ C=\frac{157.6}{1+\frac{m}{\sqrt{R}}}\\\\m=\textsf{roughness coefficient (Bazin's m)}\\m\Rightarrow\textsf{Table 5.1 Page 95} }$$</p>
+<p><span>The Powell Formula</span></br>$$\displaylines{ C=-42\log (\frac{C}{4\,®}+\frac{\epsilon}{R})\\\\\epsilon \,=\textsf{roughness coefficient (Powell's \(\epsilon\) ) }\\\epsilon\Rightarrow\textsf{Table 5.3 Page 98}\\®=\textsf{Reynolds number}\\\textsf{For rough channel, }C=42\log (\frac{R}{\epsilon})\\\textsf{For smooth channel, }C=42\log (\frac{4\,®}{C})\\\\®=\frac{VR}{\nu}\\\textsf{Kinematic viscosity of water, }\nu=1.08\times 10^{-5}  }$$</p>
+
+<h3>Chapter - 6</h3>
+
+<h3>Computation of Uniform Flow</h3>
+
+<p><span>The Conveyance of a Channel Section, K</span></br>$$\displaylines{ K=\frac{Q}{\sqrt{S}}\\\\\textsf{When the Chezy's formula is used,}\\K=CAR^{\frac{1}{2}}\\\\\textsf{When the Manning's Formula is used,}\\K=\frac{1.49}{n}\,AR^{\frac{2}{3}}\\\\AR^{\frac{2}{3}}=\frac{nK}{1.49}\\\\AR^{\frac{2}{3}}=\frac{n}{1.49}\,\frac{Q}{\sqrt{S}}\\\\Q=\frac{1.49}{n}\,AR^{\frac{2}{3}}\,S^{\frac{1}{2}}\\\\V=\frac{1.49}{n}\,R^{\frac{2}{3}}\,S^{\frac{1}{2}} }$$</p>
+<p><span>Notes</span></br>$$\displaylines{ V=\sqrt{gD}\quad\quad\frac{D}{2}=\frac{V^2}{2\,g}\\\\A=TD\quad\quad D=\frac{A}{T}\quad\quad\frac{Q^2}{gA^2}=\frac{A}{T} }$$</p>
+<p><span>The Velocity-Distribution Coefficients</span></br>$$\displaylines{ 
+\alpha =\frac{\sum_1^N\;(\alpha_N\,K_N^3\,/\,\Delta A_N^2)}{(\sum_1^N\;K_N)^3\,/\,A^2}\\\\
+\beta =\frac{\sum_1^N\;(\beta_N\,K_N^2\,/\,\Delta A_N)}{(\sum_1^N\;K_N)^2\,/\,A}
+ }$$</p>
+<p><span>The Equivalent Coefficient of Roughness</span></br>$$\displaylines{ n=\left[\,\frac{\sum_1^N\,(P_N\,n_N^{1.5})}{P}\,\right]^{\frac{2}{3}}\\\\n=\frac{(P_1\,n_1^{1.5}+P_2\,n_2^{1.5}+...+P_N\,n_N^{1.5})^{\frac{2}{3}}}{P^{\frac{2}{3}}} }$$</p>
+
+<h3>Chapter - 7</h3>
+
+<h3>Design of Channels for Uniform Flow</h3>
+
+<p><span>Notes</span></br>$$\displaylines{ \textsf{For minimum wetted perimeter, }\frac{dP}{dy}=0\\\\AR^{\frac{2}{3}}=\frac{n\,Q}{1.49\,\sqrt{S}}\\\\\textsf{Minimum permissible velocity}\Rightarrow \\2\,ft/sec-3\,ft/sec\\\\\textsf{Best Hydraulic Section}\Rightarrow\textsf{Table 7.2 Page 161} }$$</p><br>
+
+
+</div>
+<script>
+	document.querySelectorAll(".container span, .container h3").forEach(a => a.className = 'hydraulics');
+</script>
+<script src="mathjax/es5/tex-mml-chtml.js"></script>
+</body>
+</html>

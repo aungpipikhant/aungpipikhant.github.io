@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>M.O.M (CE-31013)</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="../style.css" />
+    <script src="../../mathjax/es5/tex-mml-chtml.js"></script>
+    </head>
+  <body>
+<div class="container">
+<h1>M.O.M (CE-31013)</h1>
+<h3>Chapter - 1 (Stress)</h3>
+<p><span>U.D Load (N/m)</span><br>$$\displaylines{\textsf{Rectangle}\rightarrow b\times h\\\textsf{Triangle}\rightarrow \frac{1}{2}\times b\times h}$$</p>
+<div class="grid-2">
+<p><span>Normal Stress</span><br>$$\sigma_{\textsf{avg}}=\frac{N}{A}$$</p>
+<p><span>Shear Stress</span><br>$$\tau_{\textsf{avg}}=\frac{V}{A}$$</p>
+</div>
+<p><span>Bearing Stress</span><br>$$\displaylines{\textsf{Contact area between 2 members}\\\sigma_{b}=\frac{\textsf{compression}}{\textsf{area}}}$$</p>
+<p><span>ASD (Allowable Stress Design)</span><br>$$\displaylines{\textsf{Factor of safety, }F.S=\frac{\sigma_{fail}}{\sigma_{all}}\\A=\frac{F}{\sigma_{all}}\quad \sigma_{all}=\frac{\sigma_{fail}}{F.S}}$$</p>
+<p><span>LRFD (Load & Resistance Factor Design)</span><br>$$\displaylines{\textsf{Dead load, Live load, Snow load}\\R_i=1.2D+1.6L+0.5S\\\phi P_n\ge P_u\quad \phi M_n\ge M_u\\P_u=\Sigma r_iR_i\quad P_n=\sigma_{fail}\times A}$$</p>
+
+<h3>Chapter - 2</h3>
+<p><span>Normal strain</span><br>$$\displaylines{\varepsilon =\frac{\Delta L}{L_0}\\+\textsf{ elongation}\\-\textsf{ shortening/contraction}}$$</p>
+<p><span>Shear stress</span><br>$$\displaylines{\gamma = \frac{\pi}{2}-\theta}$$</p>
+<p><span>Small Strain Analysis</span><br>$$\displaylines{\sin\Delta\theta=\Delta\theta\\\cos\Delta\theta=1\\\tan\Delta\theta=\Delta\theta}$$</p>
+
+<h3>Chapter - 3</h3>
+<p><span>Mechanical Properties of Materials</span><br>$$\displaylines{\sigma = \frac{P}{A_0}\quad\varepsilon = \frac{\delta}{L_0}\quad \delta = \sum \varepsilon L\\\textsf{Hooke's law}\rightarrow\sigma = E\varepsilon\quad\varepsilon =\frac{\sigma}{E}}$$</p>
+
+<h3>Chapter - 4 (Axial Load)</h3>
+<p><span>Displacement</span><br>$$\displaylines{\delta=\frac{PL}{AE}\\P=\textsf{Axial load}\\L=\textsf{Length}\\A=\textsf{x-section area}\\E=\textsf{Elasticity (or) Elastic modulus}\\\textsf{Volume of cone}=\frac{1}{3}\pi R^2h\\\textsf{Specific weight, }\gamma =\frac{W}{V}
+\\\delta = \int_0^L\frac{P_{(y)}dy}{A_{(y)}E}
+}$$</p>
+<p><span>Thermal stress</span><br>$$\displaylines{\delta_T=\alpha (\Delta T)L\\\alpha=\textsf{Linear coefficient of thermal expansion}\\\textsf{(Table in last 2 pages).}\\(\Delta T)=\textsf{Change in temperature}\\L=\textsf{Original length}}$$</p>
+<p><span>Compatibility</span><br>$$\displaylines{\delta_{\textsf{material 1}}=\delta_{\textsf{material 2}}\\\delta_{\textsf{material}}=(\delta_{\textsf{material}})_T-(\delta_{\textsf{material}})_F}$$</p>
+
+<h3>Chapter - 5</h3>
+<p><span>Torsion</span><br>$$\displaylines{\tau = \frac{Tc}{J}\\T=\textsf{Torque or twisting moment}\\c = \textsf{Distance from NA to considered point}\\J = \textsf{Polar moment of inertia}\\\textsf{Shaft/Solid},\;J=\frac{\pi}{2}R^4\\\textsf{Tube},\;J=\frac{\pi}{2}(R_o^4-R_i^4)\\
+R_o\textsf{ is outer radius.}\\R_i\textsf{ is inner radius.}}$$</p>
+<p><span>Angle of Twist</span><br>$$\displaylines{\phi = \sum\frac{TL}{JG}\\G=\textsf{Shear modulus of elasticity}\\L=\textsf{Length}}$$</p>
+<p><span>Displacement of tooth P on gear A</span><br>$$\displaylines{s_P=\phi_Ar}$$</p>
+
+<h3>Chapter - 6 (Bending)</h3>
+<img src="../../assets/sfdbmd.jpg" class="il" />
+<p><span>Axial load</span><br>$$\displaylines{\textsf{Tension}\rightarrow +\\\textsf{Compression}\rightarrow -}$$</p>
+<p><span>L.D to S.F.D</span><br>$$\displaylines{\textsf{no load}\rightarrow \textsf{straight line}\\\textsf{point load}\rightarrow \textsf{jump (or) drop}\\\textsf{U.D load}\rightarrow \textsf{decreasing/increasing straight line}\\\textsf{varying load}\rightarrow \textsf{curve}}$$</p>
+<p><span>S.F.D to B.M.D (Area of S.F.D)</span><br>$$\displaylines{\textsf{no shear}\rightarrow \textsf{straight line}\\\textsf{moment}\rightarrow \;\circlearrowright +\textsf{ (or) }\circlearrowleft -\quad\uparrow\downarrow\\\textsf{U.D shear}\rightarrow\textsf{decreasing/increasing straight line}\\\textsf{variable shear}\rightarrow\textsf{curve}}$$</p>
+<p><span>Finding \(x\) distance</span><br>$$\displaylines{\begin{align}&1.\quad\textsf{Section at }x\\&2.\quad\textsf{Find varying/point loads}\\&3.\quad\textsf{Find }\sum F_y\textsf{ and }\sum M\end{align}}$$</p>
+
+<p><span>Centroid</span><br>$$\displaylines{\bar{y}=\frac{\sum \bar{y}A}{\sum A}\\\textsf{for rectangle, }I_{xx}=I_o=\frac{bh^3}{12}\\I_{yy}=I_o=\frac{hb^3}{12}\\\textsf{for circle, }I_{xx}=I_{yy}=\frac{\pi d^2}{64}\\\textsf{for triangle, }I_{xx}=I_o=\frac{bh^3}{36}
+\\\textsf{Asymmetric, }I=I_o+Ak^2\textsf{ (where }k=\bar{y}-y\textsf{)}}$$</p>
+<p><span>Maximum bending stress</span><br>$$\displaylines{\sigma_{\textsf{max}}=\frac{Mc}{I}\quad (c\textsf{ is from bottom})\\\textsf{Stress at a point},\;c_{\textsf{point}}\textsf{ is from NA.}\\\textsf{Tension}\rightarrow +\\\textsf{Compression}\rightarrow -}$$</p>
+<p><span>Notes</span><br>$$\displaylines{\textsf{Moment of area}=A\times y\\n=\frac{E_{\textsf{material 1}}}{E_{\textsf{material 2}}}\\\textsf{width (or) area transformed material},\\\sigma_{\textsf{material}}=\frac{Mc}{I}\times n}$$</p>
+<p><span>Resultant \(\sigma\) at any point on the cross section</span><br>$$\displaylines{\textsf{Page 312, 313}\\\sigma=-\frac{M_zy}{I_z}+\frac{M_yz}{I_y} }$$</p>
+<p><span>Orientation of the Neutral Axis</span><br>$$\displaylines{\tan\alpha=\frac{I_z}{I_y}\tan\theta}$$</p>
+<p><span>Elasticity</span><br>$$\displaylines{\textsf{Width of wood equivalent width of steel}\\=nb_w=\frac{E_w}{E_{st}}b_w\\\sigma_{\textsf{wood}}=\frac{Mc}{I}\times n\\\textsf{Area of steel equivalent area of concrete}\\=nA_{st}=\frac{E_{st}}{E_{conc}}A_{st}\\\sigma_{\textsf{steel}}=\frac{Mc}{I}\times n}$$</p>
+
+<h3>Chapter - 7</h3>
+<p><span>Transverse Shear Stress in Beam</span><br>$$\displaylines{\tau =\frac{VQ}{It}\quad Q=A'\bar{y}'\\\bar{y}'\textsf{ is from NA.}\\t\textsf{ is width in x-section.}}$$</p>
+<p><span>Shear flow</span><br>$$\displaylines{q=\frac{VQ}{I}\quad n\textsf{ fastener(s)}\rightarrow \frac{q}{n}\\}$$</p>
+<p><span>Nail Spacing</span><br>$$\displaylines{s=\frac{V_{nail}}{q}\quad q=\frac{V_{nail}}{s}\quad \frac{V_{nail}}{s}=\frac{VQ}{I}}$$</p>
+
+</div>
+<script>
+	document.querySelectorAll(".container span, .container h3").forEach(a => a.className = 'orange2');
+</script>
+<script src="mathjax/es5/tex-mml-chtml.js"></script>
+</body>
+</html>

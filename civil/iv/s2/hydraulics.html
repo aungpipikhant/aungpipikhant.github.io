@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Hydraulics (CE-42016)</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="../style.css">
+    <script src="../../mathjax/es5/tex-mml-chtml.js"></script>
+    </head>
+  <body>
+<div class="top">Hydraulics (CE-42016)</div>
+<div class="container">
+
+<h3>Chapter - 8</h3>
+
+<p><span>Boundary Layer Development</span><br>$$\displaylines{ 
+\begin{align}
+&\textsf{Col. }1.\;\textsf{x in ft}\\
+&\textsf{Col. }2.\;\textsf{Values of }\frac{x}{k}\\\\
+&\textsf{Col. }3.\;\textsf{Values of }\frac{\delta}{x}\,,\;\frac{\delta}{x}=\frac{0.024}{\left(\frac{x}{k}\right)^{0.13}}\\\\
+&\textsf{Col. }4.\;\textsf{Values of }\delta\\
+&\textsf{Col. }5.\;\textsf{Velocity head }\frac{\nu_0^2}{2g}\textsf{ in ft, equal to }x\sin\theta\\
+&\textsf{Col. }6.\;\textsf{Velocity in fps}\\
+&\textsf{Col. }7.\;\textsf{Potential thickness of flow in ft}\,,\;\frac{q}{\nu_0}\\
+&\textsf{Col. }8.\;\textsf{Actual thickness of flow in ft}\\
+&\quad\quad\quad =\textsf{Potential thickness}\\
+&\quad\quad\quad\quad +\textsf{ 10% of the thickness }\delta\\
+\end{align}
+ }$$</p>
+
+<p><span>Tractive Force & Friction Velocity</span><br>$$\displaylines{ 
+g=32.2\,ft/s^2\quad\quad \omega = 62.4\,lb/ft^3\\\\
+\textsf{Average unit tractive force}\Rightarrow \tau_0 =\omega RS\\\\
+\textsf{Friction velocity}\Rightarrow V_f=\sqrt{gRS}\\\\
+\textsf{Maximum fraction velocity}\\V_{\textsf{f, max}}=\sqrt{\frac{\textsf{max}\;\tau_0}{\rho}}\\\\
+\textsf{Maximum unit tractive force}\\\textsf{max}\;\tau_0\Rightarrow\textsf{Fig. 7.7}\\\\
+\textsf{For z = 2 , on sides of channel}\,,\\\textsf{max}\;\tau_0=0.775\,\omega\,y\,S\\\\
+\textsf{For z = 2 , on bottom of channel}\,,\\\textsf{max}\;\tau_0=0.95\,\omega\,y\,S\\\\
+\textsf{Maximum fraction velocity on side & bottom}\\
+V_{\textsf{f, max}}\;\textsf{(on sides)}=\sqrt{\frac{0.775\,\omega\,y\,S}{\omega/g}}\\\\
+V_{\textsf{f, max}}\;\textsf{(on bottom)}=\sqrt{\frac{0.95\,\omega\,y\,S}{\omega/g}}
+ }$$</p>
+
+<p><span>Velocity Distribution in Turbulent Flow</span><br>$$\displaylines{ 
+\textsf{For rough surfaces}\,,\\
+\nu=5.75\,V_f\,\log\frac{30\,y}{k}
+ }$$</p>
+
+<h3>Chapter - 9</h3>
+
+<p><span>Equations</span><br>$$\displaylines{ 
+V=\frac{Q}{A}\quad\quad A=T\,y\\\\
+A=T\,D\quad\quad Fr=\frac{V}{\sqrt{g\,D}}\\\\
+\frac{dy}{dx}=\frac{S_0-S_f}{1-Fr^2}\\
+\frac{dy}{dx}=+\Rightarrow\textsf{backwater curve}\\
+\frac{dy}{dx}=-\Rightarrow\textsf{drawdown curve}
+ }$$</p>
+
+<p><span>Flow Profiles</span><br>$$\displaylines{ 
+\textsf{Twelve of flow profiles are gradually varied flow.}\\
+\textsf{M for mild (subcritical)} = M_1\,,\,M_2\,,\,M_3\\
+\textsf{C for critical} = C_1\,,\,C_2\,,\,C_3\\
+\textsf{S for steep (supercritical)} = S_1\,,\,S_2\,,\,S_3\\
+\textsf{H for horizontal} = H_2\,,\,H_3\\
+\textsf{A for adverse} = A_2\,,\,A_3\\
+C_2 = \textsf{uniform flow}\\\\
+\textsf{Zone I and III}\Rightarrow\textsf{backwater curve}\\
+\textsf{Zone II}\Rightarrow\textsf{drawdown curve}\\\\
+y=\textsf{actual depth}\\
+y_n=\textsf{normal depth}\\
+y_c=\textsf{critical depth}\\
+NDL=\textsf{normal depth line}\\
+CDL=\textsf{critical depth line}\\
+y_n\gt y_c\Rightarrow\textsf{mild slope}\\
+y_c\gt y_n\Rightarrow\textsf{steep slope}\\
+y_n=y_c\Rightarrow NDL=CDL\Rightarrow\textsf{critical slope}\\
+y_n=\infty\Rightarrow\textsf{horizontal, adverse slope}
+ }$$</p>
+
+<p><span>Location of Jump</span><br>$$\displaylines{ 
+\textsf{For wide channel}\,,\,R\approx y\\\\
+Q=\frac{1}{n}\,AR^{\frac{2}{3}}\,S^{\frac{1}{2}}\;\quad Q=AV=AC\sqrt{RS_0}\\\\q\;(m^3/s\;\textsf{per meter})=\frac{Q}{b}\quad\quad V=\frac{q}{y}\\\\
+E=y+\frac{V^2}{2\,g}\\\\
+y_c=\sqrt[3]{\frac{\alpha\,Q^2}{g\,b^2}}=\sqrt[3]{\frac{q^2}{g}}\quad\quad \alpha =1\\\\
+y_n\lt y_c\Rightarrow\textsf{Steep slope}\\
+y_n\gt y_c\Rightarrow\textsf{Mild slope}\\\\
+\textsf{Assume jump will occur in}\\\textsf{steep slope}\;(y_2\lt y_{n_2})\\
+y_1=y_{n_1}\quad\quad Fr^2=\frac{q^2}{g\,y_{n_1}^3}\\\\
+\textsf{Depth after jump (sequent depth)}\,,\\
+y_2=\frac{y_1}{2}\,\left[\,\sqrt{1+8\,Fr^2}-1\,\right]\\\\
+\textsf{If}\;y_2\gt y_{n_2}\,,\;\textsf{jump will occur in mild slope.}\\
+y_2=y_{n_2}\quad\quad Fr^2=\frac{q^2}{g\,y_{n_2}^3}\\\\
+\textsf{Initial depth}\,,\,y_1=\frac{y_2}{2}\,\left[\,\sqrt{1+8\,Fr^2}-1\,\right]\\\\
+E=y+\frac{\alpha\,q^2}{2\,g\,y^2}\quad\quad S_f=\frac{n^2\,q^2}{y^{\frac{10}{3}}}\\\\
+\bar{S_f}=\frac{S_{f_1}+S_{f_2}}{2}\quad\quad \Delta x=\frac{E_2-E_1}{S_0-\bar{S_f}}\\\\
+\Delta x=\frac{\Delta E}{S_0-\bar{S_f}}
+ }$$</p>
+
+<p><span>Critical Depth Control Point (C.D.C.P)</span><br>$$\displaylines{ 
+\textsf{At critical depth control point (C.D.C.P)}\,,\\y=y_c\\\\
+\frac{dy}{dx}=\frac{S_0-S_f}{1-Fr^2}=0\\\\
+S_0-S_f=0\\\\
+y_c=\sqrt[3]{\frac{Q^2}{g\,b^2}}\\\\
+\textsf{At C.D.C.P}\,,\,\frac{dy}{dx}=0\\\\
+\frac{dy}{dx}=\frac{S_0-S_f+\left(\frac{\alpha\,Q^2\,y}{g\,A^3}\right)\,\frac{db}{dx}}{\left(1-\frac{\alpha\,Q^2\,b}{g\,A^3}\right)}=0\\\\
+S_f=\frac{n^2\,V^2}{R^{\frac{4}{3}}}\quad\textsf{(SI System)}\\\\
+S_f=\frac{n^2\,V^2}{2.22\,R^{\frac{4}{3}}}\quad\textsf{(FPS System)}
+ }$$</p>
+
+<h3>Chapter - 10</h3>
+
+<h3>Methods of Computation</h3>
+
+<p><span>Direct Step Method</span><br>$$\displaylines{ 
+R=\frac{A}{P}\quad\quad D=\frac{A}{T}\\\\
+\textsf{At critical state}\,,\,\frac{V}{\sqrt{g\,D}}=1\,,\,y_c=2.22'\\\\
+Q=AV=A\,\left[\,\frac{1.49}{n}\,R^{\frac{2}{3}}\,S^{\frac{1}{2}}\,\right]\\\\
+\textsf{Normal depth}\,,\,y_n=3.36'\\\\
+\begin{align}
+&\textsf{Col. }1.\;\textsf{y in ft}\\\\
+&\textsf{Col. }2.\;A=y\,(b+z\,y)\\\\
+&\textsf{Col. }3.\;R=\frac{A}{P}=\frac{y\,(b+z\,y)}{b+2\,y\,\sqrt{1+z^2}}\\
+&\textsf{Col. }4.\;R^{\frac{4}{3}}\\\\
+&\textsf{Col. }5.\;V=\frac{Q}{A}\\\\
+&\textsf{Col. }6.\;\alpha\,\frac{V^2}{2\,g}\,,\,g=32.2\;\textsf{(FPS System)}\\
+&\quad\quad\quad\quad\quad\quad\; g=9.81\;\textsf{(SI System)}\\\\
+&\textsf{Col. }7.\;E=y+\alpha\,\frac{V^2}{2\,g}=\textsf{Col. 1 + Col. 6}\\\\
+&\textsf{Col. }8.\;\Delta E=E_2-E_1\\\\
+&\textsf{Col. }9.\;S_f=\frac{n^2\,V^2}{2.22\,R^{\frac{4}{3}}}\textsf{ (FPS System)}\\\\
+&\quad\quad\quad S_f=\frac{n^2\,V^2}{R^{\frac{4}{3}}}\textsf{ (SI System)}\\\\
+&\textsf{Col. }10.\;\bar{S_f}=\frac{S_{f_1}+S_{f_2}}{2}\\\\
+&\textsf{Col. }11.\;S_0-\bar{S_f}\\\\
+&\textsf{Col. }12.\;\Delta x=\frac{\Delta E}{S_0-\bar{S_f}}\\\\
+&\textsf{Col. }13.\;\textsf{Cumulative sum of values in Col. 12}
+\end{align}
+ }$$</p>
+
+<br>
+
+</div>
+<script>
+	document.querySelectorAll(".container span, .container h3").forEach(a => a.className = 'hydraulics');
+</script>
+<script src="mathjax/es5/tex-mml-chtml.js"></script>
+</body>
+</html>

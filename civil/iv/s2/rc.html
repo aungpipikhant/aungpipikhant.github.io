@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>R.C. (CE-42024)</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="../style.css" />
+    <script src="../../mathjax/es5/tex-mml-chtml.js"></script>
+    </head>
+  <body>
+    <div class="top">R.C. (CE-42024)</div>
+    <div class="container">
+
+<p><span>Notice</span></br>$$\displaylines{ \textsf{Other formulas not included in this}\\\textsf{web page can be found in design book.} }$$</p>
+
+<h3>Chapter - 8</h3>
+<h3>Short Columns</h3>
+
+<p><span>Formulas</span></br>$$\displaylines{ 
+T_s=A_s\,f_s\quad\textsf{(Tension Force)}\\
+C_s=A_s'\,f_s'\quad\textsf{(Compression Force)}\\
+\varepsilon_u=0.003\quad\quad E_s=29000\,ksi\\\\\varepsilon_y =\frac{f_y}{E_s}\\\\
+c_b=d\,\left(\frac{\varepsilon_u}{\varepsilon_u+\varepsilon_y}\right)\\\\
+a=\beta_1\,c\quad\quad\beta_1\Rightarrow\textsf{Table A.4}\\\\
+f_s=E_s\left(\frac{d-c}{c}\right)\,\varepsilon_u\,\le\,f_y\\\\
+f_s'=E_s\left(\frac{c-d'}{c}\right)\,\varepsilon_u\,\le\,f_y\\\textsf{If }\;f_s'\gt f_y\;\Rightarrow\,f_s'=f_y\\\\
+e=\frac{M_n}{P_n}\\\\
+\sum\,F_y=0\quad(\uparrow +)\\
+P_n=0.85\,f_c'\,ab+\textsf{Compression Forces}\\-\textsf{Tension Forces}\\
+P_n=0.85\,f_c'\,ab+A_s'\,f_s'-A_s\,f_s\\\\
+\sum\,M_{\textsf{(center)}}=0\quad(\circlearrowleft +)\\
+M_n=P_n\times\ e=0.85\,f_c'\,ab\left(\frac{h}{2}-\frac{a}{2}\right)\\\pm\textsf{ Other moments}\\\\
+\textsf{Tied columns (rectangular columns) with}\\\textsf{more than 4 main (longitudinal) bars}\\\textsf{on all 4 faces (around the perimeter)}\\
+\Rightarrow\quad A_{s_1}'\,,\,A_{s_2}'\,,\,A_{s_3}\,,\,A_{s_4}\,,\,\textsf{etc.}\\\Rightarrow\quad f_{s_1}'\,,\,f_{s_2}'\,,\,f_{s_3}\,,\,f_{s_4}\,,\,\textsf{etc.}\\\Rightarrow\quad d_1'\,,\,d_2'\,,\,d_3\,,\,d_4\,,\,\textsf{etc.} 
+  }$$</p>
+<p><span>Failures and Pure Compression / Bending</span></br>$$\displaylines{ 
+(1)\;\textsf{Balanced Failure}\\
+c=c_b\quad\quad f_s=f_y\\
+a=a_b=\beta_1\,c_b\quad\quad e_b=\frac{M_b}{P_b}\\\\
+(2)\;\textsf{Tension Failure}\\
+c\lt c_b\quad\quad e\gt e_b\quad\quad f_s=f_y\\\\
+(3)\;\textsf{Compression Failure}\\
+c\gt c_b\quad\quad e\lt e_b\quad\quad f_s\ne f_y\\\\
+(4)\;\textsf{Axial Load Zero Eccentricity}\\\textsf{(Pure Compression)}\\
+c=\infty\quad\quad e=0\quad\quad a=h\\
+P_0=0.85\,f_c'\,hb+(A_s+A_s')\,f_y\\\\
+(5)\;\textsf{Pure Bending (Pure Tension)}\\
+c=0\quad\quad e=\infty\\
+f_s'=f_y\,(\frac{d'}{d})\,\le\,f_y\\
+M_0=A_s\,f_y\,(d-\frac{h}{2})-A_s'\,f_s'\,(\frac{h}{2}-d'\,)
+ }$$</p>
+
+<p><span>Lateral Ties</span></br>$$\displaylines{ \textsf{Sizes}\\
+\textsf{Main bar size}\le\textsf{No.10}\\\therefore\textsf{Use No.3 tie.}\\
+\textsf{Main bar size}\gt\textsf{No.10}\\\therefore\textsf{Use No.4 tie.}\\\\\textsf{Spacing (smaller control)}\\
+S_{\textsf{maxi}}=16\,d_b\\
+S_{\textsf{maxi}}=48\,d_t\\
+S_{\textsf{maxi}}=b\textsf{ (or) }h\\
+d_b=\textsf{Main bar's diameter}\\
+d_t=\textsf{Tie bar's diameter}
+ }$$</p>
+
+<p><span>Reinforcement Ratio</span></br>$$\displaylines{ 
+\textsf{Assume cover}=2.5''\\\\
+K_n=\frac{P_u}{\phi\,f_c'\,A_g}\quad\quad R_n=\frac{M_u}{\phi\,f_c'\,A_g\,h}\\\\\phi =0.65\quad\textsf{(Ties)}\\\phi=0.75\quad\textsf{(Spirals)}\\\\\gamma=\frac{\gamma\,h}{h}=\frac{h-2\,\textsf{cover}}{h}\\\\
+\textsf{From graph(s)}\Rightarrow\rho_g=?\\A_{\textsf{st}}=\rho_g\,bh\\\\\rho_{\textsf{act}}=\frac{A_{\textsf{st}}\,\textsf{(from table A.2)}}{bh}\\\\0.01\lt\rho_{\textsf{act}}\lt 0.08\quad\textsf{( \(\therefore\) OK )}
+ }$$</p>
+
+<p><span>Reciprocal Load Method</span></br>$$\displaylines{ 
+\textsf{Bending about X axis}\\ e_x=0\;,\;\frac{e_y}{h_y}=*\;,\;K_n=\frac{P_{nx_0}}{f_c'\;A_g}\\\\
+\textsf{Bending about Y axis}\\
+e_y=0\;,\;\frac{e_x}{h_x}=*\;,\;K_n=\frac{P_{ny_0}}{f_c'\;A_g}\\\\
+\textsf{Bending about zero axis}\\ e_x=e_y=0\;,\;\frac{e}{h}=0\;,\;K_n=\frac{P_0}{f_c'\;A_g}\\\\
+\textsf{Bresler's Reciprocal Load Equation}\\
+\frac{1}{P_n}=\frac{1}{P_{nx_0}}+\frac{1}{P_{ny_0}}-\frac{1}{P_0}\\\\
+\phi P_n\ge P_u\quad\quad\textsf{( OK )}
+ }$$</p>
+
+<p><span>Load Contour Method</span></br>$$\displaylines{ 
+\textsf{Bending about X axis}\\ e_x=0\;,\;R_n=\frac{M_{nx_0}}{f_c'\;A_g\;h}\\\\
+\textsf{Bending about Y axis}\\
+e_y=0\;,\;R_n=\frac{M_{ny_0}}{f_c'\;A_g\;h}\\\\
+M_{uy}=P_u\times e_x\\
+M_{ux}=P_u\times e_y\\\\
+\left(\frac{M_{ux}}{\phi\;M_{nx_0}}\right)^{\alpha_1}+\left(\frac{M_{uy}}{\phi\;M_{ny_0}}\right)^{\alpha_2}\approx 1\quad\textsf{( OK )}\\\\\textsf{For square and rectangular columns}\,,\\\alpha_1=\alpha_2=\alpha=1.15\,\textsf{ to }\,1.55
+ }$$</p>
+
+<h3>Chapter - 9</h3>
+
+<h3>Slender Columns</h3>
+
+<h3>Moment Magnifier Method</h3>
+
+<p><span>Braced (Nonsway) and Unbraced (Sway) Frames</span></br>$$\displaylines{ 
+\textsf{For braced}\Rightarrow\;\frac{k\,l_u}{r}\gt 34-12\,\frac{M_1}{M_2}\\\therefore\textsf{The slenderness effect is considered.}\\\textsf{For unbraced}\Rightarrow\;\frac{k\,l_u}{r}\gt 22\\\therefore\textsf{The slenderness effect is considered.}\\\\M_2\gt M_1\\\\\textsf{\(l_u\) is clear length and \(l_c\) is c/c length.}\\r=\textsf{radius of gyration}\\r=0.3\;h\quad\textsf{(rectangular column)}\\r=0.25\;d\quad\textsf{(circular column)}\\r=\sqrt{\frac{I}{A}}\quad\textsf{(others)}\\\\
+\textsf{Rotational Restraint Factor \(\psi\)}\\\psi=\frac{\sum\;EI/l_c\quad\textsf{(column)}}{\sum\;EI/l_c\quad\textsf{(beam)}}\\\\I=0.7\,I_g\quad\textsf{(column)}\\I=0.35\,I_g\quad\textsf{(beam)}\\\\\textsf{For \(k\)}\,,\\\textsf{Braced (nonsway) frame}\Rightarrow\textsf{Fig 9.13(a)}\\\textsf{Unbraced (sway) frame}\Rightarrow\textsf{Fig 9.13(b)}\\\\\textsf{Critical load}\,,\;P_c=\frac{\pi^2\,EI}{(k\,l_u)^2}\\\\EI=\frac{0.4\,E_c\,I_g}{1+\beta_d}\\\\\textsf{If main bar sizes are different}\,,\\\\EI=\frac{0.2\,E_c\,I_g+E_s\,I_{se}}{1+\beta_d}\quad\;I_{se}=A_s\,d^2\\\\\beta_d=\frac{P_u\;\textsf{(DL)}}{P_u\;\textsf{(Total)}}\\\textsf{For wind load,}\;\beta_d=0\\\\E_c=57000\,\sqrt{f_c'}\;psi\\E_s=29\times 10^6\,psi\\\\\textsf{Stability Index}\\Q=\frac{\sum\,P_u\,\Delta_0}{V_u\,l_c}\le 0.05\quad\textsf{(Nonsway)}\\\\Q=\frac{\sum\,P_u\,\Delta_0}{V_u\,l_c}\gt 0.05\quad\textsf{(Sway)}
+}$$</p>
+
+<p><span>Steps for Design of a Selender Column in Braced (Nonsway) Frame</span></br>$$\displaylines{ \\
+\textsf{Assume clear cover}=1.5''\\
+\textsf{#3 stirrup and #10 longitudinal bar}\\\\
+\begin{align}
+&1.\;P_u\,,\,M_1\,,\,M_2=M_u=?\\&\quad\textsf{Select trial column and design as short}\\&\quad\textsf{column. (\(0.01\lt\rho_g\lt 0.08\))}\\\\
+&2.\;\textsf{Assume k=1}\\&\quad\textsf{Consider}\;\frac{k\,l_u}{r}\gt 34-12\,\frac{M_1}{M_2}\\\\
+&3.\;\textsf{From Fig 9.13(a), calculate k and recheck}\\\\
+&4.\;M_{\textsf{2 (mini)}}=P_u\,(\,0.6+0.03\,h\,)\\&\quad\textsf{Check}\,M_2\gt M_{\textsf{2 (mini)}}\\\\
+&5.\;C_m\,,\,\beta_d\,,\,EI\,,\,P_c=?\\&\quad\textsf{For single curvature,}\\&\quad C_m=0.6+0.4\,\frac{M_1}{M_2}\ge 0.4\\&\quad\textsf{For double curvature,}\\&\quad C_m=0.6-0.4\,\frac{M_1}{M_2}\ge 0.4\\\\
+&6.\;\delta_{ns}=\frac{C_m}{1-\frac{P_u}{0.75\,P_c}}\ge 1\\\\&\quad M_c=\delta_{ns}\,M_2\\&\quad K_n\,,\,R_n\,,\,\gamma\Rightarrow\textsf{Graph}\Rightarrow\rho_g=?\\&\quad A_{st}=\rho_g\,b\,h\\\\
+&7.\;\textsf{Check \(0.01\lt\rho_{\textsf{act}}\lt 0.08\)}\\&\quad\textsf{Choose stirrup and spacing.}\\\\
+&8.\;\textsf{If column dimensions are changed,}\\&\quad\textsf{recalculate 1 to 7.}
+\end{align}
+ }$$</p>
+
+<p><span>Steps for Design of a Selender Column in Unbraced (Sway) Frame</span></br>$$\displaylines{ \\
+\textsf{Factored load combinations}\Rightarrow\textsf{Page 321}\\ *** \;\:1.2\,D\quad 1.0\,L\quad 1.6\,W\:\; **\:* \\\\
+\begin{align}
+&1.\;\textsf{From }V_u\,,\,\Delta_0\,,\,\Sigma\,P_u\,,\,\\&\quad V_{ns}=1.6\times V_{\textsf{wind}}\\&\quad\Delta_0=1.6\times\textsf{deflection}\\&\quad Q\Rightarrow\textsf{nonsway or sway}\\\\
+&2.\;\textsf{Find \(\psi\) and consider }\frac{k\,l_u}{r}\gt 22\\&\quad\textsf{with \(k\) from Fig 9.13(b)}\\\\
+&3.\;M_{1ns}\,,\,M_{2ns}\,,\,M_{1s}\,,\,M_{2s}=?\\&\quad M_{ns}=1.2\,(M_D)+1.0\,(M_L)\\&\quad M_s=1.6\,(M_{\textsf{wind}})\\\\
+&4.\;\delta_s\,M_{1s}\,,\,\delta_s\,M_{2s}=?\\&\quad\delta_s=\frac{1}{1-Q}\ge 1\\&\quad\delta_s=\frac{1}{1-\frac{\Sigma\,P_u}{0.75\,\Sigma\,P_c}}\ge 1\\&\quad\textsf{(Smaller control)}\\\\
+&5.\;M_1\,,\,M_2\Rightarrow\textsf{Required }A_{st}\\&\quad M_1=M_{1ns}+\delta_s\,M_{1s}\\&\quad M_2=M_{2ns}+\delta_s\,M_{2s}\\\\
+&6.\;\textsf{Check }0.01\lt\rho_{\textsf{act}}\lt 0.08\\&\quad\textsf{Choose stirrup and spacing.}
+\end{align}
+ }$$</p>
+
+<h3>Chapter - 16</h3>
+
+<h3>Footings and Foundations</h3>
+
+<p><span>Wall / Continuous / Strip Footings</span></br>$$\displaylines{ 
+\textsf{(1) Assume thickness of footing},\,h=*\\
+\textsf{Wt. of footing}=150\,pcf\times h\\
+\textsf{Wt. of soil}=*\,pcf\quad\textsf{(take 100 if not given)}\\
+\textsf{Wt. of fill}=*\,pcf\times\textsf{depth of fill}\\
+\\\textsf{Effective bearing pressure},\\q_e=q_a-\textsf{total Wt.}\\\\
+\textsf{Required width of footing},\,b=\frac{D+L}{q_e}\\\\
+\textsf{(2) Determination of Thickness of Footing}\\
+\\\textsf{Actual bearing pressure},\\q_u=\frac{1.2\,D+1.6\,L}{A}\quad\quad A=b\times 1'\\\\
+\textsf{Shear force},\,V_u=q_u\,\left(\frac{b-a}{2}-\frac{d}{12}\right)\\
+\textsf{Design shear strength},\,\phi\,V_c=\phi\,2\sqrt{f_c'}\,bd\\\phi\,V_c\ge V_u\\\\
+\textsf{Assume clear cover = 3" and #8}\\\textsf{bar will be used.}\\
+h=d+3.5\\\\
+\textsf{(3) Determination of Steel Area}\\
+M_u=\frac{1}{8}\,q_u\,(b-a)^2\\\\
+a=d-\sqrt{d^2-\frac{2\,M_u}{0.765\,f_c'\,b}}\\\\
+\textsf{Actual}\;A_s=\frac{M_u}{\phi\,f_y\,(d-\frac{a}{2})}\\\\
+\textsf{For mini }A_s,\\
+f_y\ge 60\,ksi\Rightarrow A_s=0.0018\,bh\\
+f_y\lt 60\,ksi\Rightarrow A_s=0.002\,bh\\\\
+\textsf{(4) Check Development Length}\\
+l_d=\frac{f_y\,\alpha\,\beta\,\gamma}{\textsf{(20 or 25)}\,\sqrt{f_c'}}\times d_b\\
+\textsf{For No.6 and smaller}\Rightarrow 25\\
+\textsf{For No.7 and larger}\Rightarrow 20\\
+\\\textsf{Available length}=\frac{1}{2}\,(b-2c-a)\\
+l_d\lt\textsf{Available length}\Rightarrow\textsf{(OK)}\\
+l_d\gt\textsf{Available length}\Rightarrow\textsf{(Hooks are required)}\\
+}$$</p>
+
+<p><span>Isolated / Square Footings</span></br>$$\displaylines{ 
+\textsf{Average unit weight of concrete and fill}\\=\frac{150+100}{2}\\
+\textsf{(1) Determination of Required Footing Area}\\
+q_e=q_a-\textsf{total Wt.}\quad\quad A_{\textsf{req;}}=\frac{D+L}{q_e}\\B=\sqrt{A}\\\\
+\textsf{(2)}\\\textsf{Determination of Required Footing Thickness}\\
+q_u=\frac{1.2\,D+1.6\,L}{A}\\\\
+\textsf{Two-Way or Punching Shear},\\
+V_{u_1}=q_u\,\left[\,B^2-\frac{(\,c+d\,)^2}{144}\,\right]\\\\
+\textsf{Punching Shear Strength},\\
+\phi\,V_c=\phi\,4\,\sqrt{f_c'}\,b_0\,d\quad\quad b_0=4\,(c+d)\\\\
+\phi\,V_c\ge V_{u_1}\\\\
+\textsf{Required }\,h=d+4.5\\\\
+\textsf{Check One-Way or Beam Shear},\\
+V_{u_2}=q_u\,B\,\left[\,\frac{B-\frac{(\,c+2d\,)}{12}}{2}\,\right]\\\\
+\textsf{One-Way Shear Strength},\\
+\phi\,V_c=\phi\,2\,\sqrt{f_c'}\,bd\\\\
+\phi\,V_c\ge V_{u_2}\\\\
+\textsf{(3) Determination of Steel Area}\\
+M_u=\frac{1}{8}\,q_u\,B\,(\,B-c\,)^2\\\\
+a=d-\sqrt{d^2-\frac{2\,M_u}{0.765\,f_c'\,b}}\\\\
+\textsf{Required}\;A_s=\frac{M_u}{\phi\,f_y\,(d-\frac{a}{2})}\\\\
+\textsf{mini}\;A_s=\frac{200}{f_y}\times bd\\\\
+\textsf{(4) Check Bearing Strength}\\
+A_1\Rightarrow\textsf{Column Area}\\
+A_2\Rightarrow\textsf{Footing Area}\\
+\textsf{Actual bearing strength}=\frac{1.2\,D+1.6\,L}{A_1}\\\\
+\textsf{Design Bearing Strength},\\
+0.85\,\phi\,f_c'\,\sqrt{\frac{A_2}{A_1}}\le 0.85\,\phi\,f_c'\times 2\\
+\textsf{(smaller control)}\\\\
+\textsf{(5) Design Dowel Bar}\\
+\textsf{Mini dowel bar area}=0.005\,A_1\\
+\textsf{Provided dowel bar area}\gt\textsf{Mini}\quad\textsf{(OK)}\\\\
+\textsf{(6) Check Development Length}\\
+\textsf{Required}\;l_d\,\textsf{(compression)}\Rightarrow\textsf{Table A.11}\\
+\textsf{Available length (compression)}=h-c-2\,d_b\\
+\textsf{Required}\;l_d\,\textsf{(tension)}\Rightarrow\textsf{Table A.10}\\
+\textsf{Available length (tension)}=\frac{1}{2}\,(\,B-2c-c\,)\\\\
+\textsf{Mini splice length}\\=0.0005\,d_b\,f_y\ge l_d\,\textsf{(compression)}\\\\
+\textsf{Total dowel length}\\=\textsf{splice length}+l_d\,\textsf{(compression)}
+}$$</p>
+
+<h3>Chapter - 17</h3>
+
+<h3>Retaining Walls</h3>
+
+<p><span>Gravity Retaining Wall</span></br>$$\displaylines{ 
+K_a=\frac{1-\sin\phi}{1+\sin\phi}\quad\quad K_p=\frac{1+\sin\phi}{1-\sin\phi}\\\\
+\omega\,,\,\phi\,,\,f\Rightarrow\textsf{Table 17.1}\\\\
+\textsf{From Figure 17.3 (c)}\,,\\
+h'=\frac{S}{\omega}\quad\quad y=\frac{h^2+3\,h\,h'}{3\,(h+2\,h')}\\
+\textsf{Active force}\,,\,P_a=\frac{1}{2}\,K_a\,\omega\,h\,(h+2h')\\\\
+\textsf{For passive force without surcharge}\,,\\
+\textsf{From Figure 17.3 (a)}\,,\,P_p=\frac{1}{2}\,K_p\,\omega\,h^2\\\\
+\textsf{Overturning moment}\,,\,M_O=P_a\,y\\\\
+\textsf{Case(1): Surcharge Load to Point 'a'}\\
+R_v\,,\,M_R\Rightarrow \sum R_v\,\textsf{ and}\,\sum M_R\;\textsf{from table}\\\\
+\textsf{Case(2): Surcharge Load to Point 'b'}\\
+\textsf{Add additional surcharge load to}\;R_v\,\textsf{and}\:M_R\\\\
+\textsf{Check Overturning}\\ 
+\frac{M_R}{M_O}\ge 1.5\quad\textsf{(\(\therefore\) OK)}\\\\
+\textsf{Check Bearing Capacity}\\
+a=\frac{M_R-M_O}{R_v}\\
+q_1\,,\,q_2\Rightarrow\textsf{Figure 17.5, compare \(a\) and \(\frac{L}{3}\)}\\
+q_{\textsf{max}}\le q_{\textsf{all}}\quad\textsf{(\(\therefore\)OK)}\\\\
+\textsf{Check Sliding}\\ 
+\frac{F_R}{F_D}\ge 1.5\quad\textsf{(\(\therefore\) OK)}\\\\
+F_R=F+P_p\\
+F=R_v\times f\\
+F_D=P_a
+ }$$</p>
+
+<p><span>Cantilever Retaining Wall</span></br>$$\displaylines{ 
+\textsf{Design Moment}\,,\,M_u=1.6\,P_a\,y\\
+\textsf{From Table A.4}\,,\,\rho_{0.005}=?\\
+\rho=0.4\,\rho_{0.005}\\\\
+M_u=\phi\,\rho\,f_y\,b\,d^2\,(1-0.59\,\rho\,\frac{f_y}{f_c'})\\\\
+\textsf{Assume cover}=2.5''\\
+h=d+\textsf{cover}\\\\V_u=1.6\,P_a\\
+\phi\,V_c=2\,\phi\,\sqrt{f_c'}\,b\,d\\
+\phi\,V_c\gt V_u\quad\textsf{(\(\therefore\)OK)}\\\\
+\textsf{When checking sliding, \(R_v\) is calculated}\\\textsf{from area of \(q_1\,,\,q_2\) diagram.}\,f=\tan\phi\\\textsf{before arm at passive side.}
+ }$$</p>
+
+<h3>Chapter - 19</h3>
+
+<h3>Prestressed Concrete</h3>
+
+<p><span>Flexural Stress at the Time of Transfer \((P_i+M_0)\)</span></br>$$\displaylines{ 
+\textsf{At the top fiber}\,,\\
+f_1=-\frac{P_i}{A_c}\,\left(1-\frac{e\,c_1}{r^2}\right)-\frac{M_0\,c_1}{I_c}\\\\
+\textsf{At the bottom fiber}\,,\\
+f_2=-\frac{P_i}{A_c}\,\left(1+\frac{e\,c_2}{r^2}\right)+\frac{M_0\,c_2}{I_c}\\\\
+\textsf{ACI Limit (Table 19.2)}\\
+f_{ci}=-0.6\,f_{ci}'\ge f_2\quad\textsf{(OK)}\\
+f_{ti}=3\,\sqrt{f_{ci}'}\ge f_1\quad\textsf{(OK)}\\\\
+I_c=\frac{b\,h^3}{12}\quad\quad r^2=\frac{I_c}{A_c}\quad\quad R=\frac{P_e}{P_i}\\\\
+I_c=\frac{b\,h^3}{12}+A\,k^2\quad\textsf{(Not symmetric)}\\\\
+\omega_0 =A\times 150\quad\textsf{(if not given)}\\\\
+M_0=\frac{\omega_0\,L^2}{8}\quad\quad M_{D+L}=\frac{\omega_{D+L}\,L^2}{8}\\\\
+\bar{x}=\frac{\sum\,A\,x}{\sum\,A}
+ }$$</p>
+
+<p><span>Flexural Stress at Full Service Load \((P_e+M_0+M_{D+L})\)</span></br>$$\displaylines{ 
+\\\textsf{At the top fiber}\,,\\
+f_1=-\frac{P_e}{A_c}\,\left(1-\frac{e\,c_1}{r^2}\right)-\frac{M_0\,c_1}{I_c}\\-\,\frac{M_{D+L}\,c_1}{I_c}\\\\
+\textsf{At the bottom fiber}\,,\\
+f_2=-\frac{P_e}{A_c}\,\left(1+\frac{e\,c_2}{r^2}\right)+\frac{M_0\,c_2}{I_c}\\+\,\frac{M_{D+L}\,c_2}{I_c}\\\\
+\textsf{ACI Limit (Table 19.2)}\\
+f_{cs}=-0.45\,f_c'\ge f_1\quad\textsf{(OK)}\\
+f_{ts}=7.5\,\sqrt{f_c'}\ge f_2\quad\textsf{(OK)}
+ }$$</p>
+
+<h3>Bridges</h3>
+
+<p><span>Live load (Truck Loading in lb)</span></br>$$\displaylines{ 
+\textsf{H-20-44}\Rightarrow 8000\quad 32000\\
+\textsf{H-15-44}\Rightarrow 6000\quad 24000\\
+\textsf{HS-20-44}\Rightarrow 8000\quad 32000\quad 32000\\
+\textsf{HS-15-44}\Rightarrow 6000\quad 24000\quad 24000
+ }$$</p>
+
+<p><span>Design of a Slab Bridge</span></br>$$\displaylines{ 
+\textsf{Effective span length (L or S)}\\
+\displaylines{\;\;\,\quad\quad\quad\quad\textsf{c/c span length}\\\textsf{clear span + slab thickness}}\;\Big\}\;\textsf{(smaller control)}\\\\
+M_{D.L}=\frac{\omega\,L^2}{8}\\\\
+\textsf{Impact factor}\,,\,I=\frac{50}{L+125}\le 0.3\\\\\\
+\textsf{Clear width}\lt\textsf{Span length}\Rightarrow\textsf{Case (1)}\\
+\textsf{Main steel \(\perp\) to traffic}\\
+\textsf{HS-20}\Rightarrow M_{L.L}=0.8\left[\frac{S+2}{32}\times P_{20}\right]\\
+\textsf{HS-15}\Rightarrow M_{L.L}=0.8\left[\frac{S+2}{32}\times P_{15}\right]\\
+\textsf{If slab continuous over two or more support}\,,\\\textsf{continuous factor = 0.8 is applied.}\\
+\textsf{For distribution steel}\,,\\
+\%\,A_s=\frac{220\,\%\,A_s}{\sqrt{S}}\le 67\,\%\,\textsf{of main steel}\\\\\\
+\textsf{Clear width}\gt\textsf{Span length}\Rightarrow\textsf{Case (2)}\\
+\textsf{Main steel // to traffic}\\
+E=4+0.06\,S\le 7'\\
+P=\frac{\textsf{Load}}{E}\quad\quad M_{L.L}=\frac{P\,L}{4}\\
+\textsf{For distribution steel}\,,\\
+\%\,A_s=\frac{100\,\%\,A_s}{\sqrt{S}}\le 50\,\%\,\textsf{of main steel}\\\\\\
+M_{\textsf{Impact}}=I\times M_{L.L}\\
+M_{\textsf{total}}=M_{D.L}+M_{L.L}+M_{\textsf{Impact}}\\\\
+\textsf{Resisting Moment}\\
+M=\frac{f_c}{2}\,k\,j\,b\,d^2\quad\quad d=\sqrt{\frac{2\,M}{f_c\,k\,j\,b}}\\\\
+E_s=29\times 10^6\,psi\\ E_c=57000\,\sqrt{f_c'}\;psi\\\\
+n=\frac{E_s}{E_c}\quad\quad r=\frac{f_s}{f_c}\\\\
+k=\frac{n}{n+r}\quad\quad j=1-\frac{k}{3}\\\\
+h=d+1.5''\quad\quad A_s=\frac{M}{f_s\,j\,d}
+ }$$</p>
+
+
+<p><span>Edge Beam</span></br>$$\displaylines{ 
+\textsf{Assume edge beam's section as a rectangular.}\\
+\textsf{Own Wt. of beam}\,,\,\omega=\textsf{Area}\times 150\\\\
+M_{D.L}=\frac{\omega\,L^2}{8}\\\\
+M_{L.L}=0.1\,P\,S\\
+P=\textsf{wheel load in pounds}\,(P_{15}\textsf{ or }P_{20})\\\\
+M_{\textsf{total}}=M_{D.L}+M_{L.L}
+ }$$</p>
+
+<p><span>Interior Girder</span></br>$$\displaylines{ 
+M_{D.L}=\frac{\omega\,L^2}{8}\\\\
+\textsf{Live load moment}\\
+\textsf{For concrete slab on concrete stringers}\\\textsf{(2 or more traffic lanes)}\,,\\
+\textsf{Distribution wheel load}=\frac{S}{5}\\
+M_{\textsf{maxi (L.L)}}=?\\
+M_{\textsf{Impact}}=?\\
+M_{\textsf{maxi}}=M_{D.L}+M_{L.L}+M_I\\\\
+\textsf{Shear}\\
+V_{D.L}=\frac{\omega_D\,L}{2}\\
+V_{L.L}=\sum\,(\textsf{wheel load}\\\times\,\textsf{respective value on influence line})\\
+V_{\textsf{Impact}}=I\times V_{L.L}\\
+V_{\textsf{maxi}}=V_{D.L}+V_{L.L}+V_I\\\\
+\textsf{Stringer's Depth}\,,h\\
+\textsf{Shear stress}\Rightarrow\frac{V}{b_w\,d}\\
+\textsf{Total depth}\,,h=d+\textsf{slab's thickness (t)}\\
+\textsf{Stem Wt.}=\textsf{stem's area}\times 150\\\\
+A_s=\frac{M}{f_s\,(d-\frac{t}{2})}\quad\quad f_s=0.5\,f_y \\\\
+t\Rightarrow\textsf{slab's thickness}\\
+d=h-\textsf{(concrete cover from}\\\textsf{steel centroid to surface)}
+ }$$</p>
+
+<br>
+
+    </div>
+<script>
+	document.querySelectorAll(".container span, .container h3").forEach(a => a.className = 'rc');
+</script>
+<script src="mathjax/es5/tex-mml-chtml.js"></script>
+  </body>
+</html>

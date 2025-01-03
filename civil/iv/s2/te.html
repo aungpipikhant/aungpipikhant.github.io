@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>T.E. (CE-42017)</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="../style.css">
+    <script src="../../mathjax/es5/tex-mml-chtml.js"></script>
+    </head>
+  <body>
+<div class="top">T.E. (CE-42017)</div>
+<div class="container">
+
+<h3>Chapter - 2</h3>
+
+<h3>Airport Characteristics Related to Airport Design</h3>
+
+<p><span>Notes</span><br>$$\displaylines{ 
+\textsf{For a normal takeoff}\,,\\
+TOD_1=1.15\,D35_1\\
+CL_{\textsf{1 max}}=0.5\,[\,TOD_1-1.15\,(LOD_1)\,]\\
+TOR_1=TOD_1-CL_{\textsf{1 max}}\\\\
+\textsf{For an engine-failure takeoff}\,,\\
+TOD_2=\,D35_2\\
+CL_{\textsf{2 max}}=0.5\,[\,TOD_2-LOD_2\,]\\
+TOR_2=TOD_2-CL_{\textsf{2 max}}\\\\
+\textsf{For an engine-failure aborted takeoff}\Rightarrow DAS\\\\
+\textsf{For a normal landing}\,,\\
+LD=\frac{SD}{0.6}\\\\
+\textsf{The actual runway component requirements}\\
+FL = \textsf{max}\,(TOD_1\,,\,TOD_2\,,\,DAS\,,\,LD)\\
+FS = \textsf{max}\,(TOR_1\,,\,TOR_2\,,\,LD)\\
+SW = [\,DAS−\textsf{max}\,(TOR_1\,,\,TOR_2\,, \,LD)\,]\\
+CL = \textsf{min}\,[\,(FL − DAS)\,,\,CL_{\textsf{1 max}}\,,\,CL_{\textsf{2 max}}\,]
+}$$</p>
+
+<h3>Chapter - 14</h3>
+
+<h3>Environmental Planning</h3>
+
+<p><span>Equations</span><br>$$\displaylines{ 
+L_{AE}=10\,\log\left(\frac{1}{T_0}\,\sum_{i=1}^N\,10^{L_{A,\,i}/10}\,\Delta t\right)\\
+T_0=1\,s\quad\quad\Delta t=0.5\,s\\\\
+L_{eq}=10\,\log\left(\frac{1}{T}\,\sum_{j=1}^M\,10^{L_{AE,\,j}/10}\right)\\\\
+L_{dn}=10\,\log\left(\frac{1}{86400}\,\sum_{j=1}^M\,10^{({L_{AE,\,j}\,+\,W_j)}/10}\right)\\
+W_j = 0\,dB\quad\textsf{(7 a.m. to 10 p.m.)}\\
+W_j = 10\,dB\quad\textsf{(10 p.m. to 7 a.m.)}\\\\
+L_{dn}\approx L_{AE}-50\\
+\textsf{Single daytime}\Rightarrow 7\,\textsf{a.m.}\,\textsf{ to }\,10\,\textsf{p.m.}\\\\
+L_{AE}=\textsf{sound exposure level}\\
+L_{A,\,i}=i^{th}\;\textsf{A-weighted sound level}\\
+L_{eq}=\textsf{equivalent steady sound level}\\
+L_{dn}=\textsf{day-night average sound level for 1 day}
+}$$</p>
+
+<br>
+
+</div>
+<script>
+	document.querySelectorAll(".container span, .container h3").forEach(a => a.className = 'te2');
+</script>
+<script src="mathjax/es5/tex-mml-chtml.js"></script>
+</body>
+</html>

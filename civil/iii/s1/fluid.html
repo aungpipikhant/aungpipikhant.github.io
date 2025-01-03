@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Fluid (CE-31016)</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="../style.css" />
+    <script src="../../mathjax/es5/tex-mml-chtml.js"></script>
+    </head>
+  <body>
+<div class="container">
+<h1>Fluid (CE-31016)</h1>
+<h3>Chapter - 1</h3>
+<div class="grid-2">
+<p><span>Pressure</span><br>$$p=\frac{2\sigma}{r}$$</p>
+<p><span>Specific Gravity</span><br>$$G_s=\frac{\rho_{\textsf{substance}}}{\rho_{H_2O}}$$</p>
+</div>
+<div class="grid-2">
+<p><span>Specfic Volume</span><br>$$V_s=\frac{1}{\rho}$$</p>
+<p><span>Shear stress, Viscosity</span><br>$$\tau=\mu\frac{dv}{dy}$$</p>
+</div>
+<div class="grid-2">
+<p><span>Height of capillarity</span><br>$$H=\frac{4\sigma\cos\theta}{\rho gd}$$</p>
+<p><span>Absolute Viscosity</span><br>$$\mu=\frac{D^2}{18v}(\rho_1-\rho_2)g$$</p>
+</div>
+<div class="grid-2">
+<p><span>Kinematic Viscosity</span><br>$$\displaylines{\nu ={\mu\over\rho}}$$</p>
+<p><span>Specific weight</span><br>$$\omega=\frac{W}{V}=\frac{mg}{V}=\rho g$$</p>
+</div>
+<h3>Chapter - 2</h3>
+<p><span>Pressure difference</span><br>$$\displaylines{\textsf{Vertical}\rightarrow p_2-p_1=-\rho g(z_2-z_1)\\\textsf{Same level}\rightarrow p_1=p_2}$$</p>
+<p><span>Pressure & Head</span><br>$$\displaylines{\textsf{Absolute pressure}=\textsf{Gauge pressure}\\+\textsf{ Atmospheric pressure}\\p=\rho gh+p_{atm}}$$</p>
+<p><span>For manometers & pipes</span><br>$$\displaylines{\textsf{use left-hand limb & right-hand limb}}$$</p>
+<h3>Chapter - 3</h3>
+<p><span>Area of Trapezium</span><br>$$\displaylines{A={\frac{a+b}{2}\times h}\\a\textsf{ and }b\textsf{ are parallel sides.}\\h\textsf{ is distance between }a\textsf{ and }b.\\\textsf{moment of area}=A\times y}$$</p>
+<p><span>Resultant force</span><br>$$\displaylines{R=\rho gA\bar{y}\\R\textsf{ acts at centre of pressure.}}$$</p>
+<div class="grid-2">
+<p><span>Second Moment of Area</span><br>$$\displaylines{I_o=I_{GG}+Ak^2}$$</p>
+<p><span>Depth of Centre of Pressure</span><br>$$\displaylines{D=\sin^2\phi\left(\frac{I_o}{A\bar{y}}\right)}$$</p>
+</div>
+<p><span>Depth of Centre of Pressure for Vertical Plane</span><br>$$\displaylines{\phi =90^\circ \rightarrow D=\frac{I_o}{A\bar{y}}}$$</p>
+<p><span>Force on a Curved Surface due to Hydrostatic Pressure</span><br>$$\displaylines{R_h=\frac{1}{2}\rho gh^2\times 1\\R_v=\rho gA\times 1\\R=\sqrt{R_h^2+R_v^2}\\\tan\theta =\frac{R_v}{R_h}}$$</p>
+<p><span>Stability of a Vessel Carrying Liquid in Tanks with a Free Surface</span><br>$$\displaylines{\textsf{Overturning moment}=p\times x\\\textsf{Righting moment}=W.NM\tan\theta\\NM=Z_B-Z_G+\frac{1}{V}\left[I_0-\left(\frac{\rho_1}{\rho}\right)(I_1+I_2)\right]
+\\GM=\textsf{Metacentric height}\\
+BM=\textsf{Metacentric radius}={I\over V}\\
+\textsf{Center of buoyancy is half of submerged depth.}
+\\\textsf{Submerged Volume}={W\over \rho g}
+\\\textsf{Submerged Depth}={V\over A}
+}$$</p>
+<h3>Chapter - 5</h3>
+<p><span>Momentum & Fluid Flow</span><br>$$\displaylines{\textsf{momentum}=m\times v=\textsf{mass}\times \textsf{velocity}}$$</p>
+<p><span>Mass of Fluid Flow</span><br>$$\displaylines{m=\rho_1 A_1 v_1=\rho_2 A_2 v_2\quad(kgs^{-1})}$$</p>
+<p><span>By Newton's Second Law</span><br>$$\displaylines{F=F_1+F_2+F_3=m(v_{out}-v_{in})\\F_1=\textsf{force due to any solid body}\\F_2=\textsf{force due to gravity}\\F_3=\textsf{force due to outside}\\\textsf{the control volume (free jet)}}$$</p>
+<p><span>Pressure, Force</span><br>$$\displaylines{p=\frac{F}{A}\quad F=pA\\\rho =\frac{m}{V}\quad m=\rho V=\rho Al\\F=ma}$$</p>
+<p><span>Force Exerted by a Jet Striking a Flat Plate</span><br>$$\displaylines{\textsf{Force}=\rho A(v-u)(v-u)\cos\theta\\v=\textsf{velocity of jet}\\u=\textsf{velocity of plate held normal between jet}\\\theta =\textsf{angle between jet and plate}}$$</p>
+<p><span>Force due to Deflection of a Jet by a Curved Vane</span><br>$$\displaylines{R=-F_1\\F_2,\;F_3=0\rightarrow R_x=-F_1\\R_x=-m(v_{out}-v_{in})_x\\R_x=m(v_{in}-v_{out})_x\\R_y=m(v_{in}-v_{out})_y}$$</p>
+<p><span>Mass per unit time entering control volume</span><br>$$\displaylines{m=\rho Q\quad Q=Av\\Q\textsf{ is flowing rate.}\\F_2=0\rightarrow F_1+F_3=m(v_{out}-v_{in})\\R=-F_1\rightarrow R=F_3-m(v_{out}-v_{in})}$$</p>
+<p><span>Workdone per second</span><br>$$\displaylines{\textsf{workdone per second}\\=\textsf{reaction}\times\textsf{velocity of tank}}$$</p>
+<h3>Chapter - 6</h3>
+<p><span>The Energy Equation and Its Applications</span><br>$$\displaylines{\textsf{Bernoulli's Equation}\\\scriptsize{\displaylines{\textsf{Total energy}\\\textsf{per unit weight}}=\displaylines{\textsf{Pressure}\\\textsf{energy per}\\\textsf{unit weight}}+\displaylines{\textsf{Kinetic}\\\textsf{energy per}\\\textsf{unit weight}}+\displaylines{\textsf{Potential}\\\textsf{energy per}\\\textsf{unit weight}} }
+\\H=\frac{p}{\rho g}+\frac{v^2}{2g}+z\\\\\textsf{Between any two points, 1 and 2 on a streamline},
+\\\scriptsize{\displaylines{\textsf{Total energy per}\\\textsf{unit weight at 1}}=\displaylines{\textsf{Total energy per}\\\textsf{unit weight at 2}}}
+\\\frac{p_1}{\rho_1 g}+\frac{v_1^2}{2g}+z_1=\frac{p_2}{\rho_2 g}+\frac{v_2^2}{2g}+z_2
+\\\\\scriptsize{\displaylines{\textsf{Total energy}\\\textsf{per unit}\\\textsf{weight at 1}}=\displaylines{\textsf{Total energy}\\\textsf{per unit}\\\textsf{weight at 2}}+\displaylines{\textsf{Loss per}\\\textsf{unit}\\\textsf{weight}}
++\displaylines{\textsf{Work done}\\\textsf{per unit}\\\textsf{weight}}- \displaylines{\textsf{Energy}\\\textsf{supplied}\\\textsf{per unit}\\\textsf{weight}} }
+\\\frac{p_1}{\rho_1 g}+\frac{v_1^2}{2g}+z_1=\frac{p_2}{\rho_2 g}+\frac{v_2^2}{2g}+z_2+h+w-q
+}$$</p>
+<p><span>Continuity Flow Equation</span><br>$$\displaylines{A_1v_1=A_2v_2=A_3v_3\\
+\frac{\pi d_1^2}{4}u_1=\frac{\pi d_2^2}{4}u_2=\frac{\pi d_3^2}{4}u_3
+}$$</p>
+<p><span>Principle of Venturi Meter</span><br>$$\displaylines{Q=\left[\frac{A_1}{(m^2-1)^{\frac{1}{2}}}\right]\sqrt{2gh\left(\frac{\rho_{\textsf{man}}}  {\rho} -1\right)  }\\m=\frac{A_1}{A_2}  }$$</p>
+<h3>Theory of Small Orifice</h3>
+<div class="grid-2" >
+<p><span>Velocity of Jet</span><br>$$v=\sqrt{2gH}$$</p>
+<p><span>Theoretical Discharge</span><br>$$Q=Av=A\sqrt{2gH}$$</p>
+</div>
+<p><span>Actual Discharge</span><br>$$Q_{\textsf{actual}}=C_dQ_{\textsf{theoretical}}=C_dA\sqrt{2gH}$$</p>
+<p><span>Actual Discharge</span><br>$$\displaylines{
+\textsf{Actual velocity}=C_vv=C_v\sqrt{2gH}\\
+\textsf{Actual area}=C_cA\\
+\begin{align}
+\textsf{Actual discharge}&=\textsf{Actual area}\times\textsf{Actual velocity}\\
+&=C_cA\times C_v\sqrt{2gH}\\
+&=C_dA\sqrt{2gH}
+\end{align}\\
+(\because C_d=C_c\times C_v)
+}$$</p>
+<p><span>Coefficient of Discharge</span><br>$$\displaylines{C_d=\frac{\textsf{Actual discharge}}{\textsf{Theoretical discharge}}}$$</p>
+<p><span>Coefficient of Contraction</span><br>$$\displaylines{C_c=\frac{\textsf{Area of jet at vena contracta}}{\textsf{Area of orifice}}}$$</p>
+<p><span>Coefficient of Velocity</span><br>$$\displaylines{C_v=\frac{\textsf{Actual velocity}}{\textsf{Theoretical velocity}}}$$</p>
+<h3>Theory of Large Orifice</h3>
+<div class="grid-2" >
+<p><span>Area of Strip</span><br>$$\displaylines{A=B\delta h}$$</p>
+<p><span>Velocity of Strip</span><br>$$\displaylines{v=\sqrt{2gh}}$$</p>
+</div>
+<p><span>Theoretical Discharge</span><br>$$\displaylines{\delta Q=Av=B\sqrt{2g}\;h^{\frac{1}{2}}\delta h\\\textsf{Integration from }h=H_1\textsf{ to }H_2\\Q=B\sqrt{2g}\int_{H_1}^{H_2}h^{\frac{1}{2}}dh\\\textsf{For small orifice},\;Q=A\sqrt{2gh}\\h=\frac{1}{2}(H_1+H_2)\\
+\%\textsf{ error}=\frac{Q_{\textsf{large}}-Q_{\textsf{small}}}{Q_{\textsf{small}}}\times 100}$$</p>
+
+</div>
+<script>
+	document.querySelectorAll(".container span, .container h3").forEach(a => a.className = 'emerald');
+</script>
+</body>
+</html>

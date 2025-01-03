@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Hydrology (CE-42026)</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="../style.css">
+    <script src="../../mathjax/es5/tex-mml-chtml.js"></script>
+    </head>
+  <body>
+<div class="top">Hydrology (CE-42026)</div>
+<div class="container">
+
+<h3>Chapter - 1</h3>
+
+<h3>Introduction</h3>
+
+<p><span>Water Budget Equation</span></br>$$\displaylines{ 
+P-R-G-E-T=\Delta S\\\textsf{Input volume}-\textsf{Output volume}\\=\textsf{Change in storage}\\\\
+\textsf{Examples:}\\(I\,\Delta t+PA)-(Q\,\Delta t+EA)=\Delta S\\PA+I\,\Delta t-[\,Q\,\Delta t+(G+E+T)\,A\,]=\Delta S\\\\P=\textsf{Precipitaion}\\R=\textsf{Surface runoff}\\G=\textsf{Net groundwater flow}\\T=\textsf{Transpiration}\\E=\textsf{Evaporation}\\\Delta S=\textsf{Change in storage}\\I\,\Delta t=\textsf{Inflow volume}\\Q\,\Delta t=\textsf{Outflow volume}\\A=\textsf{Surface area}\\\\\textsf{Change in elevation, }\,\Delta z=\frac{\Delta S}{A}\\\\\textsf{Runoff coefficient}=\frac{O}{I}\\\\\textsf{Annual average precipitation,}\\\bar{P}=\frac{\sum\,A_i\,P_i}{\sum\,A_i}\\\\\textsf{Annual average everporation,}\\\bar{E}=\frac{\sum\,A_i\,E_i}{\sum\,A_i}\\\\
+R=P-L\\
+L=\textsf{Loses}=\textsf{water not available to runoff}\\\textsf{due to infiltration, evaporation, transpiration}\\\textsf{and surface storage}
+ }$$</p>
+
+<h3>Chapter - 2</h3>
+
+<h3>Precipitaiton</h3>
+
+<p><span>Optimal Number of Stations</span></br>$$\displaylines{ 
+\bar{P}=\frac{1}{m}\,\left(\,\sum_1^m\,P_i\,\right)\\\\
+\sigma_{m-1}=\sqrt{\frac{\sum_1^m\,(P_i-\bar{P})^2}{m-1}}\\\\
+C_v=\frac{100\times\sigma_{m-1}}{\bar{P}}\\\\
+N=\left(\,\frac{C_v}{\varepsilon}\,\right)^2
+ }$$</p>
+
+<p><span>Test for Consistency of Record</span></br>$$\displaylines{ 
+\textsf{Correction ratio}\,,\,CR=\frac{M_c}{M_a}
+ }$$</p>
+
+<p><span>Notes</span></br>$$\displaylines{ 
+\textsf{Probability}\,,\,P=\frac{m}{(\,N+1\,)}\\\\
+\textsf{Return period}\,,\,T=\frac{1}{P}
+ }$$</p>
+
+<h3>Chapter - 3</h3>
+
+<h3>Abstractions from Precipitaion</h3>
+
+<p><span>Meyer's Formula</span></br>$$\displaylines{ 
+E_L=K_M\,(\,e_w-e_a\,)\left(\,1+\frac{u_9}{16}\,\right)\\\\
+K_M=0.36\\
+e_w\Rightarrow\textsf{Table 3.3}\\\\
+\textsf{Relative Humidity}\,,\,RH=\frac{e_a}{e_w}\times 100\,\%\\\\
+u_9=\textsf{wind velocity at a height of 9m}\\\textsf{above ground}\\
+u_9=u_1+(9)^\frac{1}{7}
+ }$$</p>
+
+<p><span>Penman's Equation</span></br>$$\displaylines{ 
+PET=\frac{A\,H_n+E_a\,\gamma}{A+\gamma}\\\\H_n=H_a\,(1-r)\left(a+b\,\frac{n}{N}\right)-\sigma\,T_a^4\\\times\,(\,0.56-0.092\,\sqrt{e_a}\,)\left(0.10+0.90\,\frac{n}{N}\right)\\\\
+r=\textsf{reflection coefficient}\\
+\textsf{Close ground corps}\Rightarrow 0.25\\
+\textsf{Bare lands}\Rightarrow 0.45\\
+\textsf{Water surface}\Rightarrow 0.05\\
+\textsf{Snow}\Rightarrow 0.95\\\\
+H_a\Rightarrow\textsf{Table 3.4}\\
+a=0.29\,\cos\phi\\
+b=0.52\\
+N\Rightarrow\textsf{Table 3.5}\\
+\sigma =2.01\times 10^{-9}\,mm/day\\
+T_a=273+\,°C\\
+e_a=e_w\times RH\\
+e_w\,,\,A\Rightarrow\textsf{Table 3.3}\\
+\gamma =0.49\\\\\
+E_a=0.35\left(1+\frac{u_2}{160}\right)(\,e_w-e_a\,)
+ }$$</p>
+
+<p><span>Blaney-Criddle Formula</span></br>$$\displaylines{ 
+E_T=2.54\,K\,F\\\\
+F=\frac{\sum\,P_h\,\bar{T}_f}{100}\\\\
+K\Rightarrow\textsf{Table 3.7}\\
+F=\textsf{sum of monthly consumptive use}\\\textsf{factors for the period}\\
+P_h\Rightarrow\textsf{Table 3.6}\\
+\bar{T}_f=\textsf{mean monthly temperature in °F}
+ }$$</p>
+
+<p><span>\(\phi\)-index</span></br>$$\displaylines{ 
+\textsf{Duration of rainfall excess}\,,\,t_e=M\,\Delta t\\\\
+R_d=\sum_1^M\,(\,I_i-\phi\,)\,\Delta t\\
+R_d=\sum_1^M\,I_i\,\Delta t-\phi\,M\,\Delta t\\\\
+\textsf{Trial 1}\Rightarrow\textsf{Assume}\,M=N\\
+M_c\ne M\Rightarrow\textsf{try a new value of \(M\lt N\)}\\\textsf{in the next trial}
+ }$$</p>
+
+<p><span>Thornthwaite Formula</span></br>$$\displaylines{ 
+E_T=1.6\,L_a\,\left(\frac{10\,\bar{T}}{I_t}\right)^a\\\\L_a\Rightarrow\textsf{Table 3.8}\\I_t=\textsf{the total of 12 monthly values of}\\\textsf{heat index}\\I_t=\sum_1^{12}\,i\\\\
+i=\left(\frac{\bar{T}}{5}\right)^{1.514}\\\\
+a=6.75\times 10^{-7}\,I_t^3-7.71\times 10^{-5}\,I_t^2\\+\, 1.792\times 10^{-2}\,I_t+0.49239\\\\
+\textsf{Annual PET}=\sum\,E_T\\
+\textsf{Monthly PET}=\frac{\textsf{Annual PET}}{12}
+ }$$</p>
+
+<h3>Chapter - 4</h3>
+
+<h3>Streamflow Measurement</h3>
+
+<p><span>Area-Velocity Method</span></br>$$\displaylines{ 
+\textsf{For the first and last section}\,,\\
+\bar{W}_{N-1}=\frac{(\,W_N+\frac{W_{N-1}}{2}\,)^2}{2\,W_N}\\\\
+\textsf{For the rest section}\,,\\
+\bar{W}=\frac{W_i}{2}+\frac{W_{i+1}}{2}
+ }$$</p>
+
+<p><span>Slope-Area Method</span></br>$$\displaylines{ 
+R=\frac{A}{P}\\\\K_1=\frac{1}{n_1}\,A_1\,R_1^{\frac{2}{3}}\quad\quad K_2=\frac{1}{n_2}\,A_2\,R_2^{\frac{2}{3}}\\\\
+K=\sqrt{K_1\,K_2}\quad\quad \bar{S}_f=\frac{h_f}{L}\\\\
+Q=K\,\sqrt{\bar{S}_f}\\\\
+h_f=(\,h_1-h_2\,)+\left(\frac{V_1^2}{2\,g}-\frac{V_2^2}{2\,g}\right)
+ }$$</p>
+
+<p><span>Stage-Discharge Relationship</span></br>$$\displaylines{ 
+Q=C_r\,(\,G-a\,)^\beta\\
+\log Q=\beta\,\log \,(\,G-a\,)+\log C_r\\
+Y=\beta\,X+b\\
+Y=\log Q\,,\,\,X=\log \,(\,G-a\,)\,,\,\,b=\log C_r\\\\
+\beta =\frac{N\,(\,\sum XY\,)-(\,\sum X\,)(\,\sum Y\,)}{N\,(\,\sum X^2\,)-(\sum X)^2}\\\\
+b=\frac{\sum Y-\beta\,(\,\sum X\,)}{N}\\\\b=\log C_r\quad\quad C_r =10^b
+ }$$</p>
+
+<h3>Chapter - 6</h3>
+
+<h3>Hydrographs</h3>
+
+<p><span>Straight-Line Method</span></br>$$\displaylines{ 
+N=0.83\,A^{0.2}\\\\
+\textsf{Runoff depth}=\\\frac{\textsf{Runoff volume (area of DRH)}}{\textsf{Catchment area}}\\\\
+\phi\,\textsf{index}=\frac{\textsf{Total rainfall}-\textsf{Rainfall excess}}{\textsf{Duration}}
+ }$$</p>
+
+<h3>Method of Superposition</h3>
+
+<h3>S-Curve Method</h3>
+
+<h3>Chapter - 7</h3>
+
+<h3>Floods</h3>
+
+<p><span>Rational Method</span></br>$$\displaylines{ 
+Q_p=\frac{1}{3.6}\,C\,(i_{tc\,,\,p})\,A\\Q_p=\textsf{peak discharge (\(m^3/s\))}\\
+C=\textsf{coefficient of runoff}
+\\(i_{tc\,,\,p})=\textsf{mean intensity (\(mm/h\))}\\A=\textsf{drainage area (\(km^2\))}\\\\
+t_c=0.01947\,L^{0.77}\,S^{-0.385}\\
+\textsf{(OR)}\\
+t_c=0.01947\,K_1^{0.77}\\
+t_c=\textsf{time of concentration (min)}\\\\
+S=\frac{\Delta H}{L}\quad\quad K_1=\sqrt{\frac{L^3}{\Delta H}}\\\\\textsf{Average intensity}=i_{tc\,,\,p}=\frac{\textsf{depth of rainfall}}{\textsf{duration}}\\\\
+\textsf{Equivalent runoff coefficient}\\
+C_e=\frac{\sum_1^N\,C_i\,A_i}{A}
+ }$$</p>
+
+<p><span>Gumbel's Method</span></br>$$\displaylines{ 
+\sigma_{n-1}=\sqrt{\frac{\sum\,(x-\bar{x})^2}{N-1}}\\\\
+\bar{y}_n\,,\,S_n\Rightarrow\textsf{Table 7.3 and 7.4}\\\\
+\textsf{Sample size to be very large}\,,\\
+N\rightarrow\infty\,,\,\bar{y}_n=0.577\,,\,S_n=1.2825\\\\
+K=\frac{y_T-\bar{y}_n}{S_n}\\\\
+y_T=-\left[\,\,\ln .\ln\frac{T}{T-1}\right]\\\\
+x_T=\bar{x}+K\,\sigma_{n-1}\\\\
+P=\frac{1}{T}\quad\quad P_1=1-(1-P)^n
+ }$$</p>
+
+<p><span>Log-Pearson Type III Distribution</span></br>$$\displaylines{ 
+z=\log x\\\\
+\sigma_z=\sqrt{\frac{\sum\,(z-\bar{z})^2}{N-1}}\\\\
+C_s=\frac{N\,\sum\,(z-\bar{z})^3}{(N-1)(N-2)(\sigma_z)^3}\\\\
+K_z\Rightarrow\textsf{Table 7.6}\\\\
+z_T=\bar{z}+K_z\,\sigma_z\\\\
+x_T=\textsf{antilog}\,z_T=10^{z_T}\\\\
+\textsf{Log-Normal Distribution}\Rightarrow C_s=0
+ }$$</p>
+
+<h3>Chapter - 9</h3>
+
+<h3>Groundwater</h3>
+
+<p><span>Confined / Artesian / Leaky Aquifer</span></br>$$\displaylines{ 
+T=KB\quad\quad H=s+h\\\\
+T\Rightarrow\textsf{Transmissivity}\\
+K\Rightarrow\textsf{Coefficient of permeability}\\
+B\Rightarrow\textsf{Length/Thickness of strainer}\\
+s\Rightarrow\textsf{Drawdown}\\\\
+Q=\frac{2\,\pi\,T\,(h_2-h_1)}{\ln\frac{r_2}{r_1}}=\frac{2\,\pi\,KB\,(h_2-h_1)}{\ln\frac{r_2}{r_1}}\\\\
+Q=\frac{2\,\pi\,T\,(s_1-s_2)}{\ln\frac{r_2}{r_1}}=\frac{2\,\pi\,KB\,(s_1-s_2)}{\ln\frac{r_2}{r_1}}\\\\
+\textsf{At the edge of the zone of influence}\,,\\s_1=s_w\,,\,s_2=0\,,\,r_1=r_w\,,\,r_2=R\\h_1=h_w\,,\,h_2=H\\\\
+\textsf{At pumping well}\,,\\
+Q=\frac{2\,\pi\,T\,s_w}{\ln\frac{R}{r_w}}\\\\
+\textsf{\(T\) and \(s_w\) are constant}\,,
+\frac{Q_1}{Q_2}=\frac{\ln\frac{R}{r_{w_2}}}{\ln\frac{R}{r_{w_1}}}\\\\
+\textsf{\(Q \varpropto s_w\) for constant \(T\,,\,R\) and \(r_w\)}\,,\\\\
+\frac{Q_1}{Q_2}=\frac{s_{w_1}}{s_{w_2}}
+ }$$</p>
+
+<p><span>Unconfined Aquifer</span></br>$$\displaylines{ 
+\textsf{Transmissivity}\,,\,T=KH\\\\
+Q=\frac{\pi\,K\,(h_2^2-h_1^2)}{\ln\frac{r_2}{r_1}}\\\\
+\textsf{At the edge of the zone of influence}\,,\\
+Q=\frac{\pi\,K\,(H^2-h_w^2)}{\ln\frac{R}{r_w}}\\\\
+\textsf{At pumping well}\,,\\
+Q=\frac{\pi\,K\,(h_1^2-h_w^2)}{\ln\frac{r_1}{r_w}}\\\\\textsf{(or)}\\\\ Q=\frac{\pi\,K\,(h_2^2-h_w^2)}{\ln\frac{r_2}{r_w}}\\\\
+\textsf{Drawdown at the pumping well}\,,\,s_w=H-h_w
+ }$$</p>
+
+<p><span>Recuperation Test of an Open Well</span></br>$$\displaylines{ 
+Q=K_0\,H\quad\quad Q=K_s\,A\,H\\\\
+\textsf{Specific capacity per unit well area}\,,\\
+K_s=\frac{K_0}{A}=\frac{1}{T_r}\,\ln\frac{H_1}{H_2}
+ }$$</p>
+
+<br>
+
+
+</div>
+<script>
+	document.querySelectorAll(".container span, .container h3").forEach(a => a.className = 'hydrology');
+</script>
+<script src="mathjax/es5/tex-mml-chtml.js"></script>
+</body>
+</html>

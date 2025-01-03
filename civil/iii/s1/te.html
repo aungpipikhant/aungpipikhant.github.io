@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>T.E. (CE-31017)</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="../style.css" />
+    <script src="../../mathjax/es5/tex-mml-chtml.js"></script>
+    </head>
+  <body>
+<div class="container">
+<h1>T.E. (CE-31017)</h1>
+<h3>Chapter - 2</h3>
+<p><span>Notes</span><br>$$\displaylines{\textsf{Tables in Page 12, 29}\\\textsf{Nomenclature in Page 41}}$$</p>
+<p><span>Available Tractive Effort</span><br>$$F={ma+R_a+R_{rl}+R_g}$$</p>
+<div class="grid-2">
+<p><span>Aerodynamic Resistance</span><br>$$R_a={{\rho\over 2} C_DA_fV^2}$$</p>
+<p><span>\(hp\) to overcome \(R_a\)</span><br>$$hp_{R_a}={\rho C_DA_fV^3\over 1100}$$</p>
+</div>
+<p><span>Coefficient of Rolling Resistance</span><br>$$f_{rl}={0.01\left({{1}+{V\over 147}}\right)}$$</p>
+<div class="grid-2">
+<p><span>Rolling Resistance</span><br><br>$$R_{rl}={f_{rl}W}$$</p>
+<p><span>\(hp\) to overcome \(R_{rl}\)</span><br>$$hp_{R_{rl}}={f_{rl}WV\over 550}$$</p>
+</div>
+<p><span>Grade Resistance</span><br>$$R_g={W\sin\theta_g}=WG$$</p>
+<p><span>Maximum Tractive Effort (front-wheel drive)</span><br>$$F_{\textsf{max}}={{\mu W(l_r+f_{rl}h)/L}\over {1+\mu h}/L}$$</p>
+<p><span>Maximum Tractive Effort (rear-wheel drive)</span><br>$$F_{\textsf{max}}={{\mu W(l_f-f_{rl}h)/L}\over {1-\mu h}/L}$$</p>
+<p><span>Engine Generated Horsepower</span><br>$$hp_e={2\pi M_en_e\over 550}$$</p>
+<p><span>Engine Generated Tractive Effort</span><br>$$F_e={M_e\varepsilon_0\eta_d\over r}$$</p>
+<p><span>Vehicle Speed</span><br>$$V={2\pi rn_e(1-i)\over \varepsilon_0}$$</p>
+<p><span>Vehicle Acceleration</span><br>$$F-\sum R={\gamma_mma}$$<br>$$\gamma_m={1.04+0.0025\;\varepsilon_0^2}$$</p>
+<p><span>Brake Force Ratio</span><br>$$BFR_{f/r\space \textsf{max}}={{l_r+h(\mu+f_{rl})}\over{l_f-h(\mu+f_{rl})}}$$</p>
+<p><span>Percentages of Braking Force</span><br>$$PBF_f={100-{100\over 1+BFR_{f/r\space \textsf{max}}}}$$<br>$$PBF_r={100\over 1+BFR_{f/r\space \textsf{max}}}$$<br>$$PBF_f+PBF_r=100\%$$</p>
+<p><span>\(K_a\) and \(R_a\)</span><br>$$K_a={\frac\rho 2C_dA_f}\quad\quad R_a={K_aV^2}$$</p>
+<p><span>Theoretical Stopping Distance (\(R_a\) considered)</span><br>$$\displaylines{S={\frac{\gamma_bW}{2gK_a}\;\ln\left[1+\frac{K_aV_1^2}{\eta_b\mu W+f_{rl}W\pm W\sin\theta_g}\right]}\\\gamma_b=1.04}$$</p>
+<p><span>Theoretical Stopping Distance (\(R_a\) ignored)</span><br>$$S={\frac{\gamma_b(V_1^2-V_2^2)}{2g(\eta_b\mu+f_{rl}\pm\sin\theta_g)}}$$</p>
+<p><span>Practical Stopping Distance</span><br>$$\displaylines{d=\frac{V_1^2}{2g\left(\left(\frac{a}{g}  \right)\pm G  \right)}\\G=0\rightarrow d=\frac{V_1^2}{2a}\\a=11.2\;ft/s^2}$$</p>
+<p><span>Distance Travelled During Driver Perception/Reaction</span><br>$$\displaylines{d_r=V_1\times t_r}$$</p>
+<p><span>Total Stopping Distance</span><br>$$\displaylines{d_s=d+d_r\\d=\textsf{distance travelled during breaking}}$$</p>
+<h3>Chapter - 3</h3>
+<p><span>Notes</span><br>$$\displaylines{\textsf{Tables in Page 62, 66}\\\textsf{Grade (G)}=\frac{\textsf{Vertical (V)}}{\textsf{Horizontal (H)}}\\\textsf{V}=\textsf{GH}\;\;\textsf{(or)}\;\;\textsf{V}=\textsf{G}\times\textsf{Station} \\1\;\textsf{station}=100\;ft }$$</p>
+<p><span>Vertical Curve Fundamentals</span><br>$$\displaylines{y=ax^2+bx+c\\a=\frac{G_2-G_1}{2L}\quad\quad b=G_1\\c\textsf{ is elevation of PVC.}\\\frac{dy}{dx}=2ax+b}$$</p>
+<p><span>Using Offsets</span><br>$$\displaylines{Y=\frac{A}{200L}\;x^2\quad\quad A=|G_1-G_2|\\x_{\textsf{hl}}=K\times |G_1|\quad\quad K=\frac{L}{A}}$$</p>
+<p><span>Offset at the end of vertical curve</span><br>$$Y_f=\frac{AL}{200}$$</p>
+</div>
+<script>
+	document.querySelectorAll(".container span, .container h3").forEach(a => a.className = 'blue');
+</script>
+<script src="mathjax/es5/tex-mml-chtml.js"></script>
+</body>
+</html>

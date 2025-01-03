@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Soil (CE-31015)</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="../style.css" />
+    <script src="../../mathjax/es5/tex-mml-chtml.js"></script>
+    </head>
+  <body>
+<div class="container">
+  <h1>Soil (CE-31015)</h1>
+<h3>Chapter - 2</h3>
+<p><span>Standard Sieve Sizes</span><br>$$\displaylines{\textsf{Page 49 (Table 2.5)}}$$</p>
+  <div class="grid-2">
+      <p><span>Uniformity Coefficient</span><br>$$C_u={D_{60} \over D_{10}}$$</p>
+      <p><span>Coefficient of Gradation</span><br>$$C_c={D_{30}^2\over D_{60}\times D_{10}}$$</p>
+  </div>
+  <p><span>Sorting Coefficient</span><br>$$S_0={\sqrt {D_{75}\over D_{25}}}$$</p>
+<p><span>Percent finer</span><br>$$\displaylines{\textsf{Percent finer}=\frac{\Sigma M-\textsf{col.4}}{\Sigma M}\times 100}$$</p>
+<p><span>Particle-Size Classifications</span><br>$$\displaylines{\textsf{Page 37 (Table 2.3)}\\\textsf{MIT System}\rightarrow 2,\;0.06,\;0.002\\\textsf{USDA System}\rightarrow 2,\;0.05,\;0.002\\\textsf{AASHTO System}\rightarrow 2,\;0.075,\;0.002}$$</p>
+
+<h3>Chapter - 3</h3>
+<p><span>Weight</span><br>$$\displaylines{W=W_w+W_s=\omega W_s+W_s=W_s(\omega +1)}$$</p>
+<p><span>Volume</span><br>$$\displaylines{V=V_v+V_s}$$</p>
+      <p><span>Void ratio</span><br>$$\displaylines{e={V_v\over V_s}\\e=\frac{n}{1-n}\\ e=\omega_{\textsf{sat}} G_s\;(\because S=100\%=1)}$$</p>
+      <p><span>Porosity</span><br>$$n={V_v\over V}\quad n=\frac{e}{1+e}$$</p>
+  <div class="grid-2">
+      <p><span>Degree of Saturation</span><br>$$S={{V_w\over V_v}\quad S=\frac{\omega G_s}{e}}$$</p>
+      <p><span>Water content</span><br>$$\omega={W_w\over W_s}$$</p>
+  </div>
+  <p><span>Unit Weight</span><br>$$\gamma={W\over V}\quad V_w=\frac{W_w}{\gamma_w}\quad\gamma={(1+\omega)G_s\gamma_w\over 1+e}$$</p>
+  <p><span>Dry Unit Weight</span><br>$$\gamma_d={W_s\over V}\quad\gamma_d={\gamma\over 1+\omega}\quad\gamma_d={G_s\gamma_w\over 1+e}$$</p>
+<p><span>Relationship Equation</span><br>$$\displaylines{W_s=G_sV_s\gamma_w\quad G_s=\frac{W_s}{V_s\gamma_w}\\V_s=1\rightarrow W_s=G_s\gamma_w\\\gamma_w=9.81\;kN/m^3,\;62.4\;lb/ft^3}$$</p>
+<p><span>Saturated Density</span><br>$$\displaylines{\rho_{\textsf{sat}}=\frac{(G_s+e)\rho_w}{1+e}\\\textsf{Mass of water to be added}=\rho_{\textsf{sat}}-\rho}$$</p>
+<p><span>Note</span><br>$$\displaylines{\gamma\textsf{ and }\rho\textsf{ interchanges in some equations.}}$$</p>
+<h3>Chapter - 4</h3>
+<p><span>Shrinkage Limit</span><br>$$\displaylines{SL=\omega_i(\%)-\Delta\omega (\%)\\\omega_i(\%)=\frac{M_1-M_2}{M_2}\times 100\\\Delta\omega (\%)=\frac{(V_i-V_f)\rho_w}{M_2}\times 100\\SL=\left( \frac{M_1-M_2}{M_2}\right) (100)\\-\left( \frac{V_i-V_f}{M_2}\right) (\rho_w)(100)}$$</p>
+<div class="grid-2">
+<p><span>Shrinkage Ratio</span><br>$$\displaylines{SR=\frac{M_2}{V_f\rho_w}}$$</p>
+<p><span>Specific Gravity</span><br>$$\displaylines{G_s=\frac{1}{\frac{1}{SR}-\left(\frac{SL}{100}\right)}}$$</p>
+</div>
+<p><span>Volumetric Shrinkage</span><br>$$\displaylines{VS(\%)=SR[\omega (\%)-SL]}$$</p>
+<p><span>Linear Shrinkage</span><br>$$\displaylines{LS(\%)=100\left[1-\left(\frac{100}{VS(\%)+100} \right)^{\frac{1}{3}} \right]}$$</p>
+<h3>Chapter - 6</h3>
+<p><span>Moist Unit Weight</span><br>$$\displaylines{\gamma = \frac{W}{V_m}\quad\quad \gamma = \rho g}$$</p>
+<p><span>Dry Unit Weight</span><br>$$\displaylines{\gamma_d=\frac{\gamma}{1+\frac{\omega(\%)}{100}}\quad \gamma_d = \frac{G_s\gamma_w}{1+\frac{G_s\omega}{S}}}$$</p>
+<p><span>Maximum Dry Density</span><br>$$\displaylines{\rho_{d(\textsf{max})}=[4804574G_s-195.55(LL)^2\\+156971(R\#4)^{0.5}-9527830]^{0.5}}$$</p>
+<p><span>Optimum Moisture Content</span><br>$$\displaylines{\ln (\omega_{\textsf{opt}})=1.195\times 10^{-4}(LL)^2-1.964G_s\\-6.617\times 10^{-5}(R\#4)+7.651}$$</p>
+
+<p><span>Maximum Relative Density</span><br>$$\displaylines{D_r=AD_{50}^{-B}\\A=0.216\ln E-0.850\\B=-0.03\ln E+0.306\\\textsf{For modified Proctor test, }E=2700kNm/m^3}$$</p>
+<p><span>Maximum Dry Unit Weight</span><br>$$\displaylines{L=14.34+1.195\ln E\\M=-0.19+0.073\ln E\\\omega_{\textsf{opt}}(\%)=(1.99-0.165\ln E)(PI)\\\gamma_{d(\textsf{max})}=L-M\omega_{\textsf{opt}}}$$</p>
+<p><span>Relative Compaction in the Field</span><br>$$\displaylines{R=\frac{\gamma_{d(\textsf{field})}}{\gamma_{d(\textsf{max})}}}$$</p>
+<p><span>zero-air-void unit weight</span><br>$$\displaylines{\gamma_{\textsf{zav}}=\frac{\gamma_w}{\omega+\frac{1}{G_s}}}$$</p>
+
+
+<h3>Chapter - 7</h3>
+<p><span>Constant-head Permeability Test</span><br>$$\displaylines{k=\frac{QL}{Aht}}$$</p>
+<div class="grid-2">
+<p><span>Hydraulic Gradient</span><br>$$\displaylines{i=\frac{\Delta h}{L}}$$</p>
+<p><span>Darcy's Law</span><br>$$\displaylines{v=ki}$$</p>
+</div>
+<p><span>Falling-head Test</span><br>$$\displaylines{q=k\frac{h}{L}A=kiA\\k=2.303\frac{aL}{At}\log_{10}\left(\frac{h_1}{h_2}\right)\\q\textsf{ is flow rate.}}$$</p>
+<p><span>Relationships for Hydraulic Conductivity-Cohesive Soils</span><br>$$\displaylines{k=C\left(\frac{e^n}{1+e}\right)}$$</p>
+<p><span>Equivalent Hydraulic Conductivity in Stratified Soil</span><br>$$\displaylines{k_{H(eq)}=\frac{1}{H}(k_{H_1}H_1+k_{H_2}H_2+k_{H_3}H_3\\+...+k_{H_n}H_n)\\\\k_{V(eq)}=\frac{H}{\left(\frac{H_1}{k_{V_1}}\right)+\left(\frac{H_2}{k_{V_2}}\right)+\left(\frac{H_3}{k_{V_3}}\right)+...+\left(\frac{H_n}{k_{V_n}}\right)}}$$</p>
+<p><span>Ratio of Equivalent Hydraulic Conductivity</span><br>$$\displaylines{\frac{k_{H(eq)}}{k_{V(eq)}}}$$</p>
+<h3>Chapter - 8</h3>
+<p><span>Flow through a Two-layered Soil</span><br>$$\displaylines{i=\frac{h_1}{H_1+H_2}\\\\\textsf{For }0\le z\le H_1\;,\\h=h_1\left(1-\frac{k_2z}{k_1H_2+k_2H_1}\right)\\\\\textsf{For }H_1\le z\le H_1+H_2\;,\\h=h_1\left[\left(\frac{k_1}{k_1H_2+k_2H_1} \right)(H_1+H_2-z) \right]
+\\\\z\textsf{ not given, }h_2=\frac{h_1k_1}{H_1\left(\frac{k_1}{H_1}+\frac{k_2}{H_2}  \right)}
+}$$</p>
+<p><span>Flow Net</span><br>$$\displaylines{\Delta H=\frac{H_1-H_2}{N_d}\\q=\frac{k(H_1-H_2)N_f}{N_d}\\q=\textsf{the total rate of flow through all channels}\\H=\textsf{head difference}\\N_d=\textsf{number of potential drops}\\N_f=\textsf{number of flow channels}\\Q=qL=\frac{q}{kH}\times kHL}$$</p>
+<p><span>Seepage through an Earth Dam on an Impervious Base</span><br>$$\displaylines{\textsf{Page 260 - figure}\\\Delta =\frac{H}{\tan\beta}\\d=0.3\Delta + \frac{h-H}{\tan\beta}+B+\frac{h}{\tan\alpha}\\L=\frac{d}{\cos\alpha}-\sqrt{\frac{d^2}{\cos^2\alpha}-\frac{H^2}{\sin^2\alpha}}}$$</p>
+
+<h3>Chapter - 9</h3>
+<p><span>In Situ Stresses</span><br>$$\displaylines{\sigma = \gamma z}$$</p>
+<p><span>Stresses in Saturated Soil</span><br>$$\displaylines{\textsf{Without seepage}\rightarrow \textsf{Page 274}\\\textsf{Upward seepage}\rightarrow\textsf{Page 277}\\\textsf{Downward seepage}\rightarrow\textsf{Page 281}
+\\\\\textsf{Total stress (water + soil)}\rightarrow\sigma
+\\\textsf{Pore water pressure (water only)}\rightarrow u
+\\\textsf{Effective stress (soil only)}\rightarrow\sigma '=\sigma -u
+\\\\\textsf{For heave to occur / loss of stability},\;\sigma '=0
+}$$</p>
+<p><span>Seepage Force</span><br>$$\displaylines{\textsf{Seepage force per unit volume}=\gamma_wi\\\textsf{Hydraulic gradient},\;i=\frac{\Delta h}{H}}$$</p>
+<p><span>Heaving in Soil Due to Flow around Sheet Piles</span><br>$$\displaylines{\textsf{Factor of safety},\;FS=\frac{\gamma '}{i_{\textsf{av}}\gamma_w}\\FS=\frac{D\gamma '}{C_0\gamma_w(H_1-H_2)}
+\\\textsf{Page 286}\rightarrow\textsf{Table 9.1 for }C_0
+\\FS=\frac{i_{\textsf{cr}}}{i_{\textsf{exit}}}
+\\i_{\textsf{cr}}=\frac{G_s-1}{1+e}\\i_{\textsf{exit}}=\frac{\Delta h}{l}=\frac{H}{N_dl}\quad\quad \Delta h = \frac{H}{N_d}
+\\i_{\textsf{av}}=\textsf{average hydraulic gradient}
+\\i_{\textsf{cr}}=\textsf{critical hydraulic gradient}
+\\i_{\textsf{exit}}=\textsf{maximum exit gradient}
+}$$</p>
+<p><span>Linear Interpolation Formula</span><br>$$\displaylines{y=y_1+(x-x_1)\frac{(y_2-y_1)}{(x_2-x_1)}\\y\rightarrow D/T\\x\rightarrow C_0\\\textsf{Table 9.1, Page 286}  }$$</p>
+<p><span>Notes</span><br>$$\displaylines{\textsf{Immediately below},\;u=-(S\gamma_wH)}$$</p>
+
+</div>
+<script>
+	document.querySelectorAll(".container span, .container h3").forEach(a => a.className = 'brown');</script>
+<script src="mathjax/es5/tex-mml-chtml.js"></script>
+    </body>
+</html>

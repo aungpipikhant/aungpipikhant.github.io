@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Semester I</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="../style.css" />
+    <style>
+    body {
+    	background: #000;
+    }
+    .container { 
+    	padding-top: 2.8rem;
+    	background: #000;
+    }
+    .btn {
+ 	    font-weight: bold;
+ 	    font-size: 0.856rem;
+ 	    padding-bottom: 0.64rem;
+ 	    box-shadow: inset 0 -0.19rem 0rem rgba(0,0,0,0.3);
+    }
+    a { -webkit-tap-highlight-color: transparent; }
+    a:hover { filter: brightness(73%);; }
+    .appk {
+    	width: 70%;
+    	border-radius: 1rem;
+    	border-top-left-radius: 2rem;
+    	padding: 0.64rem;
+    	display: flex;
+    	flex-direction: column;
+    	margin-bottom: 1rem;
+    	margin-top: 1.9rem;
+    	background: #252525;
+    	border: 0.3px solid #555;
+    }
+    .profile {
+    	display: flex;
+    	flex-direction: row;
+    	align-items: center;
+    	margin-bottom: 0.64rem;
+    }
+    .hydraulics {
+    	color: white;
+  	    background: #008A73;
+    }
+    .timber {
+    	background: #FF4600;
+    	color: white;
+    }
+    .te {
+    	background: #C02828;
+    	color: white;
+    }
+    .structure {
+    	color: white;
+    	background: #0091D0;
+    }
+    .rc {
+    	color: white;
+    	background: #648290;
+    }
+    .maths {
+    	background: #FF7300;
+ 	    color: white;
+    }
+    span {
+    	background: none;
+    	left: 10%;
+    }
+    .container a img {
+    	width: 1rem;
+    }
+    #count {
+    	color: white;
+    	text-align: center;
+    	padding: 0.46rem;
+    	width: auto;
+      display: none;
+    }
+    </style>
+    </head>
+  <body>
+  <div class="container" >
+    <p style="position: fixed; top: 0; z-index: 999; margin: 0; width: 100%; border-top: 0; text-align: center; padding: 0.64rem;">
+    Last updated:&emsp;17/03/2024 03:03:03 PM
+    </p>
+    <h3 style="color: #fff; font-size: 1rem;">IV B.E. Civil Engineering Formulas (Sem I)</h3>
+    <p id="count" ></p>
+
+    <a href="maths.html" class="btn maths"><span><img style="transform: scale(91%);" src="../../assets/sum.svg" /></span>Maths (EM-41007)</a>
+    
+    <a href="rc.html" class="btn rc"><span><img src="../../assets/rc.svg" /></span>R.C. (CE-41024)</a>
+    
+    <a href="timber.html" class="btn timber"><span><img src="../../assets/timber.svg" /></span>Timber (CE-41014)</a>
+    
+    <a href="hydraulics.html" class="btn hydraulics"><span><img style="transform: scale(140%);" src="../../assets/hydraulics.svg" /></span>Hydraulics (CE-41016)</a>
+ 
+    <a href="te.html" class="btn te"><span><img style="transform: scale(190%);" src="../../assets/te.svg" /></span>T.E. (CE-41017)</a>
+    
+    <a href="structure.html" class="btn structure"><span><img src="../../assets/structure.svg" /></span>Structure (CE-41013)</a>
+	
+  <div class="appk">
+		<div class="profile">
+			<img style="margin-right: 0.82rem; border-radius: 50%; width: 3rem; height: 3rem; background: #fff;" alt="i" src="../../assets/me.jpg" />
+			<div class="name-link">
+			<a href="https://www.facebook.com/aungpipikhant" style="width: 100%; font-size: 0.856rem; justify-content: left; color: #fff; padding:0; margin:0; font-weight:bold;">Aung Paing Paing Khant&nbsp;
+			<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#fff" width="1rem" >
+			<path fill-rule="evenodd" d="M2.25 12c0-5.385 4.365-9.75 9.75-9.75s9.75 4.365 9.75 9.75-4.365 9.75-9.75 9.75S2.25 17.385 2.25 12zm13.36-1.814a.75.75 0 10-1.22-.872l-3.236 4.53L9.53 12.22a.75.75 0 00-1.06 1.06l2.25 2.25a.75.75 0 001.14-.094l3.75-5.25z" clip-rule="evenodd" />
+			</svg></a>
+			<a href="https://www.facebook.com/aungpipikhant" style="width: 100%; font-size: 0.82rem; color: #00c0a8; padding:0;margin:0; justify-content: left; ">View profile</a>
+			</div>
+		</div>
+		<hr color="#555" size="0.1rem">
+		<font color="#eee" style="text-align: justify; line-height: 1.6; margin-top: 0.64rem; font-size: 0.82rem;">This website is hosted for IV B.E. Civil Engineering Students to be able to memorise engineering formulas. Report me any mistakes in formulas or equations. I'll correct it. 😘</font>
+	</div>
+
+</div>
+<script>
+var countDownDate = new Date("April 1, 2024 12:00:00").getTime();
+var x = setInterval(function() {
+var now = new Date().getTime();
+var distance = countDownDate - now;
+var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+var hours = Math.floor((distance % (1000 * 60  * 60 * 24)) / (1000 * 60 * 60));
+var minutes = Math.floor((distance % (1000 * 60  * 60)) / (1000 * 60));
+var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+document.getElementById("count").innerHTML = "<b>" + days + "d " + hours + "h "
++ minutes + "m " + seconds + "s " + "</b> left to finish the exam.";
+if (distance < 0) {
+	clearInterval(x);
+	document.getElementById("count").innerHTML = "The exam has finished!";
+}
+}, 1000);
+</script>
+  </body>
+  </html>

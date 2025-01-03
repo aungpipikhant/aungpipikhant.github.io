@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Fluid (CE-32016)</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="../style.css" />
+    <script src="../../mathjax/es5/tex-mml-chtml.js"></script>
+    </head>
+  <body>
+<div class="container">
+<h1>Fluid (CE-32016)</h1>
+
+<h3>Chapter - 2</h3>
+<p><span>Simple Manometer</span><br>$$\displaylines{ \textsf{Fig 2.4 - Page 17}\\\textsf{h = pressure in the pipe in terms of head of water}\\\textsf{Pressure, p}=\omega h\\\omega = 9.81\space kN/m^3\quad\textsf{(or)}\quad 62.4\space lb/ft^3 }$$</p>
+<p><span>Micromanometer</span><br>$$\displaylines{ \textsf{Fig 2.10 - Page 21}\\\delta h=\frac{a}{A}\times h_2\\\delta h=\textsf{fall of heavy liquid level in the basin}\\\textsf{A = Basin area}\\\textsf{a = Tube area} }$$</p>
+
+<h3>Chapter - 13</h3>
+<h3>Darcy's Formula for Loss of Head in Pipes</h3>
+<p><span>Major Losses of Head</span><br>$$\displaylines{ h_f=\frac{4flv^2}{2gd}\\h_f=\frac{flQ^2}{3d^5} }$$</p>
+<p><span>Minor Losses of Head</span><br>$$\displaylines{ h_f=\frac{0.5v^2}{2g}+\frac{4flv^2}{2gd}+\frac{v^2}{2g} }$$</p>
+<p><span>Chezy's Formula for Loss of Head in Pipes</span><br>$$\displaylines{ v=C\sqrt{mi}\\i=\frac{h_f}{l}\\Q=Av=AC\sqrt{mi}\\\textsf{Hydraulic mean depth, }m=\frac{d}{4} }$$</p>
+<p><span>Hydraulic Gradient and Total Energy Lines</span><br>$$\displaylines{ \textsf{Fig. 13.3 - Page 239} }$$</p>
+<p><span>Transmission of Power through Pipes</span><br>$$\displaylines{ \textsf{Max power, }h_f=\frac{H}{3}\quad ,\space \eta =100\%=1\\H=\frac{p}{\omega} }$$</p>
+<div class="grid-2" >
+<p><span>Net Head of Water</span><br>$$\displaylines{ h=H-h_f }$$</p>
+<p><span>Efficiency of Transmission</span><br>$$\displaylines{ \eta = \frac{h}{H}=\frac{H-h_f}{H} }$$</p>
+</div>
+<p><span>Power Available</span><br>$$\displaylines{ P=\eta\space\omega\space Qh }$$</p>
+
+<h3>Chapter - 14</h3>
+<h3>Steady Incompressible Flow in Pipe and Duct Systems</h3>
+<p><span>Steady Flow Energy Equation Between A and B</span><br>$$\displaylines{ 
+\frac{p_A}{\rho g}+\frac{v_A^2}{2g}+Z_A=\frac{p_B}{\rho g}+\frac{v_B^2}{2g}+Z_B+\textsf{Losses}\\\\
+\textsf{Pressure, }p=0\quad\textsf{(\(\because\) Atmospheric pressure)}\\\textsf{Velocity, }v=0\quad\textsf{(\(\because\) Reservior is large)}\\\textsf{Minor loss of exit}=0\quad\textsf{(\(\because\) Atmospheric pressure)}\\\\\textsf{Loss of head at entrance, }h=\frac{0.5v^2}{2g}\\\\\textsf{Fraction loss, }h_f=\frac{4flv^2}{2gd}\\\\\textsf{Loss of head at sudden enlargement,}\\h=\frac{(v_1-v_2)^2}{2g}\\\\\textsf{Loss of head at exit, }h=\frac{v^2}{2g} }$$</p>
+<p><span>Duct Systems</span><br>$$\displaylines{ 
+\frac{p_A}{\rho g}+\frac{v_A^2}{2g}+Z_A+\frac{\Delta p_{\textsf{fan}}}{\rho g}\\=\\\frac{p_B}{\rho g}+\frac{v_B^2}{2g}+Z_B+\sum\textsf{Losses}\\\\
+\Delta p_{\textsf{fan}}=\sum\left[\frac{\rho Kv^2}{2}\right]\\\\
+\textsf{Friction loss}=\rho g\left(\frac{4flv^2}{2gd}\right)=\frac{4\rho flQ^2}{2dA^2}\\\\
+\begin{align}
+\textsf{Friction loss (rectanglar)}&=\rho g\left(\frac{flv^2}{2gm}\right)\\\\&=\frac{\rho flv^2}{2m}\\\\&=\frac{\rho flQ^2}{2mA^2}
+\end{align}\\\\m=\frac{A}{P}\\\\
+\textsf{Loss of transition}=\frac{4\rho fl_eQ^2}{2dA^2}\\\\
+\textsf{Entry loss}=\frac{\rho Kv^2}{2}=\frac{\rho K_{\textsf{entry}}Q^2}{2A^2}\\\\
+\textsf{Loss of exit grille}=\frac{\rho Kv^2}{2}=\frac{\rho K_{\textsf{exit}}Q^2}{2A^2}\\\\l_e=\textsf{equivalent length separation loss}
+ }$$</p>
+ <h3>Resistance Coefficients for Pipelines in Series and Parallel</h3>
+<p><span>Head Loss in Friction</span><br>$$\displaylines{ h_f=\frac{flQ^2}{3d^5}=KQ^2\quad\quad (\because\; K=\frac{fl}{3d^5})\\\\Q=\sqrt{h/K}\\\\\delta h=\frac{-\sum Q}{\sum \; (Q/2h)} }$$</p>
+<p><span>For pipe 1 and 2 are in parallel</span><br>$$\displaylines{ \frac{1}{\sqrt{K}}=\frac{1}{\sqrt{K_1}}+\frac{1}{\sqrt{K_2}} }$$</p>
+
+<h3>Chapter - 34</h3>
+<h3>Performance of Turbines</h3>
+<p><span>Power</span><br>$$\displaylines{ P=\eta\;\omega\; Q\; H\\Q=AV_f }$$</p>
+<div class="grid-2" >
+<p><span>Unit Power</span><br>$$\displaylines{ P_u=\frac{P}{H^{\frac{3}{2}}} }$$</p>
+<p><span>Unit Speed</span><br>$$\displaylines{ N_u=\frac{N}{\sqrt{H}} }$$</p>
+</div>
+<p><span>Unit Discharge</span><br>$$\displaylines{ Q_u=\frac{Q}{\sqrt{H}} }$$</p>
+<div class="grid-2" >
+<p><span>Significance of Unit Power</span><br>$$\displaylines{ P_1=P\; \left(\frac{H_1}{H}\right)^{\frac{3}{2}} }$$</p>
+<p><span>Significance of Unit Speed</span><br>$$\displaylines{ N_1=N\; \left(\frac{H_1}{H}\right)^{\frac{1}{2}} }$$</p>
+</div>
+<p><span>Significance of Unit Discharge</span><br>$$\displaylines{ Q_1=Q\; \left(\frac{H_1}{H}\right)^{\frac{1}{2}} }$$</p>
+<div class="grid-2" >
+<p><span>Increase in Speed</span><br>$$\displaylines{ \frac{N_1-N}{N} }$$</p>
+<p><span>Specific Speed of a Turbine</span><br>$$\displaylines{ N_s=\frac{N\sqrt{P}}{H^{\frac{5}{4}}} }$$</p>
+</div>
+<p><span>Velocity of Flow</span><br>$$\displaylines{ V_f=\textsf{Flow ratio}\times\sqrt{2gH} }$$</p>
+<p><span>Number of Turbines</span><br>$$\displaylines{ \frac{\textsf{Water available}}{\textsf{Discharge of each turbine}}\\\\\frac{\textsf{Total power generated}}{\textsf{Power generated by each turbine}} }$$</p>
+<p><span>Type of Turbine</span><br>$$\displaylines{ \textsf{Table 34.1 - Page 569} }$$</p>
+
+<h3>Chapter - 37</h3>
+<h3>Performance of Pumps</h3>
+<p><span>Effect of Variation in Speed</span><br>$$\displaylines{ \frac{Q}{Q_1}=\frac{N}{N_1}\quad\quad\frac{H}{H_1}=\left(\frac{N}{N_1}\right)^2\\\\\frac{P}{P_1}=\left(\frac{N}{N_1}\right)^3\\\\\textsf{N = speed of centrifugal pump's impeller} }$$</p>
+<p><span>Effect of Variation in Diameter</span><br>$$\displaylines{ Q\propto D^2\\\\\frac{H}{H_1}=\left(\frac{D}{D_1}\right)^2\quad\quad\frac{P}{P_1}=\left(\frac{D}{D_1}\right)^4\\\\\textsf{D = diameter of centrifugal pump's impeller} }$$</p>
+<p><span>Specific Speed</span><br>$$\displaylines{ N_s=\frac{N\sqrt{Q}}{H^{\frac{3}{4}}}\\\\\textsf{Type of impeller}\rightarrow\textsf{Table 37.1 - Page 638} }$$</p>
+<p><span>Number of Stages</span><br>$$\displaylines{ \frac{\textsf{Total head of water}}{\textsf{Head of water per stage}}\\\\\frac{\textsf{Total height}}{\textsf{Actual height of one stage}}\\\\\textsf{Actual height}=H\times\eta }$$</p>
+
+<h3>Chapter - 25</h3>
+<h3>Dimensional Analysis</h3>
+<p><span>Systems</span><br>$$\displaylines{ \textsf{MLT}\rightarrow\textsf{mass, length, time}\\\textsf{FLT}\rightarrow\textsf{force, length, time} }$$</p>
+<p><span>Formulas</span><br>$$\displaylines{ \textsf{Force}=\textsf{mass x acceleration}\\\\\textsf{Pressure}=\frac{\textsf{Force}}{\textsf{Area}}\\\\\textsf{Power}=\frac{\textsf{Workdone}}{\textsf{Time}}=\frac{\textsf{Force x Distance}}{\textsf{Time}}\\\\\textsf{Specific weight}=\frac{\textsf{Weight or Force}}{\textsf{Volume}}\\\\\textsf{Surface tension}=\frac{\textsf{Force}}{\textsf{Length}}\\\\\textsf{Discharge, Q}=\textsf{Area x Velocity}\\\\\textsf{Torque, T}=\textsf{Force x Distance}\\\\\begin{align}\textsf{Momentum}&=\textsf{Mass x Velocity}\\&=\frac{\textsf{Force}}{\textsf{Acceleration}}\; \textsf{x Velocity}\end{align} }$$</p>
+
+</div>
+<script>
+	document.querySelectorAll(".container span, .container h3").forEach(a => a.className = 'emerald');
+</script>
+</body>
+</html>

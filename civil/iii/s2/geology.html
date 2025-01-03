@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Geology (Geol-32011)</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="../style.css" />
+    <script src="../../mathjax/es5/tex-mml-chtml.js"></script>
+    </head>
+  <body>
+<div class="container">
+<h1>Geology (Geol-32011)</h1>
+<div class="grid-2" >
+<p><span>Porosity</span><br>$$\displaylines{ n=\frac{V_v}{V_{\textsf{bulk}}}\times 100\% }$$</p>
+<p><span>Density</span><br>$$\displaylines{ \rho_{\textsf{bulk}}=\frac{M_{\textsf{bulk}}}{V_{\textsf{bulk}}} }$$</p>
+</div>
+<p><span>Pore Volume</span><br>$$\displaylines{ V_v=\frac{M_{\textsf{sat}}-M_{\textsf{dry}}}{\rho_w}\\\\V_{\textsf{bulk}}=\pi r^2h\quad (or)\quad \frac{M_{\textsf{sat}}-M_{\textsf{sub}}}{\rho_w} }$$</p>
+<p><span>Standard Deviation</span><br>$$\displaylines{ S^2=\frac{\sum\limits_{i=1}^n\; (x_i-\bar{x})^2}{n-1}\\\textsf{Coefficient of variation of the result}=\frac{S}{\bar{x}} }$$</p>
+<p><span>Water Content</span><br>$$\displaylines{ \omega =\frac{M_{\textsf{bulk}}-M_{\textsf{dry}}}{M_{\textsf{dry}}}\times 100\% }$$</p>
+<p><span>Brazilian Tensile Test</span><br>$$\displaylines{ \sigma_t\approx\frac{2F}{\pi DH}\\\\1\; kN=101.9784\; kgF\\1\; MPa=10.2\; kgF/cm^2 }$$</p>
+<p><span>Triaxial Compression Test</span><br>$$\displaylines{ \sigma_1=\frac{\textsf{Maximum Load, P}}{\textsf{Area, A}} }$$</p>
+<p><span>Mohr-Coulomb Friction Law</span><br>$$\displaylines{ \sigma_1=\frac{2c\cos\phi + \sigma_3(1+\sin\phi)}{1-\sin\phi}\\\\\textsf{(or)}\\\\\sigma_1=\frac{2c\cos\phi}{1-\sin\phi}+\frac{\sigma_3(1+\sin\phi)}{1-\sin\phi}\\\\\phi=\textsf{angle of internal friction}\\c=\textsf{cohesion of intact rock}\\\\\textsf{Incremental strength due to}\\\textsf{confining pressure \(\sigma_3\) is}\\\sigma_1\rightarrow\sigma_1+\Delta\sigma_1\\\sigma_3\rightarrow\sigma_3+\Delta\sigma_3 }$$</p>
+<p><span>Uniaxial Compressive Strength</span><br>$$\displaylines{ \textsf{When \(\sigma_3=0\) ,}\quad\sigma_c=2c\; \frac{\cos\phi}{1-\sin\phi} }$$</p>
+<p><span>Hoek and Brown Strength Parameters</span><br>$$\displaylines{ m=\frac{BC}{AB}\\\\S=1\; (\textsf{app})\quad\quad (\textsf{0 to A})\\\\\textsf{Using Hoek and Brown yield criterion,}\\\sigma_1=\sigma_3+[\; m\sigma_c\sigma_3+S\; \sigma_c^2\; ]^{0.5} }$$</p>
+<p><span>Determine Rock Structure Rating (RSR)</span><br>$$\displaylines{ \textsf{RSR = A + B + C}\\\textsf{Parameters A, B, C from Table 14.1, 14.2, 14.3}
+ }$$</p>
+ <p><span>Shotcrete Thickness & Rockbolt Spacing</span><br>$$\displaylines{ \textsf{Figure 14.2} }$$</p>
+<p><span>Rock Mass Rating System</span><br>$$\displaylines{ \textsf{Table 14.4}\\\textsf{Condition of discontinuity}\rightarrow\textsf{See E}\\\textsf{Adjustment for joint orientiation}\rightarrow\textsf{See F, B}\\\textsf{Rock mass class}\rightarrow\textsf{See C}\\\\\displaylines{
+  \textsf{Average stand-up time}\\
+  \textsf{Cohesion of rock mass}\\
+  \textsf{Friction angle of rock mass}
+}\quad\Bigg\}\quad\textsf{See D} }$$</p>
+
+</div>
+<script>
+	document.querySelectorAll(".container span, .container h3").forEach(a => a.className = 'brown1');
+</script>
+</body>
+</html>

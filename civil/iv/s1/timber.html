@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Timber (CE-41014)</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="../style.css">
+    <script src="../../mathjax/es5/tex-mml-chtml.js"></script>
+    </head>
+  <body>
+<div class="top">Timber (CE-41014)</div>
+<div class="container">
+
+<p><span>Notice</span></br>$$\displaylines{ \textsf{Other formulas not included in this}\\\textsf{web page can be found in design book.} }$$</p>
+
+<h3>Chapter - 4</h3>
+
+<h3>Design of Bending Members</h3>
+
+<p><span>Bending Stress or Unit Fiber Stress</span></br>$$\displaylines{ \sigma_b=\frac{Mc}{I}=\frac{M}{Z}\le \bar{\alpha}F_b=F_b'\\\\Z=\frac{bd^2}{6}\\\\F_b\Rightarrow\textsf{Table A}\\\bar{\alpha}\textsf{ and total load}\Rightarrow \textsf{Table 2.17}\\\textsf{Own weight of beam (lb/ft)}=\textsf{Area}\times\textsf{Unit weight} }$$</p>
+<p><span>Depth Effect Factor</span></br>$$\displaylines{ d\gt 12\Rightarrow F_d=?\\F_d=0.81\,\left(\frac{d^2+143}{d^2+88}\right)\\\\d\lt 12\textsf{ (rectangular section) }\Rightarrow F_d=1\\\sigma_b=\frac{M}{F_d\,Z}\le \bar{\alpha}F_b }$$</p>
+<p><span>Moment</span></br>$$\displaylines{ \textsf{U.D Load}\Rightarrow M=\frac{\omega\, L^2}{8}=\frac{WL}{8}\\\textsf{Point Load}\Rightarrow M=\frac{PL}{4} }$$</p>
+<p><span>Shear Strength</span></br>$$\displaylines{ \textsf{The basic shear formula for wood,}\\\tau =\frac{VQ}{It}\le F_v\quad\textsf{(or)}\quad \tau '=\frac{VQ}{It}\le \bar{\alpha}F_v\\Q=A\bar{y}\\\\\textsf{For rectangular member,}\\\tau =\frac{3V}{2\,bd}\le F_v\quad\textsf{(or)}\quad \tau '=\frac{3V}{2\,bd}\le \bar{\alpha}F_v\\\\F_v\Rightarrow\textsf{Table A} }$$</p>
+<p><span>Exact Formulas</span></br>$$\displaylines{ 
+\textsf{U.D Load}\Rightarrow V=\frac{\omega}{2}\,(L-2d)\\\textsf{Moving point load}\Rightarrow V=P\,\left[\,\frac{L-d}{L}\,\right]\\\\\textsf{For a concentrated load,}\\V'=\frac{10P}{9}\,.\,\frac{L-x}{L}\,.\,\frac{(x/d)^2}{[\,2+(x/d)^2\,]}
+ }$$</p>
+<p><span>Effect of Notches on Beam Design</span></br>$$\displaylines{ \textsf{Allowable shear}\\\\\textsf{For square cornered,}\\\tau =\frac{3V}{2\,bd_e}\le\frac{d_e}{d}\,.\,F_v\quad\quad V=\frac{2\,bd_e^2}{3d}\,.\,F_v\\\\\textsf{For taper in transition from \(d\) to \(d_e\) ,}\\\tau =\frac{3V}{2\,bd_e}\le F_v\quad\quad V=\frac{2\,bd_e}{3}\,.\,F_v }$$</p>
+<p><span>Form Factor for Box and I Sections</span></br>$$\displaylines{ F_f=0.81\, \left[\, \frac{d^2+88+55\,S}{d^2+88}\,\right]\\\\S=P^2\,(6-8P+3P^2)(1-q)+q\\\\P=\frac{t}{d}\quad\quad q=\frac{b'}{b}\\\\t=\textsf{depth of compression flange}\\d=\textsf{depth of beam}\\b'=\textsf{thickness of web or webs}\\b=\textsf{width of beam} }$$</p>
+
+<h3>Deflection (Energy Method)</h3>
+
+<p><span>Consider Shear Deflection</span></br>$$\displaylines{ 
+\Delta =\frac{5\,\omega\,L^4}{384\,E'I}+\frac{\omega\,L^2}{8\,GA}\,.\,k\quad\textsf{(For U.D Load)}\\\\
+\Delta =\frac{PL^3}{48\,E'I}+\frac{PL}{4\,GA}\,.\,k\quad\textsf{(For Point Load)}\\\\
+E'=1.1\,E\quad\quad G=\frac{E'}{16}\\
+k=\frac{6}{5}\textsf{ for rectangular}\\
+k=\frac{10}{9}\textsf{ round beam}
+ }$$</p>
+<p><span>Neglect Shear Deflection</span></br>$$\displaylines{ 
+\Delta =\frac{5\,\omega\,L^4}{384\,EI}\quad\textsf{(For U.D Load)}\\\\
+\Delta =\frac{PL^3}{48\,EI}\quad\textsf{(For Point Load)}\\\\
+\textsf{Two equal concentrated loads spaced}\\\textsf{equal distance from supports,}\\
+\Delta =\frac{PL^3}{48\,EI}\,(3a-4a)^3
+ }$$</p>
+<p><span>Design to Prevent Lateral Buckling</span></br>$$\displaylines{ C_s=\sqrt{\frac{L_e\,d}{b^2}}\quad\quad C_k=0.775\,\sqrt{\frac{E}{F_b}}\\L_e\Rightarrow\textsf{Table 4.4}\\\sigma_b=\frac{M}{Z}\le F_b'\\\\C_s\lt 10\Rightarrow\textsf{Short beam}\\F_b'=\bar{\alpha}\,F_b\\\\10\lt C_s\lt C_k\Rightarrow\textsf{Intermediate beam}\\F_b'=F_b\,\left[\,1-\frac{1}{3}\left(\frac{C_s}{C_k}\right)^4\,\right]\\\\C_k\lt C_s\lt 50\Rightarrow\textsf{Long beam}\\F_b'=0.4\,\frac{E}{C_s^2} }$$</p>
+
+<h3>Chapter - 5</h3>
+
+<h3>Design of Lumber Compression Member</h3>
+
+<p><span>Notes</span></br>$$\displaylines{ \textsf{Normal duration}\Rightarrow\bar{\alpha}=1\\\textsf{Shorter length in cross-section is d in columns.}\\F_c\Rightarrow\textsf{Table A} }$$</p>
+<p><span>Solid Column</span></br>$$\displaylines{ 
+k=0.671\,\sqrt{\frac{E}{\bar{\alpha}F_c}}\\\\\frac{L}{d}\le 11\Rightarrow\textsf{Short column}\\F_c'=\bar{\alpha}F_c\\\\11\lt \frac{L}{d}\lt k\Rightarrow\textsf{Intermediate column}\\F_c'=\bar{\alpha}F_c\,\left[\,1-\frac{1}{3}\left(\frac{L/d}{k}\right)^4\,\right]\\\\\frac{L}{d}\gt k\Rightarrow\textsf{Long column}\\F_c'=\frac{0.3\,E}{\left(\frac{L}{d}\right)^2}\\\\P=A\times F_c'\\A=\frac{P}{\bar{\alpha}\,F_c}
+ }$$</p>
+<p><span>Design of Build-up Column</span></br>$$\displaylines{ \textsf{Use Table 5.4}\\\textsf{Allowable load, \(P\)}=P\times\textsf{ % of strength} }$$</p>
+<p><span>Combined Bending and Compression</span></br>$$\displaylines{ \frac{P/A}{F_c'}+\frac{\frac{M}{Z}+(\frac{P}{A})(6+1.5\,J)(\frac{e}{d})}{F_b-J\,\frac{P}{A}}\le 1\\\\\textsf{For not eccentric, e = 0}\\\therefore\;\frac{P/A}{F_c'}+\frac{M/Z}{F_b-J\,\frac{P}{A}}\le 1\\\\J=0\quad\textsf{(Short column)}\\J=1\quad\textsf{(Long column)}\\J=\textsf{from 0 to 1}\quad\textsf{(Intermediate column)}\\J=\frac{\frac{L}{d}-11}{k-11} }$$</p>
+
+<h3>Chapter - 6</h3>
+
+<h3>Fasteners</h3>
+
+<p><span>Nail / Spike</span></br>$$\displaylines{ 
+\textsf{Withdrawal resistance}\Rightarrow P=1380\,G^{2.5}\,DL\\
+\textsf{Lateral load resistance}\Rightarrow P=KD^{1.5}\\\textsf{Lateral load coefficient, }K\Rightarrow\textsf{Table 6.5}\\\textsf{Nails and spike sizes}\Rightarrow\textsf{Table 6.1}\\\textsf{Size of common wire spikes}\Rightarrow\textsf{Table 6.6}\\
+\textsf{Unseasoned}\Rightarrow 0.75\times\textsf{seasoned}\\\textsf{Minimum depth of penetration}=10D\\\\\textsf{Spacing}\Rightarrow\textsf{Table 6.3 Page 13}\\\textsf{End distance}=10D\\\textsf{Edge distance}=5D\\\textsf{// to grain distance}=10D\\\textsf{\(\perp\) to grain distance}=3D\\\\\textsf{Effective length}=\frac{2}{3}\,L\\\textsf{Effective length}\lt\textsf{Penetration}
+ }$$</p>
+<p><span>Wood Screw</span></br>$$\displaylines{ 
+\textsf{Page 6-28 Figure}\\\textsf{Withdrawal resistance}\Rightarrow P=2850\,G^{2}\,DL\\
+\textsf{Lateral load resistance}\Rightarrow P=KD^{2}\\\textsf{Screw number or gage}\Rightarrow\textsf{Page 6-27}\\\textsf{Minimum depth of penetration}=7D
+ }$$</p>
+<p><span>Lag Screw / Lag Bolt</span></br>$$\displaylines{ 
+\textsf{Page 6-31 Figure}\\\textsf{Withdrawal resistance}\Rightarrow P=1800\,G^{\frac{3}{2}}\,D^{\frac{3}{4}}\,L\\
+\textsf{Lateral load resistance}\Rightarrow P=KD^{2}\\\\\textsf{For parallel to grain loading,}\\P=f_1KD^2n\\\\\textsf{For perpendicular to grain loading,}\\Q=f_1f_2KD^2n\\n=\textsf{number of screws}\\f_1\,,f_2\Rightarrow\textsf{Page 14 Tables}\\\\N=\frac{PQ}{P\sin^2\theta+Q\cos^2\theta}\\\\E\Rightarrow\textsf{Table 6.7}\\\textsf{Threaded length, }TL=T-E\\\\\textsf{Minimum depth of penetration}\\=7D\textsf{ (hard wood)}\\\textsf{Minimum depth of penetration}\\=11D\textsf{ (soft wood)}
+ }$$</p>
+<p><span>Bolts</span></br>$$\displaylines{ \textsf{Design Book Page 16, 17 Tables}\\\textsf{Textbook Page 6-42, 6-43 Tables}\\\\K_1\Rightarrow\textsf{Page 15 Table}\\\textsf{Diameter factor, }K_2\Rightarrow\textsf{Page 16 Table}\\\\\textsf{From Page 6-40, for Pyinkado}\\C_{\textsf{par}}=2500\,psi\\C_{\textsf{perp}}=1000\,psi\\\\\textsf{Bolt bearing area}\lt\textsf{Net section (OK)}\\\\\textsf{Tension in wood}=\textsf{Net section}\times 1600\\\because\textsf{Pyinkado's }F_{tc//}=1600\,psi\textsf{ (Table A, B)}\\\\
+\textsf{Spacing between centers of bolts}\\\textsf{in the direction of load}=3\frac{1}{2}d\\\\\textsf{Loading perpendicular to grain,}\\l/d=2\Rightarrow 2\frac{1}{2}d\\
+l/d=6\Rightarrow 5d\\\\
+\textsf{End distance}=3d\\
+\textsf{Edge distance}=1\frac{1}{2}d\,,\;2\frac{1}{2}d
+ }$$</p>
+
+<h3>Chapter - 7</h3>
+
+<h3>Wood Trusses</h3>
+
+<p><span>Checking for Bending Stress</span></br>$$\displaylines{ 
+M_x=\frac{W_y\times L}{8}\quad\quad M_y=\frac{W_x\times L}{8}\\\\
+S_x=\frac{bd^2}{6}\quad\quad S_y=\frac{db^2}{6}\\\\
+\sigma_b\textsf{ (total)}=\sigma_{bx}+\sigma_{by}=\frac{M_x}{S_x}+\frac{M_y}{S_y}\le F_b
+ }$$</p>
+
+<p><span>Checking for Deflection</span></br>$$\displaylines{ 
+W_y=2\,W_{Dy}+W_{Ly}\quad\quad W_x=2\,W_{Dx}+W_{Lx}\\\\
+I_x=\frac{bd^3}{12}\quad\quad I_y=\frac{db^3}{12}\\\\
+\Delta_x=\frac{5\,W_y\,L^3}{384\,EI_x}\quad\quad \Delta_y=\frac{5\,W_x\,L^3}{384\,EI_y}\\\\\Delta_{\textsf{total}}=\sqrt{\Delta_x^2+\Delta_y^2}\\\Delta_{\textsf{allowable}}=\frac{L}{120}\gt\Delta_{\textsf{total}}\quad\textsf{(OK)}
+ }$$</p>
+
+<h3>Chapter - 8</h3>
+
+<h3>Glue Laminated Timber</h3>
+
+<p><span>Notes</span></br>$$\displaylines{ F_b\,,\,F_v\,,\,F_{c\perp}\,,\,E\Rightarrow\textsf{Table B}\\\\G=0.06\,E\\\\\bar{\alpha}\Rightarrow\textsf{Table 2.17 Page 8}\\\\R_v=\frac{\omega\,L_e}{2}\\\\d_e=\frac{3\,R_v}{2\,b\,\bar{\alpha}F_v}\\\\L_e=L-\frac{2\,d_e}{12}\\\\d_c=d_e+\textsf{roof slope}\times\textsf{span length}\\\\C_y=\frac{d_c-d_e}{d_e}\\\\\textsf{coeff; and formula}\Rightarrow\textsf{Figure 8.4}\\\\E_L=1.1\,E\\\\\Delta_s=\frac{3\,\omega\,L^2}{20\,Gbd_e}\\\\\Delta_a=\Delta_B+\Delta_s\lt \Delta_{\textsf{T.L}}\quad\textsf{OK}\\\\d=\frac{d_e}{d_c}\,(2\,d_c-d_e)\\d\gt 12''\Rightarrow C_F=\left(\frac{12}{d}\right)^{\frac{1}{9}}\\\\\textsf{% change}\Rightarrow\textsf{Table 8.3}\\\\F_b'=C_F\,\bar{\alpha}\,F_b\\\\f_x=\frac{9\,\omega\,L^2}{bd_e(2\,d_c-d_e)}\lt F_b'\\\\f_{xy}=f_x\tan\theta\lt F_v\\f_y=f_{xy}\tan\theta\lt F_{c\perp}\\\\F_x=\bar{\alpha}\,F_b\quad F_y=\bar{\alpha}\,F_{c\perp}\quad F_{xy}=\bar{\alpha}\,F_v\\\\\frac{f_x^2}{F_x^2}+\frac{f_y^2}{F_y^2}+\frac{f_{xy}^2}{F_{xy}^2}\le 1\quad\therefore\textsf{OK}\\\\\Delta_{\textsf{D.L}}=\Delta_a\times\frac{\omega_{\textsf{D.L}}}{\omega_{\textsf{T.L}}}\\\\\textsf{Center-line camber}=1.5\,\Delta_{\textsf{D.L}}\lt 2''\quad\textsf{(OK)} }$$</p>
+
+<h3>Chapter - 9</h3>
+
+<h3>Design of Wood Bridge</h3>
+
+<p><span>Decking</span></br>$$\displaylines{ 
+b_d\,,\,b_t\Rightarrow\textsf{Page 21 Tables}\\\\\textsf{Effective length, }L=S-\frac{b_s}{2}\;\textsf{(or)}\;S-b_s+t\\\textsf{(smaller control)}\\\\
+\omega_L=\frac{0.4\,W}{b_t}\Rightarrow\textsf{Page 9-3}\\\textsf{Figures}\Rightarrow\textsf{Page 9-8, 9-9}\\\\
+M_i=\frac{\omega_D\,L^2}{8}+\frac{\omega_L\,b_t}{4}\,\left(L-\frac{b_t}{2}\right)\\\textsf{Design moment}=0.8\,M_i\\\\\textsf{Shear}\Rightarrow x=3t\textsf{ (or) }\frac{L}{4}\\\textsf{(smaller control)}\\\\x+b_t\gt L\,,\\V=\omega_D\left(\frac{L}{2}-x\right)+\omega_L\,\frac{(L-x)^2}{2\,L}
+\\\\\textsf{Capacity of deck}\\S=\frac{b_d\,t^2}{6}\quad\quad f_b=\frac{M}{S}\quad\quad f_v=\frac{3V}{2A}  }$$</p><br>
+
+
+</div>
+<script>
+	document.querySelectorAll(".container span, .container h3").forEach(a => a.className = 'timber');
+</script>
+<script src="mathjax/es5/tex-mml-chtml.js"></script>
+</body>
+</html>

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>T.E. (CE-32017)</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="../style.css" />
+    <script src="../../mathjax/es5/tex-mml-chtml.js"></script>
+    </head>
+  <body>
+<div class="container">
+<h1>T.E. (CE-32017)</h1>
+
+<h3>Chapter - 5</h3>
+<p><span>Time-Mean Speed</span><br>$$\displaylines{ \bar{u}_t={{\sum\limits_{i=1}^nu_i}\over{n}} }$$</p>
+<p><span>Space-Mean Speed</span><br>$$\displaylines{ \bar{u}_s=\frac{1}{\frac{1}{n}\sum\limits_{i=0}^n\left[\frac{1}{(l/t_i)}\right]} }$$</p>
+<div class="grid-2" >
+<p><span>Traffic Flow</span><br>$$\displaylines{ q=\frac{1}{\bar{h}} }$$</p>
+<p><span>Traffic Density</span><br>$$\displaylines{ k=\frac{1}{\bar{s}} }$$</p>
+</div>
+<p><span>Flow-Density Model</span><br>$$\displaylines{ q=uk\\q_{\textsf{cap}}=u_{\textsf{cap}}\space k_{\textsf{cap}}=\frac{u_fk_j}{4} }$$</p>
+<p><span>Speed-Flow Model</span><br>$$\displaylines{ q=k_j\left(u-\frac{u^2}{u_f}\right) }$$</p>
+
+<p><span>Poisson Model</span><br>$$\displaylines{ P(n)=\frac{(\lambda t)^ne^{-\lambda t}}{n!}\\P(n\ge 5)=1-P(n\lt 5)\\P(h\lt t)=1-P(h\ge t)\\P(h\ge t)=e^{-qt/3600} }$$</p>
+<p><span>M/D/1 Queuing</span><br>$$\displaylines{ \rho =\frac{\lambda}{\mu}\quad\quad\bar{Q}=\frac{\rho^2}{2(1-\rho)}\\\\\bar{w}=\frac{\rho}{2\mu (1-\rho)}\quad\quad\bar{t}=\frac{2-\rho}{2\mu (1-\rho)}\\\\\rho\lt 1\\\rho=\textsf{traffic intensity}\\\lambda=\textsf{average arrival rate (veh/min)}\\\mu=\textsf{average departure rate (veh/min)}\\\bar{Q}=\textsf{average length of queue (veh)}\\\bar{w}=\textsf{average waiting time (min/veh)}\\\bar{t}=\textsf{average time spent (min/veh)} }$$</p>
+<p><span>M/M/1 Queuing</span><br>$$\displaylines{ \bar{Q}=\frac{\rho^2}{1-\rho}\quad\quad\bar{w}=\frac{\lambda}{\mu(\mu - \lambda)}\\\\\bar{t}=\frac{1}{\mu - \lambda} }$$</p>
+<p><span>M/M/N Queuing</span><br>$$\displaylines{ \rho\gt 1\\\\P_0=\frac{1}{\sum\limits_{n_c=0}^{N-1}\frac{\rho^{n_c}}{n_c!} + \frac{\rho^N}{N!(1-\rho / N)} }\\\\P_{n\gt N}=\frac{P_0\space\rho^{N+1}}{N!N(1-\rho /N)}
+\\\\\bar{Q}=\frac{P_0\space\rho^{N+1}}{N!N}\left[\frac{1}{(1-\rho /N)^2}\right]\\\\\bar{t}=\frac{\rho + \bar{Q}}{\lambda} }$$</p>
+
+<h3>Chapter - 6</h3>
+<h3>Freeway</h3>
+<p><span>Total Ramp Density</span><br>$$\displaylines{ TRD=\frac{\textsf{Total Ramps}}{\textsf{Upstream} + \textsf{Downstream}} }$$</p>
+<p><span>Free-Flow Speed (Freeway)</span><br>$$\displaylines{ FFS=75.4-f_{LW}-f_{LC}-3.22\; TRD^{0.84}\\
+f_{LW}\rightarrow \textsf{T-6.3}\\f_{LC}\rightarrow \textsf{T-6.4}\\FFS\textsf{ (Nearest 5 mi/h)}\rightarrow \textsf{T-6.1} }$$</p>
+<p><span>Analysis Flow Rate</span><br>$$\displaylines{ \nu_p=\frac{V}{PHF\times N\times f_{HV}\times f_p}\\\\PHF=\frac{V}{V_{15}\times 4}\\\\f_{HV}=\frac{1}{1+P_T(E_T-1)+P_R(E_R-1)}\\\\f_p=1\quad \textsf{(\(\because\) primarily commuter)}\\P_T=\textsf{Truck % + Bus %}\\P_R=\textsf{RV %}\\E_T\; ,\; E_R\rightarrow\textsf{T-6.5}\\ }$$</p>
+<div class="grid-2" >
+<p><span>Speed (Freeway)</span><br>$$\displaylines{ S\rightarrow\textsf{Figure 6.2} }$$</p>
+<p><span>Maximum Density</span><br>$$\displaylines{ D=\frac{\nu_p}{S} }$$</p>
+</div>
+<div class="grid-2" >
+<p><span>Determine LOS (Freeway)</span><br>$$\displaylines{ \textsf{Figure 6.2 (or) T-6.1} }$$</p>
+<p><span>% Upgrade</span><br>$$\displaylines{ E_T\rightarrow\textsf{T-6.6} }$$</p>
+</div>
+<p><span>Capacity (Freeway)</span><br>$$\displaylines{ \nu_p\rightarrow\textsf{T-6.1 (or) T-6.2} }$$</p>
+<h3>Multilane Highways (Divided / Undivided)</h3>
+<p><span>Interpolaton for CASIO fx-991EX</span><br>$$\displaylines{ \textsf{MENU}\rightarrow 6\rightarrow 2\rightarrow\; ...\rightarrow\textsf{AC}\rightarrow\; ...\rightarrow\\\textsf{OPTN}\rightarrow\; (\downarrow )\; \rightarrow 4\rightarrow 5\rightarrow\; (=) }$$</p>
+<p><span>Free-Flow Speed (Multilane Highways)</span><br>$$\displaylines{ FFS=BFFS-f_{LW}-f_{LC}-f_M-f_A\\\\BFFS\rightarrow\displaylines{\textsf{(+7 if posted speed limit < 50)}\\\textsf{(+5 if posted speed limit \(\ge\) 50)}}\\\\f_{LW}\rightarrow \textsf{T-6.3}\\f_{LC}\rightarrow\textsf{T-6.11}\\f_M\rightarrow\textsf{T-6.12}\\f_A\rightarrow\textsf{T-6.13} }$$</p>
+<p><span>Total Lateral Clearance</span><br>$$\displaylines{ TLC=LC_R+LC_L\\LC_L=6\; ft\quad\textsf{(Undivided)}\quad \textsf{(If not given)}
+ }$$</p>
+ <p><span>Determine LOS (Multilane Highways)</span><br>$$\displaylines{ \textsf{Figure 6.4}\\\\\textsf{(or)}\\\\\textsf{Table 6.9 with \(D=\frac{\nu_p}{S}\) (S from Figure 6.4)} }$$</p>
+ <p><span>Capacity (Miltilane Highways)</span><br>$$\displaylines{ \nu_p\rightarrow\textsf{T-6.9 (or) T-6.10} }$$</p>
+ <p><span>Current Number of Large Tracks, Buses and RVs</span><br>$$\displaylines{ \textsf{Large tracks and buses}\rightarrow P_T\times V\\\textsf{RVs}\rightarrow P_R\times V }$$</p>
+ <p><span>New Trucks Added</span><br>$$\displaylines{ 
+\nu_p=\\\\\frac{V+V_{nt}}{(PHF)(N)\left[\frac{1}{
+  1+\left(\frac{240+V_{nt}}{V+V_{nt}}\right)(E_T-1)+\left(\frac{60}{V+V_{nt}}\right)(E_R-1)
+}\right](f_p)}\\\\\textsf{240 and 60 are variables based on current number}\\\textsf{of (large tracks and buses) and (RVs) respectively.
+} }$$</p>
+<h3>Two-Lane Highways</h3>
+<p><span>Directional Traffic Split</span><br>$$\displaylines{ \textsf{Analysis (d) / Opposing (o)} }$$</p>
+<p><span>Directonal Demand Flow Rate</span><br>$$\displaylines{ \nu_d=\frac{V_d}{PHF}\quad\quad\nu_o=\frac{V_o}{PHF} }$$</p>
+<p><span>Directional Analysis Flow Rate</span><br>$$\displaylines{ \nu_i=\frac{V_i}{PHF\times f_G\times f_{HV}}\\\\i=\textsf{"d" for analysis and "o" for opposing}\\f_G\rightarrow\textsf{T-6.15}\\E_T\; ,\; E_R\rightarrow\textsf{T-6.16} }$$</p>
+<p><span>Free-Flow Speed (Two-Lane Highways)</span><br>$$\displaylines{ FFS=BFFS-f_{LS}-f_A\\f_{LS}\rightarrow\textsf{T-6.14}\\f_A\rightarrow\textsf{T-6.13} }$$</p>
+<p><span>Average Travel Speed</span><br>$$\displaylines{ ATS_d=FFS-0.00776(\nu_d+\nu_o)-f_{np}\\f_{np}\rightarrow\textsf{T-6.17} }$$</p>
+<p><span>Percent Time Spent Following</span><br>$$\displaylines{ PTSF_d=BPTSF_d+f_{np}\left(\frac{\nu_d}{\nu_d+\nu_o}\right)\\f_{np}\rightarrow\textsf{T-6.18}\\\\BPTSF_d=100\left[1-\exp\left(a\nu_d^b\right)\right]\\\textsf{a and b}\rightarrow\textsf{T-6.19}\\\\\textsf{LOS Criteria for Two-Lane Highways}\rightarrow\textsf{T-6.20} }$$</p>
+
+<h3>Chapter - 7</h3>
+<p><span>Sum of Flow Ratios</span><br>$$\displaylines{ Y_c=\sum_{i=1}^n\left(\frac{v}{s}\right)_{ci}\\\\\textsf{If }\; Y_c\gt X_c\;\rightarrow\; X_c=1 }$$</p>
+<p><span>Minimum Cycle Length</span><br>$$\displaylines{ C_{min}=\frac{L\times X_c}{X_c-\sum\limits_{i=1}^n\left(\frac{v}{s}\right)_{ci}} }$$</p>
+<p><span>Optimum Cycle Length</span><br>$$\displaylines{ C_{opt}=\frac{1.5\times L+5}{1.0-\sum\limits_{i=1}^n\left(\frac{v}{s}\right)_{ci}} }$$</p>
+<p><span>Green-Time Allocations</span><br>$$\displaylines{ g_i=\left(\frac{v}{s}\right)_{ci}\left(\frac{C}{X_i}\right)\\\\X_c=\frac{\sum\limits_{i=1}^n\left(\frac{v}{s}\right)_{i}\times C}{C-L}\\\\\textsf{3 phases}\rightarrow C=g_1+g_2+g_3+L }$$</p>
+<p><span>Effective Red Time</span><br>$$\displaylines{ r=C-g }$$</p>
+<p><span>Time to queue clearance after the start of the effective green</span><br>$$\displaylines{ t_c=\frac{vr}{s-v} }$$</p>
+<p><span>Proportion of the cycle with a queue</span><br>$$\displaylines{ P_q=\frac{r+t_c}{C} }$$</p>
+<p><span>Proportion of vehicles stopped</span><br>$$\displaylines{ P_s=\frac{r+t_c}{C} }$$</p>
+<p><span>Maximum number of vehicles in the queue</span><br>$$\displaylines{ Q_{max}=vr }$$</p>
+<p><span>The total vehicle delay per cycle</span><br>$$\displaylines{ D_t=\frac{vr^2}{2(1-v/s)} }$$</p>
+<p><span>Average delay per vehicle</span><br>$$\displaylines{ d_{avg}=\frac{r^2}{2C\; (1-v/s)} }$$</p>
+<p><span>Maximum delay of any vehicle</span><br>$$\displaylines{ d_{max}=r }$$</p>
+<p><span>Uniform delay</span><br>$$\displaylines{ d_1=\frac{0.5C\; (1-\frac{g}{C})^2}{1-(\frac{v}{c}\times\frac{g}{C})}\\\\X=\frac{v}{c}=\frac{v}{s\times g/C} }$$</p>
+<p><span>Random delay</span><br>$$\displaylines{ d_2=900T\left[(X-1)+\sqrt{(X-1)^2+\frac{8kIX}{cT}}\right]\\\\k=0.5\quad\textsf{(pretimed control)}\\I=1.0\quad\textsf{(isolated mode)} }$$</p>
+<p><span>Total signal delay per cycle</span><br>$$\displaylines{ d=d_1+d_2+d_3\\\\\textsf{No initial queue}\rightarrow d_3=0 }$$</p>
+
+<h3>Chapter - 8</h3>
+<h3>Travel Demand and Traffic Forecasting</h3>
+<p><span>Probability</span><br>$$\displaylines{ P_{im}=\frac{e^{U_{im}}}{\sum\limits_s e^{U_{is}}} }$$</p>
+
+<script>
+	document.querySelectorAll(".container span, .container h3").forEach(a => a.className = 'blue');
+</script>
+</body>
+</html>

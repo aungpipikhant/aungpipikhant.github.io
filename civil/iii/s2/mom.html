@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>M.O.M (CE-32013)</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="../style.css" />
+    <script src="../../mathjax/es5/tex-mml-chtml.js"></script>
+    </head>
+  <body>
+<div class="container">
+<h1>M.O.M. (CE-32013)</h1>
+
+<h3>Chapter - 8</h3>
+<h3>Thin-walled Pressure Vessels</h3>
+<p><span>Cylindrical Vessels</span><br>$$\displaylines{ \frac{r}{t}\ge 10\rightarrow\textsf{thin-walled vessel}\\\textsf{Circumferential or hoop stress, }\sigma_1=\frac{pr}{t}\\\textsf{Longitudinal stress, }\sigma_2=\frac{pr}{2t} }$$</p>
+<div class="grid-2" >
+<p><span>Spherical Vessels</span><br>$$\displaylines{ \sigma_2=\frac{pr}{2t} }$$</p>
+<p><span>Max Shear for Rectangle</span><br>$$\displaylines{ \tau=1.5\;\frac{V}{A} }$$</p>
+</div>
+<p><span>Centroid of Semicircle</span><br>$$\displaylines{ \bar{y}'=\frac{4r}{3\pi} }$$</p>
+
+<h3>Chapter - 9</h3>
+<h3>Stress Transformation</h3>
+<p><span>General Equations</span><br>$$\displaylines{ 
+\sigma_{x'}=\frac{\sigma_x+\sigma_y}{2}+\frac{\sigma_x-\sigma_y}{2}\space\cos 2\theta + \tau_{xy}\sin 2\theta\\\\
+\sigma_{y'}=\frac{\sigma_x+\sigma_y}{2}-\frac{\sigma_x-\sigma_y}{2}\space\cos 2\theta - \tau_{xy}\sin 2\theta\\\\
+\tau_{x'y'}=-\frac{\sigma_x-\sigma_y}{2}\space\sin 2\theta + \tau_{xy}\cos 2\theta
+ }$$</p>
+ <p><span>Principal Stresses</span><br>$$\displaylines{ 
+\tan 2\theta_p=\frac{\tau_{xy}}{(\sigma_x-\sigma_y)/2}\\\\
+\sigma_{1,2}=\frac{\sigma_x+\sigma_y}{2}\pm \sqrt{\left(\frac{\sigma_x-\sigma_y}{2}\right)^2+\tau_{xy}^2}
+  }$$</p>
+<p><span>Maximum In-Plane Shear Stress</span><br>$$\displaylines{ 
+ \tan 2\theta_s=\frac{-(\sigma_x-\sigma_y)/2}{\tau_{xy}}\\\\
+ \sigma_{\textsf{avg}}=\frac{\sigma_x+\sigma_y}{2}\\\\
+ \tau_{\displaylines{\textsf{max}\\\textsf{in-plane}}}=\sqrt{\left(\frac{\sigma_x-\sigma_y}{2}\right)^2+\tau_{xy}^2}
+ }$$</p>
+ <p><span>Mohr's Circle</span><br>$$\displaylines{ 
+R=\sqrt{\left(\frac{\sigma_x-\sigma_y}{2}\right)^2+\tau_{xy}^2}\\\textsf{(or)}\\R=\sqrt{x^2+y^2}\\\\
+\textsf{Centre C}=(\sigma_{\textsf{avg}},\space 0)\\
+\textsf{Point A}=(\sigma_x,\space \tau_{xy})
+  }$$</p>
+<p><span>Notes</span><br>$$\displaylines{
+2\theta_{p_1}\textsf{ and }2\theta_{p_2}\textsf{ are 180° apart in Mohr's Circle.}\\
+2\theta_{s_1}\textsf{ and }2\theta_{s_2}\textsf{ are 180° apart in Mohr's Circle.}\\
+2\theta_{p}\textsf{ and }2\theta_{s}\textsf{ are 90° apart in Mohr's Circle.}
+ }$$</p>
+
+<h3>Chapter - 10</h3>
+<h3>Strain Transformation</h3>
+<p><span>General Equations</span><br>$$\displaylines{ 
+\varepsilon_{x'}=\frac{\varepsilon_x+\varepsilon_y}{2}+\frac{\varepsilon_x-\varepsilon_y}{2}\space\cos 2\theta + \frac{\gamma_{xy}}{2}\sin 2\theta\\\\
+\varepsilon_{y'}=\frac{\varepsilon_x+\varepsilon_y}{2}-\frac{\varepsilon_x-\varepsilon_y}{2}\space\cos 2\theta - \frac{\gamma_{xy}}{2}\sin 2\theta\\\\
+\frac{\gamma_{x'y'}}{2}=-\left(\frac{\varepsilon_x-\varepsilon_y}{2}\right)\space\sin 2\theta + \frac{\gamma_{xy}}{2}\cos 2\theta
+ }$$</p>
+<p><span>Principal Strains</span><br>$$\displaylines{ 
+\tan 2\theta_p=\frac{\gamma_{xy}}{\varepsilon_x-\varepsilon_y}\\\\
+\varepsilon_{1,2}=\frac{\varepsilon_x+\varepsilon_y}{2}\pm \sqrt{\left(\frac{\varepsilon_x-\varepsilon_y}{2}\right)^2+\left(\frac{\gamma_{xy}}{2}\right)^2}
+  }$$</p>
+<p><span>Maximum In-Plane Shear Strain</span><br>$$\displaylines{ 
+ \tan 2\theta_s=-\left(\frac{\varepsilon_x-\varepsilon_y}{\gamma_{xy}}\right)\\\\
+ \varepsilon_{\textsf{avg}}=\frac{\varepsilon_x+\varepsilon_y}{2}\\\\
+ \frac{\gamma_{\displaylines{\textsf{max}\\\textsf{in-plane}}}}{2}=\sqrt{\left(\frac{\varepsilon_x-\varepsilon_y}{2}\right)^2+\left(\frac{\gamma_{xy}}{2}\right)^2}
+ }$$</p>
+<p><span>Mohr's Circle</span><br>$$\displaylines{ 
+R=\sqrt{\left(\frac{\varepsilon_x-\varepsilon_y}{2}\right)^2+\left(\frac{\gamma_{xy}}{2}\right)^2}\\\textsf{(or)}\\R=\sqrt{x^2+y^2}\\\\
+\textsf{Centre C}=(\varepsilon_{\textsf{avg}},\space 0)\\
+\textsf{Point A}=(\varepsilon_x,\space \frac{\gamma_{xy}}{2})
+  }$$</p>
+<p><span>Generalized Hooke's Law</span><br>$$\displaylines{ 
+ \varepsilon_x=\frac{1}{E}[\;\sigma_x-\nu (\sigma_y+\sigma_z)\; ]\\
+ \varepsilon_y=\frac{1}{E}[\;\sigma_y-\nu (\sigma_x+\sigma_z)\; ]\\
+ \varepsilon_z=\frac{1}{E}[\;\sigma_z-\nu (\sigma_x+\sigma_y)\; ]
+ }$$</p>
+<p><span>Dilatation</span><br>$$\displaylines{ e=\frac{1-2\nu}{E}(\sigma_x+ \sigma_y+ \sigma_z) }$$</p>
+
+<h3>Chapter - 11</h3>
+<h3>Design of Beams and Shafts</h3>
+<div class="grid-2" >
+<p><span>Section Modulus</span><br>$$\displaylines{ S_{\textsf{req'd}}=\frac{M_{\textsf{max}}}{\sigma_{\textsf{allow}}}=\frac{I}{c} }$$</p>
+<p><span>Shear Stress</span><br>$$\displaylines{ \tau_{\textsf{avg}}=\frac{V_{\textsf{max}}}{A_\textsf{w}}=\frac{V_{\textsf{max}}}{d\; t_\textsf{w}} }$$</p>
+</div>
+<p><span>Shear Stress for Rectangular Sections</span><br>$$\displaylines{ \tau_{\textsf{max}}=1.5\; \frac{V_{\textsf{max}}}{A} }$$</p>
+<p><span>Centroid and Moment of Inertia</span><br>$$\displaylines{ \bar{y}=\frac{\sum \bar{y}A}{\sum A}\\\\I=I_0+Ak^2\\\\\textsf{Revision:}\quad\textsf{3becivil.netlify.app/sem1/mom} }$$</p>
+<p><span>Nail Spacing</span><br>$$\displaylines{ s=\frac{V_{\textsf{nail}}}{q}\quad\quad q=\frac{VQ}{I}\\\\Q=A'\bar{y}'\\\\\textsf{Number of nails can be calculated from}\\q ,\;\textsf{length and }V_{\textsf{nail}}.\\\\1\;m\;\rightarrow\;...kN\\...m\quad\rightarrow\quad ?\\\textsf{Number of nails}=\frac{?}{V_{\textsf{nail}}} }$$</p>
+<p><span>Radius of the Sheft</span><br>$$\displaylines{ c=\left(\frac{2}{\pi\;\tau_{\textsf{allow}}}\;\sqrt{M^2+T^2}\right)^{1/3}\\\\M=\textsf{resultant moment}\\T=\textsf{torque} }$$</p>
+
+<h3>Chapter - 12</h3>
+<h3>Deflection of Beams and Shafts</h3>
+<p><span>Slope and Elastic Curve</span><br>$$\displaylines{ EI\;v=f(x)\;\textsf{(Deflection of the Elastic Curve)}\\EI\;\frac{dv}{dx}=\theta\;\textsf{(Slope of the Elastic Curve)}\\EI\;\frac{d^2v}{dx^2}=M(x)\;\textsf{(Moment)}\\EI\;\frac{d^3v}{dx^3}=V(x)\;\textsf{(Shear Force)}\\EI\;\frac{d^4v}{dx^4}=w(x)\;\textsf{(Uniform Load)}\\EI=\textsf{flexural rigidity
+} }$$</p>
+<h3>Chapter - 13</h3>
+<h3>Buckling of Columns</h3>
+<h3>Ideal Column with Pin Supports</h3>
+<p><span>Critical or Maximum Axial Load</span><br>$$\displaylines{ P_{\textsf{cr}}=\frac{\pi^2EI}{L^2}\\\\I=Ar^2\quad\quad r=\sqrt{I/A}\\r=\textsf{radius of gyration} }$$</p>
+<p><span>Critical Stress</span><br>$$\displaylines{ \sigma_{\textsf{cr}}=\frac{P_{\textsf{cr}}}{A}\quad\quad\sigma_{\textsf{cr}}=\frac{\pi^2E}{(L/r)^2}\\\\ L/r=\textsf{slenderness ratio} }$$</p>
+<h3>Columns Having Various Types of Supports</h3>
+<p><span>Effective Length</span><br>$$\displaylines{ L_e=KL\\\\P_{\textsf{cr}}=\frac{\pi^2EI}{(KL)^2}\quad\quad\sigma_{\textsf{cr}}=\frac{\pi^2E}{(KL/r)^2}\\\\\textsf{Pinned ends,}\; K=1\\\textsf{Fixed and free ends,}\; K=2\\\textsf{Fixed ends,}\; K=0.5\\\textsf{Pinned and fixed ends,}\; K=0.7\\\\P_{\textsf{allow}}=\frac{P_{\textsf{cr}}}{\textsf{F.S.}} }$$</p>
+<p><span>Secant Formula</span><br>$$\displaylines{ \sigma_{\textsf{max}}=\frac{P}{A}\;\left[\;1+\frac{ec}{r^2}\;\sec\left(\frac{L_e}{2r}\sqrt{\frac{P}{EA}}\right)\;\right]\\\\\textsf{For \(P_x\) with \(\sigma_Y\) ,}\\\sigma_Y=\frac{P_x}{A}\;\left[\;1+\frac{ec}{r^2_x}\;\sec\left(\frac{(KL)_x}{2r_x}\sqrt{\frac{P_x}{EA}}\right)\;\right] }$$</p>
+<h3>Design of Columns for Concentric Loading</h3>
+<p><span>AISC | Steel Columns</span><br>$$\displaylines{ \left(\frac{KL}{r}\right)_c=\sqrt{\frac{2\pi^2\; E}{\sigma_Y}}\\\\0\lt KL/r\lt (KL/r)_c\; ,\\\\\sigma_\textsf{allow}=\\\\\frac{\left[\; 1-\frac{\left(\frac{KL}{r}\right)^2}{2\left(\frac{KL}{r}\right)_c^2}\;\right]\sigma_Y}{\left(\frac{5}{3}\right)+[\left(\frac{3}{8}\right)\left(\frac{KL}{r}\right)/\left(\frac{KL}{r}\right)_c]-[\left(\frac{KL}{r}\right)^3/8\left(\frac{KL}{r}\right)_c^3]}\\\\\\(KL/r)_c\lt KL/r\lt 200\; ,\\\\\sigma_\textsf{allow}=\frac{12\pi^2 E}{23(KL/r)^2} }$$</p>
+<p><span>Aluminum Columns</span><br>$$\displaylines{ 
+\sigma_\textsf{allow}=28\; ksi\quad\quad 0\le \frac{KL}{r}\le 12\\\\\\\sigma_\textsf{allow}=\left[\; 30.7-0.23\left(\frac{KL}{r}\right)\right]\; ksi\\ 12\lt \frac{KL}{r}\lt 55\\\\\\\sigma_\textsf{allow}=\frac{54000\; ksi}{(KL/r)^2}\quad\quad 55\le \frac{KL}{r}
+ }$$</p>
+<p><span>NFPA | AITC | Timber Columns</span><br>$$\displaylines{ 
+\sigma_\textsf{allow}=1.20\; ksi\quad\quad 0\le \frac{KL}{d}\le 11\\\\\\
+\sigma_\textsf{allow}=1.20\left[\; 1-\frac{1}{3}\left(\frac{KL/d}{26.0}\right)^2\right]\; ksi\\ 11\lt \frac{KL}{d}\le 26\\\\\\
+\sigma_\textsf{allow}=\frac{540\; ksi}{(KL/d)^2}\quad\quad 26\lt \frac{KL}{d}\le 50
+ }$$</p>
+<h3>Design of Columns for Eccentric Loading</h3>
+<p><span>Use of Available Column Formulas | Eq. 13-30</span><br>$$\displaylines{ \sigma_\textsf{max}=\frac{P}{A}+\frac{Mc}{I}\\\\\sigma_\textsf{max}\le\sigma_\textsf{allow} }$$</p>
+<p><span>Interaction Method | Eq. 13-31</span><br>$$\displaylines{ \frac{\sigma_a}{(\sigma_a)_\textsf{allow}}+\frac{\sigma_b}{(\sigma_b)_\textsf{allow}}\le 1\\\\\frac{\sigma_a}{(\sigma_a)_\textsf{allow}}\le 0.15 }$$</p>
+
+</div>
+<script>
+	document.querySelectorAll(".container span, .container h3").forEach(a => a.className = 'orange2');
+</script>
+</body>
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Survey (CE-31011)</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="../style.css" />
+    <script src="../../mathjax/es5/tex-mml-chtml.js"></script>
+    </head>
+  <body>
+<div class="container">
+<h1>Survey (CE-31011)</h1>
+<h3>Chapter - 2 (Triangulation)</h3>
+<p><span>Number of Directions Observed (D)</span><br>$$\displaylines{D=2(n-1)\\C=(n'-s'+1)+(n-2s+3)}$$</p>
+<p><span>Strength of Figure</span><br>$$\displaylines{R={\frac{D-C}{D}\Sigma d}\\\textsf{For d, Table(2.1) Page-26}}$$</p>
+<p><span>Captain McCaw's Method</span><br>$$\displaylines{h=\frac{1}{2}(h_2+h_1)+\frac{1}{2}(h_2-h_1)\frac{X}{S}\\-(S^2-X^2)\left[\frac{1-2m}{2R}\right]\\\textsf{Line of sight should be raised}\rightarrow \textsf{add 3m}\\\left[\frac{1-2m}{2R}\right]=0.06735}$$</p>
+<h3>Chapter - 5 (Aerial Survey)</h3>
+<p><span>Photo/Map scale ratio</span><br>$${{\textsf{Photo scale}}\over{\textsf{Map scale}}}={\frac{\textsf{Photo distance of line AB}}{\textsf{Map distance of line AB}}}$$</p>
+<p><span>Photo scale</span><br>$$S = \frac{f}{H - h} = \frac{\textsf{Photo distance}}{\textsf{Ground distance}}$$</p>
+<p><span>\(X_a, X_b, Y_a, Y_b\)</span><br>$$\displaylines{X_a={\frac{H-h_a}{f}}\;x_a\quad\quad X_b={\frac{H-h_b}{f}\;x_b}\\\\Y_a={\frac{H-h_a}{f}}\;y_a\quad\quad Y_b={\frac{H-h_b}{f}}\;y_b\\\\AB=\sqrt{(X_a-X_b)^2+(Y_a-Y_b)^2}}$$</p>
+<p><span>Number of photographs per strip</span><br>$$\displaylines{N_1={\frac{L_1}{(1-P_l)Sl}+1}\\\\\textsf{Air base, }L=(1-P_l)Sl}$$</p>
+<p><span>Number of Strips</span><br>$$N_2={\frac{W_1}{(1-P_w)Sw}+1}$$</p>
+<p><span>Total Number of Photographs Required</span><br>$$N_1\times N_2$$</p>
+<p><span>Exposure Interval</span><br>$$T={\frac{L}{V}}\quad\quad T={\frac{3600L}{V}}(V = kmh^{-1})$$</p>
+<h3>Chapter - 9 (Field Astronomy)</h3>
+<p><span>In spherical triangle APB</span><br>$$\displaylines{b=AP=90^\circ - \textsf{Latitude of }A\\a=BP=90^\circ - \textsf{Latitude of }B\\\textsf{Cosine formula}\rightarrow\\\cos p=\cos a\cos b+\sin a\sin b\cos P\\\textsf{Shortest distance}=\textsf{Radius}\times \textsf{Central angle}}$$</p>
+<p><span>Star at Culmination (or) Transit (N+, S-)</span><br>$$\displaylines{\delta\le\theta,\textsf{upper}\rightarrow ZS=\theta -\delta\\\delta\gt\theta,\textsf{upper}\rightarrow ZS=\delta -\theta\\\delta\ge\theta,\textsf{lower}\rightarrow ZS=180^\circ - (\theta +\delta)\\\delta\gt 90-\theta\rightarrow \textsf{Circumpolar star}}$$</p>
+<img src="../../assets/st.jpg" class="il" />
+<p><span>Cosine Formula for H</span><br>$$\displaylines{\cos ZS=\cos ZP\cos PS\\+\sin ZP\sin PS\cos H}$$</p>
+<p><span>Cosine Formula for A</span><br>$$\displaylines{\cos PS=\cos ZP\cos ZS\\+\sin ZP\sin ZS\cos A}$$</p>
+<p><span>Notes</span><br>$$\displaylines{H\gt 180^\circ\rightarrow A\textsf{ is eastern}\\H\lt 180^\circ \rightarrow A\textsf{ is western}\\\textsf{Azimuth (}A\textsf{) is given eastern, }H=360^\circ -H_1\\\textsf{sunset, sunrise}\rightarrow \textsf{Altitude (}\alpha\textsf{)}=0\\24^h\rightarrow 360^\circ\quad 12^h\rightarrow 180^\circ\quad 1^h\rightarrow 15^\circ\\1^m\rightarrow 15'\quad 1^s\rightarrow 15''}$$</p>
+<p><span>Conversion of Time (W+, E-)</span><br>$$\displaylines{\textsf{Standard time}=\\\textsf{L.M.T}\pm\textsf{Difference in longitude}\\\\\textsf{Greenwich time}=\\\textsf{Local time}\pm\textsf{Longitude of the place}}$$</p>
+<p><span>Notes</span><br>$$\displaylines{\textsf{Standard meridian for India}=82^\circ 30'E\\\textsf{p.m. given}\rightarrow \textsf{add }12^h\\\textsf{Correction}\rightarrow 9.8565^s}$$</p>
+<p><span>More Equations</span><br>$$\displaylines{
+\textsf{Sidereal time interval}=\\\textsf{Mean time interval}+\textsf{acceleration}\\\\
+\textsf{Mean time interval}=\\\textsf{Sidereal time interval}-\textsf{retardation}\\\\
+\textsf{Mean time interval before G.M.N}=\\12^h-\textsf{G.M.T}\\\\
+\textsf{G.M.T of observation}=\\\textsf{G.A.T of observation}-\textsf{Equation of time}\\\\
+\textsf{G.A.T of observation}=\\\textsf{L.A.T of observation}-\textsf{Longitude of place}}$$</p>
+</div>
+<script>
+	document.querySelectorAll(".container span, .container h3").forEach(a => a.className = 'orange3');
+</script>
+<script src="mathjax/es5/tex-mml-chtml.js"></script>
+</body>
+</html>

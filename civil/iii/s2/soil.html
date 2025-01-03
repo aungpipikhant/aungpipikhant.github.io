@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Soil (CE-32015)</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="../style.css" />
+    <script src="../../mathjax/es5/tex-mml-chtml.js"></script>
+    </head>
+  <body>
+<div class="container">
+  <h1>Soil (CE-32015)</h1>
+
+<h3>Chapter - 11</h3>
+<h3>Compressibility of Soil</h3>
+<p><span>Modulus of Elasticity</span><br>$$\displaylines{ E_s=\frac{\sum E_{s(i)}\space\Delta z}{\bar{z}} }$$</p>
+<h3>For Calculation of Settlement</h3>
+<p><span>Total Settlement</span><br>$$\displaylines{ S_t=S_c+S_s+S_e }$$</p>
+<p><span>At the center of foundation</span><br>$$\displaylines{ B'=\frac{B}{2}\quad\quad\alpha=4\\m'=\frac{L}{B}\quad\quad n'=\frac{H}{\left(\frac{B}{2}\right)} }$$</p>
+<p><span>At the corner of foundation</span><br>$$\displaylines{ B'=B\quad\quad\alpha=1\\m'=\frac{L}{B}\quad\quad n'=\frac{H}{B} }$$</p>
+<p><span>Shape Factor</span><br>$$\displaylines{ I_s=F_1+\frac{1-2\mu_s}{1-\mu_s}\space F_2\\F_1\rightarrow\textsf{Table 11.1}\\F_2\rightarrow\textsf{Table 11.2} }$$</p>
+<p><span>Elastic Settlement</span><br>$$\displaylines{ S_{e\textsf{ (flexible)}}=\Delta\sigma(\alpha B')\space\frac{1-\mu_s^2}{E_s}\space I_s\space I_f\\I_f\rightarrow\textsf{Table 11.3}\\S_{e\textsf{ (rigid)}}=0.93\space S_{e\textsf{ (flexible)}} }$$</p>
+<p><span>Height of Solids</span><br>$$\displaylines{ H_s=\frac{M_s}{AG_s\rho_w}\\H_v=H-H_s\\e=\frac{H_v}{H_s} }$$</p>
+<p><span>Primary Consolidation Settlement</span><br>$$\displaylines{ S_c=H\space\frac{\Delta e}{1+e_0}\quad\quad \Delta e=e_0-e_1 }$$</p>
+<p><span>For Normally Consolidated Clays</span><br>$$\displaylines{ S_c=\frac{C_cH}{1+e_0}\space \log\left(\frac{\sigma_0'+\Delta\sigma '}{\sigma_0'}\right) }$$</p>
+<p><span>For Overconsolidated Clays</span><br>$$\displaylines{ \textsf{For}\space \sigma_0'+\Delta\sigma '\le \sigma_c'\space ,\\\\S_c=\frac{C_sH}{1+e_0}\space \log\left(\frac{\sigma_0'+\Delta\sigma '}{\sigma_0'}\right)\\\\\textsf{For}\space \sigma_0'+\Delta\sigma '\gt \sigma_c'\space ,\\\\S_c=\frac{C_sH}{1+e_0}\space \log \frac{\sigma_c'}{\sigma_0'} + \frac{C_cH}{1+e_0}\space \log\left(\frac{\sigma_0'+\Delta\sigma '}{\sigma_c'}\right) }$$</p>
+<p><span>Compression Index</span><br>$$\displaylines{ C_c=0.009(LL-10) }$$</p>
+<p><span>Secondary Consolidation Settlement</span><br>$$\displaylines{ S_s=C_{\alpha}'\space H\space\log\left(\frac{t_2}{t_1}\right)\\\\C_{\alpha}'=\frac{C_{\alpha}}{1+e_p}\\\\C_{\alpha}=\frac{\Delta e}{\log\left(\frac{t_2}{t_1}\right)}\\\\\Delta e=C_c\space\log\left(\frac{\sigma_0'+\Delta\sigma '}{\sigma_0'}\right)\\\\e_p=e_0-\Delta e }$$</p>
+<p><span>Hydraulic Conductivity</span><br>$$\displaylines{ k=c_v\space m_v\space \gamma_w }$$</p>
+<p><span>Coefficient of Consolidation</span><br>$$\displaylines{ c_v=\frac{T_vH_{dr}^2}{t}\\T_v\rightarrow\textsf{Table 11.7}\\\textsf{Lab}\rightarrow H_{dr}=\frac{H}{2}\\\textsf{Field}\rightarrow H_{dr}=H }$$</p>
+<p><span>Coefficient of Compressibility</span><br>$$\displaylines{ m_v=\frac{a_v}{1+e_{avg}}\\a_v=\frac{\Delta e}{\Delta\sigma '}\\\Delta e=e_0-e }$$</p>
+<h3>Consolidation Settlement Under a Foundation</h3>
+<p><span>Weighted Average Method</span><br>$$\displaylines{ \Delta\sigma_{av}'=\frac{\Delta\sigma_t'+4\Delta\sigma_m'+\Delta\sigma_b'}{6}\\\\m_1=\frac{L}{B}\quad\quad n_1=\frac{z}{b}\quad\quad b=\frac{B}{2}\\\\\Delta\sigma'=q\space I_4\\I_4\rightarrow\textsf{Table 10.10 - Page 341} }$$</p>
+
+<h3>Chapter - 13</h3>
+<h3>Lateral Earth Pressure</h3>
+<p><span>Earth Pressure At-Rest</span><br>$$\displaylines{ \textsf{Vertical effective stress, }\sigma_0'=\gamma z\\\textsf{Horizontal effective stress, }\sigma_h'=K_0\space\sigma_0'\\\textsf{Pore water pressure, }u=z\gamma_w\\\\K_0=(1-\sin\phi ')(\textsf{OCR})^{\sin\phi '}\\P_0=\sum\textsf{Area of pressure diagram}\\\textsf{Location, }\bar{z}=\frac{\sum\textsf{Moment of pressure diagram}}{P_0} }$$</p>
+<p><span>Rankine Active Pressure, \(P_a\)</span><br>$$\displaylines{ K_a=\frac{1-\sin\phi '}{1+\sin\phi '}\\\sigma_a'=K_a\space\sigma_0'-2c'\sqrt{K_a} }$$</p>
+<p><span>Rankine Passive Pressure, \(P_p\)</span><br>$$\displaylines{ K_p=\frac{1+\sin\phi '}{1-\sin\phi '}\\\sigma_p'=K_p\space\sigma_0'+2c'\sqrt{K_p} }$$</p>
+<p><span>\(P_a\) (before the tensile crack occurs)</span><br>$$\displaylines{ P_a=\displaylines{\textsf{(+ area of pressure diagram)}\\+\space\textsf{(- area of pressure diagram)}} }$$</p>
+<p><span>\(P_a\) (after the tensile crack occurs)</span><br>$$\displaylines{ P_a=\textsf{(+ area of pressure diagram)} }$$</p>
+
+<h3>Chapter - 15</h3>
+<h3>Slope Stability</h3>
+<div class="grid-2" >
+<p><span>Factor of safety w.r.t cohesion</span><br>$$\displaylines{ F_{c'}=\frac{c'}{c'_d} }$$</p>
+<p><span>Factor of safety w.r.t friction</span><br>$$\displaylines{ F_{\phi '}=\frac{\tan\phi '}{\tan\phi_d'} }$$</p>
+</div>
+<p><span>Stability of Infinite Slope (no seepage)</span><br>$$\displaylines{ F_s=\frac{c'}{\gamma H\cos^2\beta\space\tan\beta}+\frac{\tan\phi '}{\tan\beta}\\\\H_{\textsf{cr}}=\frac{c'}{\gamma}\space\frac{1}{\cos^2\beta\space (\tan\beta-\tan\phi')} }$$</p>
+<p><span>Stability of Infinite Slope (seepage)</span><br>$$\displaylines{ F_s=\frac{c'}{\gamma_{\textsf{sat}} H\cos^2\beta\space\tan\beta}+\frac{\gamma'\tan\phi '}{\gamma_{\textsf{sat}}\tan\beta} }$$</p>
+<p><span>Analysis of Finite Slope with Plane Failure Surface</span><br>$$\displaylines{ 
+H=\frac{4c'_d}{\gamma}\left[\frac{\sin\beta\space\cos\phi'_d}{1-\cos(\beta-\phi'_d)}\right]\\\\
+H_{\textsf{cr}}=\frac{4c'}{\gamma}\left[\frac{\sin\beta\space\cos\phi'}{1-\cos(\beta-\phi')}\right]
+}$$</p>
+<p><span>Distance</span><br>$$\displaylines{ D=nH_{cr} }$$</p>
+<p><span>The Depth Function, D</span><br>$$\displaylines{ \frac{\textsf{Vertical distance from top of slope to firm base}}{\textsf{Height of slope}} }$$</p>
+<p><span>Case of Critical Circles | Cohesion</span><br>$$\displaylines{ c_d=\gamma Hm\\\textsf{The stability number, }m=\frac{c_d}{\gamma H}\\F_s=1\quad\Rightarrow\quad H=H_{cr}\space ,\space c_d=c_u\\H_{cr}=\frac{c_u}{\gamma m}\\\\\beta\gt\; 53^\circ\rightarrow\textsf{The critical circle is a toe circle.}\\m\rightarrow\textsf{Fig 15.13 - Page 593}\\\alpha\;,\;\;\theta\rightarrow\textsf{Fig 15.14 - Page 594} }$$</p>
+
+<h3>Chapter - 12</h3>
+<h3>Shear Strength of Soil</h3>
+<div class="grid-2" >
+<p><span>For total normal stress</span><br>$$\displaylines{ \tau_f=c+\sigma\tan\phi }$$</p>
+<p><span>For effective normal stress</span><br>$$\displaylines{ \tau_f=c'+\sigma '\tan\phi ' }$$</p>
+</div>
+<h3>Direct Shear Test</h3>
+<p><span>Determination of Shear Strength Parameters</span><br>$$\displaylines{ 
+\sigma=\frac{\textsf{Normal Force}}{\textsf{Area of Specimen}}=\frac{N}{A}\\\\\tau=\frac{\textsf{Shear Force}}{\textsf{Area of Specimen}}=\frac{V}{A}\\\\c=?\quad\quad\phi=?
+ }$$</p>
+ <h3>Triaxial Shear Test</h3>
+ <p><span>Stresses</span><br>$$\displaylines{ 
+\sigma_3=\Biggl\{\quad\displaylines{\textsf{Minor principal stress}\\\textsf{All round pressure}\\\textsf{Chamber confining pressure}}\\\\
+\Delta\sigma_d=\biggl\{\quad\displaylines{\textsf{Deviator stress}\\\textsf{Principal shear difference}}\\\\
+\sigma_1=\biggl\{\quad\displaylines{\textsf{Major principal stress}\\\textsf{Axial stress}}\\\\
+\sigma_1=\sigma_3+\Delta\sigma_d
+  }$$</p>
+ <h3>Consolidated-Drained Triaxial Test \((\sigma=\sigma ')\)</h3>
+<p><span>Notes</span><br>$$\displaylines{ \textsf{Minor principal stress, }\sigma_3=\sigma_3 '\\\textsf{Major principal stress, }\sigma_1=\sigma_1 '=\sigma_3 '+(\Delta\sigma_d)_f\\\\\sin\phi '=\frac{\left(\frac{\sigma_1 '-\sigma_3 '}{2}\right)}{c'\cot\phi '+\left(\frac{\sigma_1 '+\sigma_3 '}{2}\right)}\\\\\sigma_1 '=\sigma_3 '\tan^2(45+\frac{\phi '}{2})+2c'\tan(45+\frac{\phi '}{2})\\\textsf{Failure plane, }\theta =45+\frac{\phi '}{2}\\\textsf{Maximum shear stress, }\theta =45^\circ }$$</p>
+<p><span>At Failure Plane</span><br>$$\displaylines{ \sigma_f=\frac{\sigma_1 '+\sigma_3 '}{2}+\frac{\sigma_1 '-\sigma_3 '}{2}\space\cos 2\theta\\\\\tau_f=\left(\frac{\sigma_1 '-\sigma_3 '}{2}\right)\space\sin 2\theta\\\\\textsf{Sandy soil, sand, normally consolidated clay}\\\Rightarrow c=0 }$$</p>
+<h3>Consolidated-Undrained Triaxial Test</h3>
+<p><span>Major Principal Stress at Failure</span><br>$$\displaylines{ 
+\textsf{Total:}\quad\sigma_1=\sigma_3+(\Delta\sigma_d)_f\\
+\textsf{Effective:}\quad\sigma_1 '=\sigma_1-(\Delta u_d)_f\\(\Delta u_d)_f=\textsf{pore water pressure at failure}
+ }$$</p>
+ <p><span>Minor Principal Stress at Failure</span><br>$$\displaylines{ 
+\textsf{Total:}\quad\sigma_3\\
+\textsf{Effective:}\quad\sigma_3 '=\sigma_3-(\Delta u_d)_f
+ }$$</p>
+<p><span>For sand and normally consolidated clay</span><br>$$\displaylines{ 
+\phi=\sin^{-1}\left(\frac{\sigma_1-\sigma_3}{\sigma_1+\sigma_3}\right)\\\\
+\phi '=\sin^{-1}\left(\frac{\sigma_1 '-\sigma_3 '}{\sigma_1 '+\sigma_3 '}\right) }$$</p>
+
+<h3>Chapter - 16</h3>
+<h3>Soil Bearing Capacity</h3>
+<p><span>Surcharge</span><br>$$\displaylines{ q=\gamma D_f\\\gamma=\rho g\\D_f\le B\\
+D_f=\textsf{depth of foundation}\\
+B=\textsf{size of footing} }$$</p>
+<p><span>General Equation</span><br>$$\displaylines{ q_u=c'N_c+qN_q+\frac{1}{2}\; \gamma BN_{\gamma} }$$</p>
+<p><span>Square Footing</span><br>$$\displaylines{ q_u=1.3\; c'N_c+qN_q+0.4\; \gamma BN_{\gamma} }$$</p>
+<p><span>Circular Footing</span><br>$$\displaylines{ q_u=1.3\; c'N_c+qN_q+0.3\; \gamma BN_{\gamma} }$$</p>
+<p><span>Terzaghi's Bearing Capacity Factors</span><br>$$\displaylines{ \textsf{Table 16.1 - Page 650} }$$</p>
+<p><span>Allowable Gross Load</span><br>$$\displaylines{ Q_{\textsf{all}}=q_{\textsf{all}}\times A\quad\quad Q_{\textsf{all}}=mg\\\\q_{\textsf{all}}=\frac{Q_{\textsf{all}}}{A}\\\\q_{\textsf{all}}=\frac{q_u}{F_s} }$$</p>
+<h3>Effect of Groundwater Table</h3>
+<p><span>Case I, II, III</span><br>$$\displaylines{ 
+\textsf{Figure 16.6 - Page 651}\\\\
+\textsf{Case I}\rightarrow\quad q=\gamma (D_f-D)+\gamma ' D\\\\
+\textsf{Case II}\rightarrow\quad q=\gamma 'D_f\\\\
+\textsf{Case III}\rightarrow\quad q=\gamma_{\textsf{av}}\; D_f\\
+D\le B\rightarrow\quad\gamma_{\textsf{av}}=\frac{1}{B}[\; \gamma D+\gamma '(B-D)\; ]\\
+D\gt B\rightarrow\quad\gamma_{\textsf{av}}=\gamma
+ }$$</p>
+<p><span>Modified General Ultimate Bearing Capacity Equation</span><br>$$\displaylines{ 
+\begin{align}
+q_u&=c'\space\lambda_{\textsf{cs}}\space\lambda_{\textsf{cd}}\space
+\lambda_{\textsf{ci}}\space N_{\textsf{c}}+q\space\lambda_{\textsf{qs}}\space\lambda_{\textsf{qd}}\space
+\lambda_{\textsf{qi}}\space N_{\textsf{q}}\\
+&+\frac{1}{2}\gamma B\space\lambda_{\textsf{\(\gamma\)s}}\space\lambda_{\textsf{\(\gamma\)d}}\space
+\lambda_{\textsf{\(\gamma\)i}}\space N_{\gamma}
+\end{align}\\\\\textsf{Table 16.2 - Page 657} }$$</p>
+<p><span>Shape Factor</span><br>$$\displaylines{ 
+\lambda_{\textsf{cs}}=1+\left(\frac{B}{L}\right)\left(\frac{N_q}{N_c}\right)\\\\
+\lambda_{\textsf{qs}}=1+\left(\frac{B}{L}\right)\tan\phi '\\\\
+\lambda_{\textsf{\(\gamma\)s}}=1-0.4\left(\frac{B}{L}\right)\\\\
+\textsf{L = length of the foundation (L > B)}
+ }$$</p>
+ <p><span>Depth Factors</span><br>$$\displaylines{ 
+\textsf{For }D_f/B\le 1\; ,\\\\
+\lambda_{\textsf{cd}}=1+0.4\left(\frac{D_f}{B}\right)\\\\
+\lambda_{\textsf{qd}}=1+2\tan\phi '(1-\sin\phi ')^2\; \frac{D_f}{B}\\\\
+\lambda_{\textsf{\(\gamma\)d}}=1\\\\\\
+\textsf{For }D_f/B\gt 1\; ,\\\\
+\lambda_{\textsf{cd}}=1+0.4\tan^{-1}\left(\frac{D_f}{B}\right)\\\\
+\lambda_{\textsf{qd}}=1+2\tan\phi '(1-\sin\phi ')^2\tan^{-1}\left(\frac{D_f}{B}\right)\\\\
+\lambda_{\textsf{\(\gamma\)d}}=1
+  }$$</p>
+<p><span>Inclination Factors</span><br>$$\displaylines{ 
+\lambda_{\textsf{ci}}=\lambda_{\textsf{qi}}=\left(1-\frac{\alpha^\circ}{90^\circ}\right)^2\\\\
+\lambda_{\textsf{\(\gamma\)i}}=\left(1-\frac{\alpha}{\phi '}\right)^2\\\\
+\alpha=\textsf{inclinaton of the load on the foundation}\\\textsf{with respect to the vertical}
+ }$$</p>
+<p><span>Notes</span><br>$$\displaylines{ 
+\textsf{All inclination factors}=1\quad\textsf{(vertical load)}\\
+\textsf{All shape factors}=1\quad\textsf{(continuous footing)}
+ }$$</p>
+
+ <h3>Chapter - 17</h3>
+ <h3>Subsoil Exploration</h3>
+ <p><span>Corrected standard penetration numbers</span><br>$$\displaylines{ (N_1)_{60}=C_NN_{60} }$$</p>
+ <p><span>Correction Factor</span><br>$$\displaylines{ C_N=\left[\frac{1}{\left(\frac{\sigma_0 '}{p_a}\right)}\right]^{0.5}\\\\p_a\approx 100\; kN/m^2 }$$</p>
+<p><span>Average Soil Friction Angle</span><br>$$\displaylines{ \phi '=\tan^{-1}\left[\frac{N_{60}}{12.2+20.3\left(\frac{\sigma_0 '}{p_a}\right)}\right]^{0.34} }$$</p>
+
+</div>
+<script>
+	document.querySelectorAll(".container span, .container h3").forEach(a => a.className = 'brown');</script>
+    </body>
+</html>

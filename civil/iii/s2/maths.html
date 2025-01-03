@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Maths (EM-32006)</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="../style.css" />
+    <script src="../../mathjax/es5/tex-mml-chtml.js"></script>
+    </head>
+  <body>
+<div class="container">
+<h1>Maths (EM-32006)</h1>
+
+<h3>Chapter - 1</h3>
+<h3>13.3</h3>
+<h3>Derivative Analytic Function</h3>
+<p><span>Circle Equation</span><br>$$\displaylines{ |z-a|=\rho\\\textsf{Unit circle}\rightarrow |z|=1\\\lt\quad\quad\textsf{open, interior}\\\gt\quad\quad\textsf{open, exterior}\\\le\quad\quad\textsf{closed, interior}\\\ge\quad\quad\textsf{closed, exterior} }$$</p>
+<div class="grid-2" >
+<p><span>Open Annulus</span><br>$$\displaylines{ \rho_1\lt |z-a| \lt \rho_2 }$$</p>
+<p><span>Closed Annulus</span><br>$$\displaylines{ \rho_1 \le |z-a| \le\rho_2 }$$</p>
+</div>
+<p><span>Complex Number</span><br>$$\displaylines{ z=x+iy\\\textsf{Re}\space z=x\quad\quad\textsf{Im}\space z=y\\\bar{z}=x-iy\\\theta=\textsf{Arg}\space z\quad\quad z=re^{i\theta} }$$</p>
+<p><span>Complex Function</span><br>$$\displaylines{ f(z)=U+iV\\\textsf{Re}\space f=U\quad\quad\textsf{Im}\space f=V }$$</p>
+<p><span>Derivative</span><br>$$\displaylines{ f'(z)=\lim_{\Delta z\to 0}\space\frac{f(z+\Delta z)-f(z)}{\Delta z}\\\\\overline{z+\Delta z}=(x+\Delta x)-i(y+\Delta y)\\\Delta z=\Delta x+i\Delta y }$$</p>
+<h3>13.4</h3>
+<p><span>Cauchy-Riemann Equation</span><br>$$\displaylines{ U_x=V_y\quad\quad U_r=\frac{1}{r}V_{\theta}\\U_y=-V_x\quad\quad V_r=-\frac{1}{r}U_{\theta}\\\therefore \textsf{Cauchy-Riemann Equation is satisfied.}\\\therefore f(z) \textsf{ is analytic.} }$$</p>
+<p><span>Theorem - 3 Laplace's Equation</span><br>$$\displaylines{ U_{xx}+U_{yy}=0\\\therefore\textsf{U is harmonic.}\\\\V_{xx}+V_{yy}=0\\\therefore\textsf{V is harmonic.} }$$</p>
+<h3>13.5</h3>
+<p><span>Exponential Function</span><br>$$\displaylines{ e^z=e^{x+iy}=e^x.e^{iy}=e^x(\cos y+i\sin y)\\|e^{iy}|=|\cos y+i\sin y|=\sqrt{\cos^2y+\sin^2y}=1\\|e^z|=|e^{x+iy}|=|e^x.e^{iy}|=e^x\\\textsf{Arg}\space e^z=y\\\textsf{arg}\space e^z=y\pm 2n\pi\space (n=0,1,2,...) }$$</p>
+<h3>13.6</h3>
+<p><span>Trigonometric and Hyperbolic Functions</span><br>$$\displaylines{ 
+\cos z=\frac{1}{2}(e^{iz}+e^{-iz})\\
+\sin z=\frac{1}{2i}(e^{iz}-e^{-iz})\\
+\cosh z=\frac{1}{2}(e^{z}+e^{-z})\\
+\sinh z=\frac{1}{2}(e^{z}-e^{-z})\\
+\cos z=\cos x\cosh y-i\sin x\sinh y\\
+\sin z=\sin x\cosh y+i\cos x\sinh y\\
+\cosh z=\cosh x\cos y+i\sinh x\sin y\\
+\sinh z=\sinh x\cos y+i\cosh x\sin y\\
+\sin iz=i\sinh z\\
+\sinh iz=i\sin z\\
+\cos iz=\cosh z\\
+\cosh iz=\cos z
+}$$</p>
+<h3>13.7</h3>
+<h3>Logarithm General Power</h3>
+<p><span>Principle Value of ln z</span><br>$$\displaylines{ \textsf{Ln}\space z=\ln |z|+i\textsf{Arg}\space z\\\ln z=\textsf{Ln}\space z\pm 2n\pi i\\|z|=\sqrt{x^2+y^2} }$$</p>
+<p><span>\(\textsf{Arg}\space z=\theta =\)</span><br>$$\displaylines{ 
+\tan^{-1}|\frac{y}{x}|\quad\textsf{(Quadrant I)}\\
+\pi-\tan^{-1}|\frac{y}{x}|\quad\textsf{(Quadrant II)}\\
+-\pi +\tan^{-1}|\frac{y}{x}|\quad\textsf{(Quadrant III)}\\
+-\tan^{-1}|\frac{y}{x}|\quad\textsf{(Quadrant IV)}
+}$$</p>
+<p><span>General Power</span><br>$$\displaylines{ z^c=e^{c\ln z} }$$</p>
+
+<h3>Chapter - 2</h3>
+<h3>14.1</h3>
+<h3>Line Integral in The Complex Plane</h3>
+<p><span>Theorem - 1</span><br>$$\displaylines{ \int_{z_0}^{z_1}f(z)dz=F(z_1)-F(z_0) }$$</p>
+<p><span>Second Evaluation Method</span><br>$$\displaylines{ \int_cf(z)dz=\int f(z)\space\dot{z}\space dt\\\\\textsf{Circle equation,}\\z=z_0+\rho e^{it} }$$</p>
+<p><span>Notes</span><br>$$\displaylines{ \frac{x-x_1}{x_2-x_1}=t\quad\quad\frac{y-y_1}{y_2-y_1}=t }$$</p>
+<h3>14.2</h3>
+<p><span>Cauchy's Integral Theorem</span><br>$$\displaylines{ \oint\frac{f(z)}{z-z_0}\; dz=0\\\textsf{Let f(z) is analytic, \(z_0\) outside C} }$$</p>
+<h3>14.3</h3>
+<p><span>Cauchy's Integral Formula</span><br>$$\displaylines{ \oint\frac{f(z)}{z-z_0}\; dz=2\pi i\space f(z_0)\quad\quad\textsf{(C.C.W)}\\\\\textsf{(C.W)}\quad\rightarrow\quad -2\pi i\space f(z_0)\\\textsf{Let f(z) is analytic, \(z_0\) inside C} }$$</p>
+<h3>14.4</h3>
+<p><span>Derivatives of Analytic Functions</span><br>$$\displaylines{ 
+\oint\frac{f(z)}{(z-z_0)^{n+1}}\space dz=\frac{2\pi i}{n!}\space f^n(z_0)\\\\
+\oint\frac{f(z)}{(z-z_0)^{2}}\space dz=\frac{2\pi i}{1!}\space f^{'}(z_0)\\\\
+\oint\frac{f(z)}{(z-z_0)^{3}}\space dz=\frac{2\pi i}{2!}\space f^{''}(z_0)
+}$$</p>
+
+<h3>Chapter - 3</h3>
+<h3>15.1</h3>
+<h3>Sequences, Series, Convergent Test</h3>
+<p><span>Theorem - 8 Ratio Test</span><br>$$\displaylines{ L=\lim_{n\to\infty}\left|\frac{z_{n+1}}{z_n}\right|\\\\L\lt 1\rightarrow\textsf{Convergence}\\L\gt 1\rightarrow\textsf{Divergence}\\L=1\rightarrow\textsf{Convergence or divergence} }$$</p>
+<h3>15.2</h3>
+<p><span>Power Series</span><br>$$\displaylines{ 
+ \begin{align}
+ \sum_{n=0}^\infty a_n(z-z_0)^n&=a_0+a_1(z-z_0)\\&+a_2(z-z_0)^2+...
+ \end{align}\\\\}$$$$\displaylines{z_0=0,\\
+ \begin{align}
+ \sum_{n=0}^\infty a_n(z)^n=a_0+a_1z+a_2z^2+...
+ \end{align}
+ }$$</p>
+<p><span>Theorem - 2 Radius of Convergence</span><br>$$\displaylines{ \textsf{Cauchy Hadamard Formula}\\R=\lim_{n\to\infty}\left|\frac{a_n}{a_{n+1}}\right|\\R=0\rightarrow\textsf{Convergence at centre \(z_0\)}\\R=\textsf{constant}\rightarrow\textsf{Convergence, }|z-z_0|\lt R\\R=\infty\rightarrow\textsf{Convergence for all \(z\)} }$$</p>
+<h3>15.3</h3>
+<p><span>Functions Given by Power Series</span><br>$$\displaylines{ z_0=0,\\ \begin{align}f(z)&=\sum_{n=0}^\infty a_nz^n\\&=a_0+a_1z+a_2z^2+a_3z^3+...\end{align} }$$</p>
+<p><span>T-3 Termwise Differentiation of a Power Series</span><br>$$\displaylines{\begin{align}f(z)&=\sum_{n=0}^\infty a_nnz^{n-1}\\&=a_1+2a_2z+3a_3z^2+...\end{align} }$$</p>
+<p><span>T-4 Termwise Integration of a Power Series</span><br>$$\displaylines{\begin{align}f(z)&=\sum_{n=0}^\infty a_n\frac{z^{n+1}}{n+1}\\&=a_0z+a_1\frac{z^2}{2}+a_2\frac{z^3}{3}+a_3\frac{z^4}{4}+...\end{align} }$$</p>
+<p><span>nCr</span><br>$$\displaylines{ nCr=\binom nr=\frac{n!}{r!(n-r)!} }$$</p>
+<h3>15.4</h3>
+<p><span>Taylor and Maclaurin Series</span><br>
+$$\displaylines{ 
+f(z)=\sum_{n=1}^\infty a_n(z-z_0)^n\quad\quad a_n=\frac{1}{n!}f^n(z_0)\\\\
+\textsf{T.S, centre = \(z_0\)}\\
+\begin{align}
+f(z)&=f(z_0)+\frac{(z-z_0)}{1!}f'(z_0)\\&+\frac{(z-z_0)^2}{2!}f''(z_0)+\frac{(z-z_0)^3}{3!}f'''(z_0)\\&+...
+\end{align}\\}$$
+
+$$\displaylines{
+\textsf{M.S, centre = \(z_0\) = 0}\\
+\begin{align}
+f(z)&=f(0)+\frac{z}{1!}f'(0)\\&+\frac{z^2}{2!}f''(0)+\frac{z^3}{3!}f'''(0)+...
+\end{align}
+}$$</p>
+<p><span>Example - 1</span><br>$$\displaylines{ f(z)=\frac{1}{1-z}=\sum_{n=0}^\infty z^n\quad , \quad |z|<1 }$$</p>
+<p><span>Example - 2</span><br>$$\displaylines{ f(z)=e^z=\sum_{n=0}^\infty \frac{z^n}{n!} \quad , \quad R=\infty , \textsf{for all z} }$$</p>
+<p><span>Example - 3</span><br>$$\displaylines{ 
+f(z)=\cos z=\sum_{n=0}^\infty (-1)^n\frac{z^{2n}}{(2n)!}\\R=\infty , \textsf{for all z}\\\\ 
+f(z)=\sin z=\sum_{n=0}^\infty (-1)^n\frac{z^{2n+1}}{(2n+1)!}\\R=\infty , \textsf{for all z}\\\\
+f(z)=\cosh z=\sum_{n=0}^\infty \frac{z^{2n}}{(2n)!}\\R=\infty , \textsf{for all z}\\\\
+f(z)=\sinh z=\sum_{n=0}^\infty \frac{z^{2n+1}}{(2n+1)!}\\R=\infty , \textsf{for all z}\\\\
+}$$</p>
+<p><span>Example - 4</span><br>$$\displaylines{
+f(z)=\ln(1+z)=\sum_{n=0}^\infty (-1)^n\frac{z^{n+1}}{(n+1)}\\\quad |z|<1 \\\\
+f(z)=\ln(1-z)=\sum_{n=0}^\infty (-1)^{2n+1}\frac{z^{n+1}}{(n+1)}\\\quad |z|<1 \\\\
+f(z)=\ln\frac{(1+z)}{(1-z)}=2\sum_{n=0}^\infty \frac{z^{2n+1}}{(2n+1)}\\\quad |z|<1 
+}$$</p>
+<p><span>Example - 5</span><br>$$\displaylines{ f(z)=\frac{1}{1+z^2}=\sum_{n=0}^\infty (-1)^nz^{2n}\quad , \quad |z|<1 }$$</p>
+<p><span>Example - 6</span><br>$$\displaylines{ f(z)=\arctan z=\tan^{-1}z=\sum_{n=0}^\infty (-1)^n\frac{z^{2n+1}}{2n+1}\\|z|<1 }$$</p>
+<h3>Chapter - 4</h3>
+<h3>16.1</h3>
+<p><span>Laurent Series</span><br>$$\displaylines{ 
+\begin{align}
+f(z)&=\sum_{n=0}^\infty a_n(z-z_0)^n+\sum_{n=1}^\infty \frac{b_n}{(z-z_0)^n}\\
+&=a_0+a_1(z-z_0)+a_2(z-z_0)^2+...\\
+&+\frac{b_1}{(z-z_0)}+\frac{b_2}{(z-z_0)^2}+\frac{b_3}{(z-z_0)^3}+...
+\end{align} }$$
+$$\displaylines{ \\\frac{1}{|z-z_0|}\lt R\Rightarrow |z-z_0|>\frac{1}{R}  }$$</p>
+<h3>16.2</h3>
+<h3>Singularities and Zeros</h3>
+<p><span>Example - 1</span><br>$$\displaylines{ f(z)=\frac{1}{z(z-2)^5}+\frac{1}{(z-2)^2}\\\\\textsf{f(z) has a simple pole at z=0, fifth order at}\\\textsf{z=2 and second order at z=2.} }$$</p>
+<h3>16.3</h3>
+<p><span>Residue Integration Method</span><br>$$\displaylines{ 
+ \begin{align}
+ f(z)&=\sum_{n=0}^\infty a_n(z-z_0)^n+\sum_{n=1}^\infty \frac{b_n}{(z-z_0)^n}\\
+ &=a_0+a_1(z-z_0)+a_2(z-z_0)^2+...\\
+ &+\frac{b_1}{(z-z_0)}+\frac{b_2}{(z-z_0)^2}+\frac{b_3}{(z-z_0)^3}+...
+ \end{align}\\\\
+ b_1=\mathop{Res}_{z=z_0}\space f(z)\\
+ \oint f(z)dz=2\pi i\space b_1\quad\textsf{(C.C.W)}\\
+ \oint f(z)dz=-2\pi i\space b_1\quad\textsf{(C.W)}
+ }$$</p>
+<p><span>Residue at a Simple Pole</span><br>$$\displaylines{ \mathop{Res}_{z=z_0}\space f(z)=\lim_{z\to z_0}(z-z_0)f(z)\\\mathop{Res}_{z=z_0}\space f(z)=\mathop{Res}_{z=z_0}\space\frac{p(z)}{q(z)}=\frac{p(z)}{q'(z)} }$$</p>
+<p><span>Residue at a Pole of Higher order</span><br>$$\displaylines{ \mathop{Res}_{z=z_0}\space f(z)=\\\frac{1}{(m-1)!}\lim_{z\to z_0}\left[\frac{d^{m-1}}{dz^{m-1}}(z-z_0)^m f(z)\right] }$$</p>
+<p><span>Residue Theorem</span><br>$$\displaylines{ 
+\textsf{(C.C.W)}\quad\oint f(z)dz=2\pi i\sum_{j=1}^k\mathop{Res}_{z=z_j}\space f(z)\\
+\textsf{(C.W)}\quad\oint f(z)dz=-2\pi i\sum_{j=1}^k\mathop{Res}_{z=z_j}\space f(z)
+ }$$</p>
+<h3>16.4</h3>
+<p><span>Residue Integration of Real Integrals</span><br>$$\displaylines{ \cos\theta = \frac{1}{2}(z+\frac{1}{z})\\\sin\theta =\frac{1}{2i}(z-\frac{1}{z})\\d\theta =\frac{dz}{iz} }$$</p>
+<p><span>Fourier Integral</span><br>$$\displaylines{ \int_{-\infty}^{\infty}f(x)\; e^{isx}dx=2\pi i\space \sum Res \; [\;f(z)\; e^{isz}\;] }$$</p>
+<p><span>Principal Value</span><br>$$\displaylines{ 
+\begin{align}
+pr.v.\space\int_{-\infty}^{\infty}f(x)\; dx&=2\pi i\space \sum Res\space f(z)\\&+\pi i\space \sum Res\space f(z)
+\end{align}
+ \\\\ [\space 2\pi i(\textsf{complex})+\pi i(\textsf{real})\space ] }$$</p>
+
+
+<h3>Chapter - 5</h3>
+<h3>Conformal Mapping</h3>
+<h3>17.2</h3>
+<p><span>Linear Fractional Transformations</span><br>$$\displaylines{ \textsf{Finding the inverse \(z=z(w)\)}\\\textsf{Finding the fixed points, \(z=?\)}\rightarrow w=z\\\textsf{Finding LFT with fixed points given.}\\w=\frac{az+b}{cz+d}\\cz^2+(d-a)z-b=0 }$$</p>
+<h3>17.3</h3>
+<h3>Special Linear Fractional Transformations</h3>
+<p><span>Map \(z_1,\space z_2,\space z_3\space\textsf{onto}\space w_1,\space w_2,\space w_3 \)</span><br>$$\displaylines{ \frac{w-w_1}{w-w_3}\space .\frac{w_2-w_3}{w_2-w_1}=\frac{z-z_1}{z-z_3}\space .\frac{z_2-z_3}{z_2-z_1} }$$</p>
+
+</div>
+<script>
+	document.querySelectorAll(".container span, .container h3").forEach(a => a.className = 'orange');
+</script>
+  </div>
+    </body>
+</html>

@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Maths (EM-42008)</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="../style.css" />
+    <script src="../../mathjax/es5/tex-mml-chtml.js"></script>
+    </head>
+  <body>
+<div class="top">Maths (EM-42008)</div>
+<div class="container">
+
+<h3>Chapter - 1</h3>
+<h3>23.1 (Graphs and Digraphs)</h3>
+
+<p><span>Notes</span></br>$$\displaylines{ \textsf{Graph, }G=(V,E)=\textsf{(vertices, edges)}\\\\\textsf{Adjancency Matrix (vertex to vertex)}\\\textsf{Graph}\Rightarrow\textsf{1 if G has an edge. 0 else.}\\\textsf{Symmetric}\\\textsf{Digraph}\Rightarrow\textsf{1 if G has a directed edge. 0 else.}\\\textsf{No symmetric}\\\\\textsf{Incidence Matrix (vertex to edge)}\\\textsf{Graph}\Rightarrow\textsf{1 if vertex is an endpont of edge.}\\\textsf{0 else.}\\\\\textsf{Digraph}\Rightarrow
+\Bigg\{\;\begin{align}
+&\textsf{-1 if edge leaves vertex}\\
+&\textsf{1 if edge enters vertex}\\
+&\textsf{0 else}
+\end{align} }$$</p>
+
+<h3>23.2 (Moore's Algorithm)</h3>
+<p><span>Moore's Algorithm</span></br>$$\displaylines{ 
+\textsf{The length of * shortest path is *.}
+ }$$</p>
+<h3>23.3 (Bellman's Principle. Dijkstra's Algorithm)</h3>
+<p><span>Bellman's Principle. Dijkstra's Algorithm</span></br>$$\displaylines{ 
+\textsf{Permanent label}=PL\\
+\textsf{Temporary label}=TL\\
+PL=\{\quad\}\,,\,TL=\phi
+ }$$</p>
+<h3>23.4 (Kruskal's Greedy Algorithm)</h3>
+
+<p><span>Kruskal's Greedy Algorithm</span></br>$$\displaylines{ \textsf{Vertex = n}\\\textsf{Edges = n - 1}\\T=\{(*,*),(*,*),...\} }$$</p>
+
+<h3>23.5 (Prim's Algorithm)</h3>
+
+<p><span>Prim's Algorithm</span></br>$$\displaylines{ \textsf{Vertex starts from 2.}\\S=(*,*),(*,*),... }$$</p>
+
+<h3>23.6 (Flows in Networks)</h3>
+
+<p><span>Flow Augmenting Paths</span></br>$$\displaylines{ P:s\rightarrow t\\\\f_{ij}=c_{ij}\Rightarrow\textsf{No forward edge;}\\f_{ij}\,\textsf{(flow)}\lt c_{ij}\,\textsf{(capacity)}\\\\f_{ij}=0\Rightarrow\textsf{No backward edge;}\;f_{ij}\gt 0\\\\\Delta_{ij}=c_{ij}-f_{ij}\;\textsf{(forward edges)}\\\Delta_{ij}=f_{ij}\;\textsf{(backward edges)}\\\Delta=\textsf{min}\{\Delta_{ij}\,,...\}\\\\\textsf{Inflow = Outflow} }$$</p>
+
+<p><span>Cut Sets</span></br>$$\displaylines{ \textsf{cap}\,(S,\,T)=\sum\,c_{ij} }$$</p>
+
+<h3>23.7 (Ford-Fulkerson Algorithm)</h3>
+<p><span>Ford-Fulkerson Algorithm</span></br>$$\displaylines{ \textsf{f is the addition of initial outflow(s)}\\\textsf{(not corrected) and \(\Delta t\) (s).} }$$</p>
+<h3>Chapter - 2</h3>
+<h3>24.5 (Random Variables. Probability Distributions)</h3>
+
+<p><span>Discrete Random Variables</span></br>$$\displaylines{ \textsf{Probability/Density Function}\\f(x)=P\,(X=x)\\\\f(x)=\Bigg\{\begin{align}&\;P_j\:,\,x=x_j\;(\,j=1,\,2,\,3,\,...)\\\\&\,0,\,\textsf{otherwise}\end{align}\\\\F(x)\Rightarrow\textsf{Distribution Function}\\\\F(x)=P\,(X\le x)=\sum_{x_j\,\le\, x}\,f(x_j)=\sum_{x_j\,\le\, x}\,P_j\\\\P\,(a\lt X\le b)=\sum_{a\,\lt\, x_j\,\le\, b}\,P_j\\\\P\,(a\lt X\le b)=F(b)-F(a)\\\\k=?\Rightarrow\sum_x\,f(x)=1\\P\,(X\gt a)=1-P\,(X\le a)\\\\\textsf{Independent event}\Rightarrow\textsf{Multiply the probabilities} }$$</p>
+
+<p><span>Continuous Random Variables and Distributions</span></br>$$\displaylines{ F(x)=P\,(X\le x)=\int_{-\infty}^{x}\,f(v)\,dv\\\\k=?\Rightarrow\int_{-\infty}^{\infty}\,f(v)\,dv=1\\\\P\,(a\lt X\le b)=\int_a^b\,f(v)\,dv\\\\P\,(a\lt X\le b)=F(b)-F(a)\\F'(x)=f(x)\quad\quad\frac{d}{dx}\,F(x)=f(x) }$$</p>
+
+<h3>24.6 (Mean and Variance of a Distribution)</h3>
+
+<p><span>Mean and Variance</span></br>$$\displaylines{ \textsf{Mean}=\mu=E(X)\\\textsf{Variance}=\sigma^2=E(X-\mu)^2 }$$</p>
+
+<p><span>Discrete Type</span></br>$$\displaylines{ \mu=E(X)=\sum_j\,x_j\,f(x_j)\\\\\sigma^2=E(X-\mu)^2=\sum_j\,(x_j-\mu)^2\,f(x_j)\\\\\textsf{(or)}\quad\sigma^2=E(X^2)-\mu^2\\\\E(X^2)=\sum_j\,x_j^2\,f(x_j)\\\\\sqrt{\sigma^2}=\sigma\;\textsf{is standard deviation.} }$$</p>
+
+<p><span>Continuous Type</span></br>$$\displaylines{ \mu=E(X)=\int_{-\infty}^{\infty}\,x\,f(x)\,dx\\\\E(X^2)=\int_{-\infty}^{\infty}\,x^2\,f(x)\,dx\\\\\sigma^2=E(X-\mu)^2=\int_{-\infty}^{\infty}\,(x-\mu)^2\,f(x)\,dx }$$</p>
+
+<p><span>Properties</span></br>$$\displaylines{ \begin{align}
+&1.\;E(k)=k\quad\textsf{(k=constant)}\\
+&2.\;E(kv)=k\,E(v)\\
+&3.\;E(k_1\,v_1+k_2\,v_2)=k_1\,E(v_1)+k_2\,E(v_2)\\
+\end{align} }$$</p>
+
+<p><span>Standardized Variable</span></br>$$\displaylines{ Z=\frac{X-\mu}{\sigma} }$$</p>
+
+<h3>24.7 (Binomial, Poisson, and Hypergeometric Distributions)</h3>
+
+<p><span>I. Binomial Distribution</span></br>$$\displaylines{ 
+p=?\quad\quad q=1-p\\
+\textsf{Mean},\;\mu=n\,p\\
+\textsf{Variance},\;\sigma^2=n\,p\,q\\\\
+P(X=x)=f(x)\\
+=\left\{\begin{align}
+&\,\binom nx\,p^x\,q^{n-x}\,,\,x=0,\,1,\,2,\,...,\,n\\
+&\,\,0\,,\,\textsf{otherwise}
+\end{align}\right.
+ }$$</p>
+
+<p><span>II. Poisson Distribution</span></br>$$\displaylines{ 
+\textsf{Mean},\;\mu=\sigma^2=n\,p\\\\
+P(X=x)=f(x)\\
+=\left\{\begin{align}
+&\,\frac{\mu^x\,e^{-\mu}}{x!}\,,\,x=0,\,1,\,2,\,...\\
+&\\
+&\,\,0\,,\,\textsf{otherwise}
+\end{align}\right.
+ }$$</p>
+
+<p><span>III. Hypergeometric Distribution</span></br>$$\displaylines{ 
+n=\textsf{draw of things}\\
+N=\textsf{total things}\\
+M=\textsf{defective (or) wanted things}\\
+p=\frac{M}{N}\quad\quad q=1-\frac{M}{N}\\\\
+\textsf{With Replacement}\\
+P(X=x)=f(x)\\
+\small{
+=\left\{\begin{align}
+&\,\binom nx\left(\frac{M}{N}\right)^x\left(1-\frac{M}{N}\right)^{n-x},\,x=0,\,1,\,2,\,...,\,n\\
+&\\
+&\,\,0\,,\,\textsf{otherwise}
+\end{align}\right. }
+ }$$</p>
+
+<p><span>III. Hypergeometric Distribution</span></br>$$\displaylines{ 
+\textsf{Without Replacement}\\
+P(X=x)=f(x)\\
+=\left\{\begin{align}
+&\,\frac{\binom Mx \binom {N-M}{n-x}}{\binom Nn}\,,\,x=0,\,1,\,2,\,...,\,n\\
+&\\
+&\,\,0\,,\,\textsf{otherwise}
+\end{align}\right.
+ }$$</p>
+
+<h3>24.8 (Normal Distribution)</h3>
+
+<p><span>Normal Distribution</span></br>$$\displaylines{ 
+\textsf{Mean}=\mu\\
+\textsf{Variance}=\sigma^2\\
+\textsf{Standard Deviation}=\sigma\\\\
+\textsf{Theorem - 1}\\
+P(X\le x)=F(x)=\Phi\left(\frac{x-\mu}{\sigma}\right)\\\\
+\textsf{Theorem - 2}\\
+P(a\lt X\le b)=F(b)-F(a)\\=\Phi\left(\frac{b-\mu}{\sigma}\right)-\Phi\left(\frac{a-\mu}{\sigma}\right)\\\\
+P(X\le a)=F(a)\\
+\Phi\,(-Z)=1-\Phi\,(Z)\\
+\Phi\,(0)=0.5\\\\
+Z\,,\,\Phi\,(Z)\Rightarrow\textsf{Table A7}\\
+\textsf{(or) for CASIO fx-991EX}\,,\\
+\textsf{MENU}\rightarrow 6\rightarrow\textsf{AC}\\\rightarrow\textsf{OPTN}\rightarrow\textsf{Norm Dist}\rightarrow 1\\\\
+\%\,,\,Z\,(\Phi)\Rightarrow\textsf{Table A8}
+ }$$</p>
+
+<h3>24.9 (Distrubutions of Several Random Variables)</h3>
+
+<p><span>Discrete Two-Dimensional Distributions</span></br>$$\displaylines{ 
+(X,\,Y)=(x_1,\,y_1)\,,\,(x_2,\,y_2)\,,\,...\\\\
+\textsf{Probability function}\\
+f(x,\,y)=\Big\{\begin{align}&\,P_{ij}\;,\,x=x_i\;,\;y=y_j\\&\,0\;,\;\textsf{otherwise}\end{align}\\\\
+\textsf{Distribution function}\\F(x,\,y)=\sum_{x_i\,\le\, x}\;\sum_{y_j\,\le\, y}\;f(x_i\,,\,y_j)\\\\
+\sum_i\,\sum_j\,f(x_i\,,\,y_j)=1
+ }$$</p>
+
+<p><span>Continuous Two-Dimensional Distributions</span></br>$$\displaylines{ 
+(X,\,Y)=a\lt x\lt b\,,\,c\lt y\lt d\\\\
+F(x,\,y)=P(X\le x\,,\,Y\le y)\\=\int_{-\infty}^y\int_{-\infty}^x\,f(x^*,\,y^*)\,dx^*\,dy^*\\\\
+P(a\lt X\lt b\,,\,c\lt Y\lt d)\\=\int_c^d\int_a^b\,f(x,\,y)\,dx\,dy\\\\
+\int_{-\infty}^{\infty}\int_{-\infty}^{\infty}\,f(x,\,y)\,dx\,dy=1
+ }$$</p>
+
+<h3>Marginal Distributions</h3>
+
+<p><span>Marginal Distributions</span></br>$$\displaylines{ 
+\textsf{Density function (X)}\Rightarrow f_1(x)\\
+\textsf{Density function (Y)}\Rightarrow f_2(y)\\
+\textsf{Distribution function (X)}\Rightarrow F_1(x)\\
+\textsf{Distrubution function (Y)}\Rightarrow F_2(y)
+ }$$</p>
+
+<p><span>Discrete Type</span></br>$$\displaylines{ 
+f_1(x)=P(X=x,\,Y\textsf{ arbitrary})=\sum_y\,f(x,\,y)\\
+f_2(y)=P(X\textsf{ arbitrary},\,Y=y)=\sum_x\,f(x,\,y)\\
+F_1(x)=P(X\le x,\,Y\textsf{ arbitrary})=\sum_{x^*\,\le\, x}\,f_1(x^*)\\
+F_2(y)=P(X\textsf{ arbitrary},\,Y\le y)=\sum_{y^*\,\le\, y}\,f_2(y^*)\\
+ }$$</p>
+
+<p><span>Continuous Type</span></br>$$\displaylines{ 
+f_1(x)=\int_{-\infty}^{\infty}\,f(x,\,y)\,dy\\
+f_2(y)=\int_{-\infty}^{\infty}\,f(x,\,y)\,dx\\\\
+F_1(x)=P(X\le x\,,\,-\infty \lt Y\lt\infty)\\=\int_{-\infty}^x\,f_1(x^*)\,dx\\\\
+F_2(y)=P(-\infty \lt X\lt\infty\,,\,Y\le y)\\=\int_{-\infty}^y\,f_2(y^*)\,dy\\\\
+f_1(x)\,.\,f_2(y)=f(x,\,y)\\
+\therefore\textsf{The random variables X and Y are independent.}
+ }$$</p>
+
+<h3>Queuing Theory</h3>
+
+<p><span>Notes</span><br>$$\displaylines{ 
+\textsf{Queue}=\textsf{waiting in a line}\\\\
+\textsf{Arrival rate (poisson arrival)},\,\lambda =\frac{n}{t}\\\\
+\displaylines{\textsf{Service rate (mean, average,}\\\textsf{expontential service time)}}\;,\,\mu =\frac{1}{t}\\\\
+\textsf{Traffic intensity (utilization factor)},\,\rho = \frac{\lambda}{\mu}\\\\
+\textsf{Number of customer}\\
+L_s=\textsf{in the system}\\
+L_q=\textsf{waiting in the queue}\\
+L_b=\textsf{busy (time to time)}\\\\
+\textsf{Waiting time}\\
+W_s=\textsf{system (queue + service)}\\
+W_q=\textsf{in the queue}\\
+W_b=\textsf{busy}
+ }$$</p>
+
+<p><span>Formulas</span><br>$$\displaylines{ 
+P(n\ge k)=(\,\rho\,)^k=\left(\frac{\lambda}{\mu}\right)^k\\\\
+P(n\gt k)=(\,\rho\,)^{k+1}=\left(\frac{\lambda}{\mu}\right)^{k+1}\\\\
+P(n = k)=\rho^k\,(1-\rho)\\\\
+P(n=0)=1-\rho\\\\
+L_s=\frac{\lambda}{\mu - \lambda}\quad\quad L_b=\frac{\mu}{\mu - \lambda}\\\\L_q=L_s-\frac{\lambda}{\mu}=\frac{\lambda^2}{\mu\,(\mu - \lambda)}\\\\
+W_s=W_b=\frac{1}{\mu - \lambda}\\\\W_q=\frac{\lambda}{\mu\,(\mu - \lambda)}
+ }$$</p>
+
+<h3>Chapter - 3</h3>
+
+<h3>25.3 (Confidence Intervals)</h3>
+
+<p><span>Table 25.1 (Known Variance \(\sigma^2\))</span><br>$$\displaylines{
+\textsf{Confidence interval for the mean}\\\\ 
+\begin{align}
+&1^{\textsf{st}}\,\textsf{step}:\;\gamma=?\\\\
+&2^{\textsf{nd}}\,\textsf{step}:\; c=?\Rightarrow\textsf{Table A8}\Rightarrow Z(D)\\
+&\quad\quad\quad\quad\textsf{(or)}\;\Phi(c)-\Phi(-c)=\gamma\\\\
+&3^{\textsf{rd}}\,\textsf{step}:\;\bar{x}\Rightarrow\textsf{mean/average}\\\\
+&4^{\textsf{th}}\,\textsf{step}:\;k=\frac{c\,\sigma}{\sqrt{n}}\,,\,n=\textsf{sample size}\\
+&\quad\quad\quad\quad \bar{x}-k=?\\
+&\quad\quad\quad\quad \bar{x}+k=?\\\\
+&\quad\quad\quad\quad CONF_\gamma\,\{\,\bar{x}-k\le\mu\le\bar{x}+k\,\}\\\\
+&\quad\quad\quad\quad\ L=2\,k
+\end{align}
+ }$$</p>
+
+<p><span>Table 25.2 (Unknown Variance \(\sigma^2\))</span><br>$$\displaylines{ 
+\textsf{Confidence interval for the mean}\\\\
+\begin{align}
+&1^{\textsf{st}}\,\textsf{step}:\;\gamma=?\\\\
+&2^{\textsf{nd}}\,\textsf{step}:\; c=?\Rightarrow F(c)=\frac{1}{2}\,(\,1+\gamma\,)\\
+&\quad\quad\quad\quad (n-1)\,\textsf{degrees of freedom}\\
+&\quad\quad\quad\quad \textsf{and t-distribution}\Rightarrow\textsf{Table A9}\\\\
+&3^{\textsf{rd}}\,\textsf{step}:\;\bar{x}=?\,,\,S=?\\
+&\quad\quad\quad\quad S^2=\frac{1}{n-1}\,\sum_{j=1}^n\,(\,x_j-\bar{x}\,)^2\\\\
+&4^{\textsf{th}}\,\textsf{step}:\;k=\frac{c\,s}{\sqrt{n}}\\
+&\quad\quad\quad\quad \bar{x}-k=?\\
+&\quad\quad\quad\quad \bar{x}+k=?\\\\
+&\quad\quad\quad\quad CONF_\gamma\,\{\,\bar{x}-k\le\mu\le\bar{x}+k\,\}
+\end{align}
+ }$$</p>
+
+<p><span>Table 25.3 (Mean Need Not Be Known)</span><br>$$\displaylines{ 
+\textsf{Confidence interval for the variance}\\\\
+\begin{align}
+&1^{\textsf{st}}\,\textsf{step}:\;\gamma=?\\\\
+&2^{\textsf{nd}}\,\textsf{step}:\; c_1=?\,,\,c_2=?\\
+&\quad\quad\quad\quad F(c_1)=\frac{1}{2}\,(\,1-\gamma\,)\\
+&\quad\quad\quad\quad F(c_2)=\frac{1}{2}\,(\,1+\gamma\,)\\
+&\quad\quad\quad\quad (n-1)\,\textsf{degrees of freedom}\\
+&\quad\quad\quad\quad \textsf{and chi-square distribution}\\
+&\quad\quad\quad\quad\Rightarrow\textsf{Table A10}\\\\
+&3^{\textsf{rd}}\,\textsf{step}:\;\bar{x}=?\,,\,(n-1)\,s^2=?\\
+&\quad\quad\quad\quad (n-1)\,s^2=\sum_{j=1}^n\,(\,x_j-\bar{x}\,)^2\\
+&\quad\quad\quad\quad s^2=\textsf{sample variance}\\\\
+&4^{\textsf{th}}\,\textsf{step}:\;k_1=\frac{(n-1)\,s^2}{c_1}\\\\
+&\quad\quad\quad\quad k_2=\frac{(n-1)\,s^2}{c_2}\\\\
+&\quad\quad\quad\quad CONF_\gamma\,\{\,k_2\le\sigma^2\le k_1\,\}
+\end{align}
+ }$$</p>
+
+<br>
+
+</div>
+<script>
+	document.querySelectorAll(".container span, .container h3").forEach(a => a.className = 'maths');
+</script>
+<script src="mathjax/es5/tex-mml-chtml.js"></script>
+    </body>
+</html>

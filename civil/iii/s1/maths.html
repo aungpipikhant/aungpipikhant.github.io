@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Maths (EM-31005)</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="../style.css" />
+    <script src="../../mathjax/es5/tex-mml-chtml.js"></script>
+    </head>
+  <body>
+<div class="container">
+<h1>Maths (EM-31005)</h1>
+	<h3>Chapter - 1</h3>
+	<h3>10.1 - Sequences</h3>
+	<p><span>Convergence or Divergence</span><br>$$\displaylines{\textsf{(Sequences, Sandwich, Integral test)}\\\textsf{Constant}\rightarrow \textsf{Convergence}\\\pm\infty,\textsf{ limit doesn't exist}\rightarrow \textsf{Divergence}}$$</p>
+	<p><span>T - 2 Sandwich Theorem (\(a_n\le b_n\le c_n\))</span><br>$$\displaylines{\textsf{trigo}^1\rightarrow -1\le \textsf{trigo}\le 1\\\textsf{trigo}^2\rightarrow 0\le \textsf{trigo}\le 1}$$</p>
+	<p><span>T - 5</span><br>$$\displaylines{\#1\lim_{n\to\infty}{\ln n\over n} = 0\quad\#2\lim_{n\to\infty}\sqrt[n]{n}=1\\ \#3\lim_{n\to\infty}x^{\frac{1}{n}}=1\,(x\gt 0)\\\#4\lim_{n\to\infty}x^n=0\,(|x|\lt 1)\\\#5\lim_{n\to\infty}{(1+{x\over n})^n}=e^x
+	\,(\textsf{any }x)\\\#6\lim_{n\to\infty}{x^n\over n!}=0\,(\textsf{any }x)}$$</p>
+	<h3>10.2 - Infinite Series</h3>
+	<p><span>Infinite Geometric Series</span><br>$$\displaylines{S={a\over{1-r}}\quad|r|\lt 1\rightarrow \textsf{Convergence}\\|r|\ge 1\rightarrow \textsf{Divergence}\\\sum_{n=1}^\infty ar^{n-1}\textsf{ (or) }\sum_{n=0}^\infty ar^n}$$</p>
+	<p><span>Telescoping Series</span><br>$$\displaylines{\sum_{n=1}^\infty (b_n-b_{n+1})=(b_1-b_2)+(b_2-b_3)+...\\+(b_n-b_{n-1})+...+(b_k-b_{k+1})\\\\k^{th}\textsf{ partial sum, }S_k=b_1-b_{k+1}\\\textsf{Notes: }\tan^{-1}\infty = \frac{\pi}{2},\;\tan^{-1}1=\frac{\pi}{4}}$$</p>
+	<h3>10.3 - Integral Test</h3>
+	<p><span>Integral Test and p-series</span><br>$$\displaylines{\textsf{Integral test}\quad\int_1^\infty f(x)dx\\\textsf{Constant}\rightarrow\textsf{Convergence}\\\pm\infty,\;\textsf{limit doesn't exist}\rightarrow\textsf{Divergence}\\\\\textsf{p-series }({1\over n^p})\quad p\gt 1\rightarrow \textsf{Convergence}\\p\le 1\rightarrow \textsf{Divergence}}$$</p>
+	<h3>10.4 - Comparison Test</h3>
+	<p><span>T - 10</span><br>$$\displaylines{d_n\le a_n\le c_n\\\textsf{if }\Sigma c_n\textsf{ is con;, }\Sigma a_n\textsf{ is con;}\\\textsf{if }\Sigma d_n\textsf{ is div;, }\Sigma a_n\textsf{ is div;}}$$</p>
+	<p><span>T - 11 Limit Comparison Test</span><br>$$\displaylines{
+	1.\,\lim_{n\to\infty} \frac{a_n}{b_n}=c\gt 0\\\textsf{both }\Sigma a_n\textsf{ and }\Sigma b_n\textsf{ con; (or) div;}\\
+	2.\,\lim_{n\to\infty} \frac{a_n}{b_n}=0\\\textsf{if }\Sigma b_n\textsf{ is con;, }\Sigma a_n\textsf{ is con;}\\
+	3.\,\lim_{n\to\infty} \frac{a_n}{b_n}=\infty\\\textsf{if }\Sigma b_n\textsf{ is div;, }\Sigma a_n\textsf{ is div;}
+	}$$</p>
+	<h3>10.5 Ratio Test</h3>
+	<p><span>Ratio Test and Root Test</span><br>$$\displaylines{\rho\lt 1\rightarrow \textsf{Convergence}\\\rho\gt 1 \rightarrow \textsf{Divergence}\\\rho =1\rightarrow \textsf{The test is inconclusive}}$$</p>
+	<p><span>T - 12 Ratio Test</span><br>$$\displaylines{\textsf{Ratio test}\rightarrow\rho = \lim_{n\to\infty}{a_{n+1}\over a_n}\\\textsf{Root test}\rightarrow\rho = \lim_{n\to\infty}{\sqrt[n]{a_n}}
+	\\\lim_{n\to\infty}\sqrt[n]{c}=1
+	\\\lim_{n\to\infty}\sqrt[n]{n^p}=1
+	\\\lim_{n\to\infty}\sqrt[n]{\ln n}=1
+	\\\lim_{n\to\infty}\sqrt[n]{n!}=\infty
+	\\\lim_{n\to\infty}\sqrt[n]{n}=1}$$</p>
+	<h3>Chapter - 2</h3>
+	<h3>2.2</h3>
+	<p><span>Homogeneous Linear ODEs</span><br>$$\displaylines{y''+ay'+by=0\rightarrow \lambda^2+a\lambda+b=0\\\lambda_1\ne\lambda_2\rightarrow y=C_1e^{\lambda_1x}+C_2e^{\lambda_2x}\\\lambda_1=\lambda_2\rightarrow y=(C_1+C_2x)e^{\lambda x}\\\lambda = p\pm qi\rightarrow y=e^{px}(A\cos qx +B\sin qx)}$$</p>
+	<h3>2.3</h3>
+	<p><span>Differential Operator</span><br>$$D^2y+Dy+Iy\rightarrow y''+y'+y$$</p>
+	<h3>2.5</h3>
+	<p><span>Euler-Cauchy Equation</span><br>$$\displaylines{x^2y''+axy'+by=0\\ m^2+(a-1)m+b=0\\m_1\ne m_2\rightarrow y=C_1x^{m_1}+C_2x^{m_2}\\m_1=m_2\rightarrow y=(C_1+C_2\ln x)x^m\\m=u\pm iv\rightarrow\\ y=x^u(A\cos(v\ln x)+B\sin(v\ln x))\\x^2D^2y+xDy+Iy\rightarrow x^2y''+xy'+y}$$</p>
+	<h3>2.6</h3>
+	<p><span>Wronskian</span><br>$$\displaylines{y=C_1y_1+C_2y_2\\W=\begin{vmatrix}y_1&y_2\\y_1'&y_2'\end{vmatrix}=y_1y_2'-y_2y_1'\ne 0}$$</p>
+	<h3>2.7</h3>
+	<p><span>Nonhomogeneous Linear ODEs</span><br>$$\displaylines{y=y_h+y_p\\ke^{\gamma x}\rightarrow Ce^{\gamma x}\\kx^n\rightarrow K_nx^n+K_{n-1}x^{n-1}+...+K_1x+K_0\\k\cos \omega x,\,k\sin \omega x\rightarrow K\cos\omega x + M\sin\omega x\\
+	ke^{\alpha x}\cos \omega x,\,ke^{\alpha x}\sin \omega x\rightarrow\\ e^{\alpha x}(K\cos\omega x + M\sin\omega x)\\\cosh x\rightarrow {1\over 2}(e^x+e^{-x})\\\sinh x \rightarrow {1\over 2}(e^x-e^{-x})}$$</p>
+	<h3>2.10</h3>
+	<p><span>Variation of Parameters</span><br>$$y_p=-y_1\int {y_2r\over W}dx+y_2\int {y_1r\over W}dx$$</p>
+	<h3>Chapter - 3 (Higher Order Linear ODEs)</h3>
+	<h3>3.1, 3.2</h3>
+	<p><span>Homogeneous Linear ODEs</span><br>$$\displaylines{y=C_1y_1+C_2y_2+C_3y_3+...+C_ny_n\\x^3y'''+x^2y''+xy'+y=0\\m(m-1)(m-2)+m(m-1)+m+1=0}$$</p>
+	<h3>3.3 - Nonhomogeneous Linear ODEs</h3>
+	<p><span>Variation of Parameters</span><br>$$\displaylines{y_p=y_1\int{W_1\over W}rdx+y_2\int{W_2\over W}rdx\\+...+y_n\int{W_n\over W}rdx\\
+	W=\begin{vmatrix}y_1&y_2&y_3\\y_1'&y_2'&y_3'\\y_1''&y_2''&y_3''\end{vmatrix}\quad
+	W_1=\begin{vmatrix}0&y_2&y_3\\0&y_2'&y_3'\\1&y_2''&y_3''\end{vmatrix}\\
+	W_2=\begin{vmatrix}y_1&0&y_3\\y_1'&0&y_3'\\y_1''&1&y_3''\end{vmatrix}\quad
+	W_3=\begin{vmatrix}y_1&y_2&0\\y_1'&y_2'&0\\y_1''&y_2''&1\end{vmatrix}}$$</p>
+	<h3>Chapter - 4 (Laplace Transforms)</h3>
+	<p><span>Partial Fraction Revision</span><br>$$\displaylines{
+	\frac{1}{(x-a)(x-b)}=\frac{A}{x-a}+\frac{B}{x-b}\\
+	\frac{1}{(x-a)^2}=\frac{A}{x-a}+\frac{B}{(x-a)^2}\\
+	\frac{1}{(x-a)^2(x-b)}=\frac{A}{x-a}+\frac{B}{(x-a)^2}+\frac{C}{x-b}\\
+	\frac{1}{(x-a)(x^2+bx+c)}=\frac{A}{x-a}+\frac{Bx+C}{x^2+bx+c}\\
+	\frac{1}{s^3(s-1)}=\frac{A}{s^3}+\frac{B}{s^2}+\frac{C}{s}+\frac{D}{s-1}}$$</p>
+	<h3>6.1 - Laplace Transform. Linearity</h3>
+	<p><span>First Shifting Theorem</span><br>$$\displaylines{F(s)=\mathscr{L}(f)=\int_0^\infty e^{-st}f(t)dt\\1\rightarrow {1\over s}\quad t\rightarrow {1\over s^2}\quad t^2\rightarrow {\frac{2!}{s^3}}\quad t^n\rightarrow \frac{n!}{s^{n+1}}\\
+	e^{at}\rightarrow \frac{1}{s-a}\quad t^ne^{at}\rightarrow \frac{n!}{(s-a)^{n+1}}\\
+	 \cos\omega t\rightarrow \frac{s}{s^2+\omega^2}\quad \sin\omega t\rightarrow \frac{\omega}{s^2+\omega^2}\\
+	 \cosh\omega t\rightarrow \frac{s}{s^2-\omega^2}\quad \sinh\omega t\rightarrow \frac{\omega}{s^2-\omega^2}\\
+	 e^{at}\cos\omega t\rightarrow \frac{(s-a)}{(s-a)^2+\omega^2}\\ e^{at}\sin\omega t\rightarrow \frac{\omega}{(s-a)^2+\omega^2}\\\mathscr{L}^{-1}(F)=f(t)}$$</p>
+	<h3>6.2</h3>
+	<p><span>Transforms of Derivatives and Integrals</span><br>$$\displaylines{\mathscr{L}(f'')=s^2\mathscr{L}(f)-sf(0)-f'(0)\\\mathscr{L}(f')=s\mathscr{L}(f)-f(0)\\\mathscr{L}(y'')=s^2Y-sy(0)-y'(0)\\\mathscr{L}(y')=sY-y(0)\quad \quad\mathscr{L}(y)=Y\\\mathscr{L}^{-1}(\frac{1}{s}F(s))=\int_0^tf(\tau)d\tau}$$</p>
+	<h3>6.3</h3>
+	<p><span>Unit Step Function (Heaviside's Function)</span><br>$$\displaylines{u(t-a)=\begin{cases}0,&t\lt a\\ 1,&t\gt a\end{cases}}$$</p>
+	<p><span>Examples</span><br>$$\displaylines{f(t)=\begin{cases}\sin t,&1\lt t\lt 3\\-\cos t,&t\gt 3\end{cases}\\f(t)=\sin t[u(t-1)-u(t-3)]\\-\cos t[u(t-3)]\\\mathscr{L}(f(t)u(t-a))=e^{-as}\mathscr{L}(f(t+a))\\
+	\mathscr{L}(u(t-a))=e^{-as}\mathscr{L}(1)=\frac{e^{-as}}{s}\\\mathscr{L}(3tu(t-2))=e^{-2s}\mathscr{L}(3(t+2))}$$</p>
+	<p><span>Theorem - 1</span><br>$$\mathscr{L}^{-1}(e^{-as}F(s))=f(t-a)u(t-a)$$</p>
+	<h3>6.5</h3>
+	<p><span>Convolution Integral Equations</span><br>$$\displaylines{h(t)=(f\ast g)(f)=\int_0^tf(\tau)g(t-\tau)d\tau\\
+	\sin A\sin B={\frac{1}{2}}[-\cos (A+B)+\cos (A-B)]\\
+	\cos A\cos B={\frac{1}{2}}[\cos (A+B)+\cos (A-B)]\\
+	\sin A\cos B={\frac{1}{2}}[\sin (A+B)+\sin (A-B)]}$$</p>
+	<p><span>Convolution & Unit Step Method Example</span><br>$$\displaylines{F(s)=\frac{e^{-as}}{s(s-2)}=e^{-as}\left[ \frac{1}{s}\ast\frac{1}{s-2}\right]\\f(t)=u(t-a)[1\ast e^{2t}] }$$</p>
+	<p><span>Volterra Integral Equation Examples</span><br>$$\displaylines{y(t)-\int_0^ty(\tau)\sin (t-\tau)d\tau=t\\y-y\ast\sin t=t\\\\y(t)-\int_0^t(1+\tau)y(t-\tau)d\tau=1-\sinh t\\y-(1+t)\ast y=1-\sinh t\\\\y(t)-\int_0^ty(\tau)d\tau=1\\y-y\ast 1=1}$$</p>
+	<h3>Chapter - 5 (Fourier Analysis)</h3>
+	<h3>11.1</h3>
+	<p><span>Fourier Series</span><br>$$\displaylines{a_0=\frac{1}{2\pi}\int_{-\pi}^\pi f(x)dx\\a_n=\frac{1}{\pi}\int_{-\pi}^\pi f(x)\cos nx\;dx\\b_n=\frac{1}{\pi}\int_{-\pi}^\pi f(x)\sin nx\;dx\\\textsf{The Fourier series is}\\f(x)=a_0+\sum_{n=1}^\infty (a_n\cos nx+b_n\sin nx)}$$</p>
+
+<h3>11.2</h3>
+<p><span>From Period 2\(\pi\) to Any Period  \(p=2L\)</span><br>$$\displaylines{a_0=\frac{1}{2L}\int_{-L}^Lf(x)dx\quad p=2L\\a_n=\frac{1}{L}\int_{-L}^Lf(x)\cos \frac{n\pi x}{L}dx\\b_n=\frac{1}{L}\int_{-L}^Lf(x)\sin\frac{n\pi x}{L}dx\\\textsf{The Fourier series is}\\f(x)=a_0+\sum_{n=1}^\infty\left(a_n\cos\frac{n\pi x}{L}+b_n\sin\frac{n\pi x}{L}\right)}$$</p>
+<h3>Even and Odd Functions</h3>
+<p><span>Fourier cosine series</span><br>$$\displaylines{
+f(-x)=f(x)\rightarrow \textsf{Even function}\\\textsf{Fourier cosine series, }a_0=?\;a_n=?\\
+\textsf{For period 2L},\\a_0=\frac{1}{L}\int_0^Lf(x)dx\\a_n=\frac{2}{L}\int_0^Lf(x)\cos\frac{n\pi x}{L}dx\\f(x)=a_0+\sum_{n=1}^\infty a_n\cos\frac{n\pi x}{L}\\\textsf{For period 2}\pi,\\
+a_0=\frac{1}{\pi}\int_0^\pi f(x)dx\\a_n=\frac{2}{\pi}\int_0^\pi f(x)\cos nx\;dx\\f(x)=a_0+\sum_{n=1}^\infty a_n\cos nx}$$</p>
+<p><span>Fourier sine series</span><br>$$\displaylines{f(-x)=-f(x)\rightarrow \textsf{Odd function}\\\textsf{Fourier sine series, }b_n=?\\\textsf{For period 2L},\\b_n=\frac{2}{L}\int_0^Lf(x)\sin\frac{n\pi x}{L}dx\\f(x)=\sum_{n=1}^\infty b_n\sin\frac{n\pi x}{L}
+\\\textsf{For period 2}\pi,\\b_n=\frac{2}{\pi}\int_0^\pi f(x)\sin nx\;dx\\f(x)=\sum_{n=1}^\infty b_n\sin nx }$$</p>
+
+</div>
+<script>
+	document.querySelectorAll(".container span, .container h3").forEach(a => a.className = 'orange');
+</script>
+<script src="mathjax/es5/tex-mml-chtml.js"></script>
+  </div>
+    </body>
+</html>
