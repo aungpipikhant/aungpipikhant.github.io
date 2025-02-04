@@ -62,38 +62,30 @@ span {
 	position: absolute;
 	border-bottom-right-radius: 0.8rem;
 }
-   .hydraulics {
- 	   color: #008A91;
- 	   background: rgba(0,138,115,0.2);
+   .hydraulic {
+ 	   color: #0099C0;
+ 	   background: rgba(0,153,192,0.23);
    }
-   .timber {
-   	color: #FF4600;
-   	background: rgba(255,70,0,0.2);
+   .steel {
+   	color: #0073C0;
+   	background: rgba(0,115,192,0.23);
    } 
-   .hydrology {
-   	color: #0091F0;
-   	background: rgba(0,145,240,0.2);
-   }
-   .rc {
-   	color: #648290;
-   	background: rgba(100,130,144,0.2);
+   .ee {
+   	color: #919155;
+   	background: rgba(145,145,85,0.23);
    }
    .structure {
-   	color: #0091D0;
-   	background: rgba(0,145,208,0.2);
+   	color: #91376A;
+   	background: rgba(145,55,106,0.23);
    }
-   .maths {
-   	color: #FF7300;
-   	background: rgba(255,115,0,0.2);
+   .estimate {
+   	color: #4673A6;
+   	background: rgba(70,115,166,0.23);
    }
-   .te {
-      color: #E02828;
-      background: rgba(224,40,40,0.2);
+   .ce {
+      color: #916446;
+      background: rgba(145,100,70,0.23);
    }
-   .te2 {
-      color: #4673D0;
-      background: rgba(70,115,208,0.2);
-   }   
 .grid-2 {
 	width: 90%;
 	display: flex;
