@@ -11,9 +11,181 @@
 <div class="top">Steel (CE-51024)</div>
 <div class="container">
 
-<h3>Chapter - 1</h3>
+<h3>Chapter - 3</h3>
 
-<p><span>Test</span><br>$$\displaylines{ test }$$</p>
+<h3>Tension Members</h3>
+
+<p><span>Properties of Steel</span><br>$$\displaylines{ 
+\textsf{From Table 2.1.1},\\
+\textsf{A36}\Rightarrow F_y=36\,ksi,\,F_u=58\,ksi\\
+\textsf{A572 Grade 50}\Rightarrow F_y=50\,ksi,\,F_u=65\,ksi
+ }$$</p>
+
+<p><span>Net Area</span><br>$$\displaylines{ 
+A_n=A_g-(\,\textsf{Diameter of bolt}+\frac{1''}{8})\\\times\,\textsf{Thickness of plate}\\\\
+A_n=A_g-(\,\textsf{Actual hole diameter}+\frac{1''}{16})\\\times\,\textsf{Thickness of plate}\\\\
+\textsf{Effect of Staggered Holes on Net Area}\\
+A_n=A_g-n\,(\,h\,t\,)+\frac{s^2}{4\,g}\,t
+ }$$</p>
+
+
+<p><span>Effective Net Area</span><br>$$\displaylines{ 
+A_e=U\,A_n\\
+U=1-\frac{\bar{x}}{L}\le 0.9
+ }$$</p>
+
+<p><span>Design Strength</span><br>$$\displaylines{ 
+\phi_t\,T_n\ge T_u=1.2\,DL+1.6\,LL\\\\
+\textsf{Yielding in gross section}\\
+\phi_t\,T_n=\phi_t\,F_y\,A_g=0.9\,F_y\,A_g\\\\
+\textsf{Fracture in net section}\\
+\phi_t\,T_n=\phi_t\,F_u\,A_e=0.75\,F_u\,A_e\\\\
+\textsf{(Smaller control)}
+ }$$</p>
+
+<p><span>Tearing Failure at Bolt Holes</span><br>$$\displaylines{ 
+\textsf{Shear Yielding - Tension Fracture}\\
+(\,F_u\,A_{nt}\ge 0.6\,F_u\,A_{nv}\,)\\
+T_n=0.6\,F_y\,A_{gv}+F_u\,A_{nt}\\\\
+
+\textsf{Shear Fracture - Tension Yielding}\\
+(\,F_u\,A_{nt}\lt 0.6\,F_u\,A_{nv}\,)\\
+T_n=0.6\,F_u\,A_{nv}+F_y\,A_{gt}\\\\
+T_n=\textsf{nominal strength of a tension member}\\
+A_{gv}=\textsf{gross area acted upon by shear}\\
+A_{gt}=\textsf{gross area acted upon by tension}\\
+A_{nv}=\textsf{net area acted upon by shear}\\
+A_{nt}=\textsf{net area acted upon by tension}\\
+F_u=\textsf{minimum tensile strength}\\
+F_y=\textsf{minimum yield stress}
+ }$$</p>
+
+<h3>Chapter - 4</h3>
+
+<h3>Structural Fasteners</h3>
+
+<p><span>Design Tensile Strength</span><br>$$\displaylines{ 
+\phi\,R_{nt}=\phi\,(\,0.75\,F_u^b\,)\,A_b\\\\
+\phi=0.75
+ }$$</p>
+
+<p><span>Design Shear Strength</span><br>$$\displaylines{ 
+\textsf{No threads in shear plane (threads excluded)}\\
+\phi\,R_n=\phi\,(\,0.5\,F_u^b\,)\,m\,A_b\\\\
+\textsf{Threads in shear plane (threads included)}\\
+\phi\,R_n=\phi\,(\,0.4\,F_u^b\,)\,m\,A_b\\\\
+\phi=0.75\\
+F_u^b\Rightarrow\textsf{Table 4.1.1}\\
+m=\textsf{number of shear planes participating}\\
+A_b=\textsf{gross cross-sectional area across}\\\textsf{the unthreaded shank of the bolt}\\\\
+\phi\,R_{nv}\ge V_u\\
+\textsf{Required n}=\frac{\sum\,A_b}{A_b}
+ }$$</p>
+
+<p><span>Design Bearing Strength</span><br>$$\displaylines{ 
+\textsf{For all holes except long-slotted holes}\\\textsf{perpendicular to the line of force}\\
+\phi\,R_n=\phi\,(\,2.4\,d\,t\,F_u\,)\\
+\phi=0.75\\
+d=\textsf{nominal diameter of bolt}\\\textsf{at unthreaded area}\\
+t=\textsf{thickness of part against which bolt bears}\\\\
+\textsf{Number of bolts}=\frac{\phi_t\,T_n}{\phi\,R_n}\\\\
+\textsf{End distance},\,L_e\ge 1.5\,d\\
+L_e\ge\frac{P}{\phi\,F_u\,t}\\
+\textsf{Center-to-center spacing},\,s\ge 3\,d\\
+\textsf{Minimum edge distance}\Rightarrow\textsf{Table 4.7.2}
+ }$$</p>
+
+<h3>Combined Shear and Tension</h3>
+
+<p><span>Bearing-Type Connection</span><br>$$\displaylines{ 
+\textsf{Design tension stress limit (Table 4.14.1)}\\\\
+\textsf{For A325-X bolts},\\
+\phi\,F_{ut}'=\phi\,(\,117-1.5\,f_{uv}\,)\le \phi\,90\\\\
+\textsf{For A325-N bolts},\\
+\phi\,F_{ut}'=\phi\,(\,117-1.9\,f_{uv}\,)\le \phi\,90\\\\
+\sum\,T_u=\phi\,F_{ut}'\,\sum\,A_b\\
+\sum\,V_u=f_{uv}\,\sum\,A_b
+ }$$</p>
+
+<p><span>Slip-Critical Connection</span><br>$$\displaylines{ 
+\textsf{For A325 bolts in standard holes},\\
+f_v\le\left[\,F_v'=17\left(\,1-\frac{T}{T_b}\,\right)\,\right]\\\\
+\textsf{For A490 bolts in standard holes},\\
+f_v\le\left[\,F_v'=21\left(\,1-\frac{T}{T_b}\,\right)\,\right]\\\\
+\sum\,V=F_v'\,\sum\,A_b\\
+T_b\Rightarrow\textsf{Table 4.4.1}
+ }$$</p>
+
+<h3>Chapter -5</h3>
+
+<h3>Welding</h3>
+
+<p><span>Fillet Welds</span><br>$$\displaylines{ 
+\textsf{From Figure 5.11.2},\\
+t\lt\frac{1''}{4}\Rightarrow a_{\textsf{max}}=t\\
+t\ge\frac{1''}{4}\Rightarrow a_{\textsf{max}}=t-\frac{1''}{16}\\
+\textsf{Minimum a}\Rightarrow\textsf{Table 5.11.1}\\\\
+\textsf{Effective throat dimension},\,t_e\\
+\textsf{Except SAW},\,t_e=0.707\,a\\\\
+\textsf{For SMAW},\\
+a\le\frac{3}{8}\Rightarrow t_e=a\\
+a\gt\frac{3}{8}\Rightarrow t_e=0.707\,a+0.11\\\\
+\textsf{For fillet weld},\\
+\phi\,R_{nw}=\phi\,t_e\,(\,0.6\,F_{EXX}\,)\\\\
+\textsf{For base metal},\\
+\phi\,R_{nw}=\phi\,t\,(\,0.6\,F_u\,)\\\\
+F_{EXX}\Rightarrow\textsf{Table 5.13.1}\\
+t=\textsf{thickness of base material}\\
+F_u=\textsf{tensile strength of base metal}\\\\
+\textsf{The strength provided by fillet weld},\\
+T=L_w\,\phi\,R_{nw}\\
+\textsf{The strength provided by plug/slot weld},\\
+T=\phi\,R_{nw}=0.75\times\textsf{faying area}\times 0.6\,F_{EXX}\\\\
+\textsf{Tensile capacity of plate}\\
+\phi\,T_n=0.9\,F_y\,A_g\\
+\phi\,T_n=0.75\,F_u\,A_e\\
+A_e=U\,A_n=1\times A_n=A_g\\
+\phi\,T_n\ge T_u\\\\
+\textsf{Required }L_w=\frac{T_u}{\phi\,R_{nw}}
+ }$$</p>
+
+<p><span>Slot Welds</span><br>$$\displaylines{ 
+\textsf{Minimum width of a slot}=t+\frac{5}{16}\\
+\textsf{Maximum width of a slot}=2\frac{1}{4}\,t_w\\
+\textsf{Maximum length of slot}=10\,(\textsf{weld thickness})
+ }$$</p>
+
+<h3>Chapter - 6</h3>
+
+<h3>Compression Members</h3>
+
+<p><span>Columns</span><br>$$\displaylines{ 
+P_u=1.2\,DL+1.6\,LL\\
+K\Rightarrow\textsf{Figure 6.9.5}\\\\
+\lambda_c=\frac{KL}{r}\sqrt{\frac{F_y}{\pi^2\,E}}\\\\
+\lambda_c\le 1.5\Rightarrow F_{cr}=(\,0.658^{Q\,\lambda_c^2}\,)\,Q\,F_y\\
+\lambda_c\gt 1.5\Rightarrow F_{cr}=\left(\frac{0.877}{\lambda_c^2}\right)\,F_y\\\\
+Q=1\\
+E=29\times 10^3\,ksi\\
+\frac{L}{r}=\textsf{slenderness ratio}=70\sim 80\\
+F_{cr}\Rightarrow\textsf{Table 6.9.1}\\
+\phi_c\,P_n\ge P_u\\
+\phi_c\,F_{cr}\,A_g=P_u\\\\
+\textsf{For equal strength with respect to the}\\\textsf{x-and y-axes},\\
+\frac{(KL)_x}{r_x}=\frac{(KL)_y}{r_y}\\
+\frac{r_x}{r_y}=\frac{(KL)_x}{(KL)_y}\\\\
+\textsf{Weak axis control},\\
+\frac{(KL)_y}{r_y}\Rightarrow\textsf{Table 6.9.1}\Rightarrow F_{cr}=?\\\\
+\textsf{Strong axis control}\Rightarrow (KL)_y=?\\
+\frac{(KL)_y}{r_y}\Rightarrow\textsf{Table 6.9.1}\Rightarrow F_{cr}=?\\\\
+\phi_c\,P_n=\phi_c\,F_{cr}\,A_g\ge P_u\quad\textsf{(OK)}
+ }$$</p>
+
+<p><span>Restraint Factor</span><br>$$\displaylines{ 
+G_{\textsf{top}}=\frac{\sum\,(\,EI/L\,)_{\textsf{col}}}{\sum\,(\,EI/L\,)_{\textsf{beam}}}\\\\
+G_{\textsf{bottom}}=10\,\textsf{(for hinged support)}\\\\
+K\Rightarrow\textsf{Figure 6.9.4}
+ }$$</p>
 
 <br>
 </div>

@@ -11,9 +11,212 @@
 <div class="top">Hydraulic (CE-51016)</div>
 <div class="container">
 
-<h3>Chapter - 1</h3>
+<h3>Chapter - 7</h3>
 
-<p><span>Test</span><br>$$\displaylines{ test }$$</p>
+<h3>Reservior Planning</h3>
+
+<p><span>Trapezoidal Formula</span><br>$$\displaylines{ 
+V=\frac{h}{2}\,[\,A_1+2\,A_2+2\,A_3\,+\,...\\+\,2\,A_{n-1}+A_n\,]
+ }$$</p>
+
+<p><span>Cone Formula</span><br>$$\displaylines{ 
+\Delta\,V_1=\frac{h}{3}\,(\,A_1+A_2+\sqrt{A_1\,A_2}\,)\\\\
+V=\Delta\,V_1+\Delta\,V_2+\Delta\,V_3\,+\,...\,=\sum\,\Delta\,V
+ }$$</p>
+
+<p><span>Prismoidal Formula</span><br>$$\displaylines{ 
+V=\frac{h}{3}\,[\,(\,A_1+A_n\,)\\+\,4\,(\,A_2+A_4+A_6\,+\,...\,)\\+\,2\,(\,A_3+A_5\,+\,...\,)\,]\\\\
+\textsf{The prismoidal formula is applicable only}\\\textsf{when there are odd numbers of areas}\\\textsf{(i.e. n should be an odd number).}\\\\
+n=\textsf{even}\Rightarrow V=V_1+V_2
+ }$$</p>
+
+<p><span>Analytical Method</span><br>$$\displaylines{ 
+\textsf{Adjusted inflow}=\textsf{Stream inflow}\\+\,\textsf{Precipitation}-\textsf{Evaporation}\\-\,\textsf{Downstream Discharge}\\\\
+\textsf{Storage required}=\textsf{Adjusted inflow}-\textsf{Demand}\\\\
+\textsf{1 cumec-month}=1\times 60\times 60\times 24\times 30\\=259.2\,ha\textsf{-}m
+ }$$</p>
+
+<h3>Chapter - 11</h3>
+
+<h3>Gravity Dams</h3>
+
+<p><span>Notes</span><br>$$\displaylines{ 
+\textsf{Concrete unit weight},\,\omega_c=24\,kN/m^3\\
+\textsf{Water unit weight},\,\omega=9.81\,kN/m^3\,(10\,kN/m^3)\\\\
+\textsf{Water pressure (u/s)},\\
+P_H=\frac{1}{2}\times\omega\,H\times H=\frac{\omega\,H^2}{2}\\\\
+\textsf{Tail water pressure (d/s)},\\
+P_{H'}=\frac{\omega\,(\,H'\,)^2}{2}\\\\
+p=\omega\,H\quad\quad p'=\omega\,H'
+ }$$</p>
+
+<p><span>Earthquake Forces on Water</span><br>$$\displaylines{ 
+h\gt\frac{H}{2}\Rightarrow\textsf{Consider u/s face vertical.}\\
+C_m=0.735\,(\,1-\frac{\phi}{90°}\,)\\
+p_e=C\,\alpha_h\,\omega\,H\\
+P_e=0.726\,(\,p_e\,H\,)\\
+M_e=0.299\,(\,p_e\,H^2\,)
+ }$$</p>
+
+<p><span>Tension Failure</span><br>$$\displaylines{ 
+\bar{x}=\frac{\sum\,M}{\sum\,V}\\
+e=\frac{B}{2}-\bar{x}\\
+e\lt\frac{B}{6}\Rightarrow\textsf{There is no tension.}\\
+e\gt\frac{B}{6}\Rightarrow\textsf{Tension is developed.}
+ }$$</p>
+
+<p><span>Vertical Stresses at the Base of the Dam</span><br>$$\displaylines{ 
+\textsf{Reservior Full}\\
+\textsf{At toe (d/s) edge},\,f_{yd}=\frac{\sum\,V}{B}\,(\,1+\frac{6\,e}{B}\,)\\
+\textsf{At heel (u/s) edge},\,f_{yu}=\frac{\sum\,V}{B}\,(\,1-\frac{6\,e}{B}\,)\\\\
+\textsf{Reservior Empty}\\
+\textsf{At toe (d/s) edge},\,f_{yd}=\frac{\sum\,V}{B}\,(\,1-\frac{6\,e}{B}\,)\\
+\textsf{At heel (u/s) edge},\,f_{yu}=\frac{\sum\,V}{B}\,(\,1+\frac{6\,e}{B}\,)\\\\
+\textsf{\(f_{yd}\) and \(f_{yu}\)}\\
+\textsf{(+) Compression}\\
+\textsf{(-) Tension}
+ }$$</p>
+
+<p><span>Principal and Shear Stresses</span><br>$$\displaylines{ 
+\textsf{At toe (d/s)}\\
+\sigma_d=f_{yd}\,\sec^2\phi_d-(\,p'-p_e'\,)\,\tan^2\phi_d\\
+\tau_d=[\,f_{yd}-(\,p'-p_e'\,)\,]\,\tan\phi_d\\
+\textsf{No tail water}\Rightarrow p'=0,\,p_e'=0\\
+\sigma_d=f_{yd}\,\sec^2\phi_d\\
+\tau_d=f_{yd}\,\tan\phi_d\\\\
+\textsf{At heel (u/s)}\\
+\sigma_u=f_{yu}\,\sec^2\phi_u-(\,p+p_e\,)\,\tan^2\phi_u\\
+\tau_u=-[\,f_{yu}-(\,p+p_e\,)\,]\,\tan\phi_u\\
+\textsf{Reservior empty}\Rightarrow p=0,\,p_e=0\\
+\sigma_u=f_{yu}\,\sec^2\phi_u\\
+\tau_u=-f_{yu}\,\tan\phi_u\\\\
+\textsf{\(\sigma_d\) and \(\sigma_u\)}\\
+\textsf{(+) Compression}\\
+\textsf{(-) Tension}\\\\
+\textsf{\(\tau_d\) and \(\tau_u\)}\\
+\textsf{(+) Towards upstream}\\
+\textsf{(-) Towards downstream}
+ }$$</p>
+
+<p><span>Failure Due to Overturning</span><br>$$\displaylines{ 
+F_O=\frac{\sum\,M_R}{\sum\,M_O}\gt 1.5\,\textsf{(safe)}
+ }$$</p>
+
+<p><span>Failure Due to Sliding</span><br>$$\displaylines{ 
+F_S=\frac{\mu\,\sum\,V}{\sum\,H}\gt 1\,\textsf{(safe)}\\
+\textsf{Sliding factor},\,SF=\frac{\sum\,H}{\sum\,V}\\
+\textsf{Shear friction factor},\,SFF=\frac{\mu\,\sum\,V+b\,q}{\sum\,H}
+ }$$</p>
+
+<h3>Chapter - 12</h3>
+
+<h3>Embankment Dams</h3>
+
+<h3>Phreatic Line for a Homogeneous Earth Dam with a Horizontal Drainage Blanket</h3>
+
+<p><span>Analytical Method</span><br>$$\displaylines{ 
+\textsf{Page 384 - Figure 12.17}\\\\
+y_0=\sqrt{b^2+h^2}-b\\\\
+y=\sqrt{y_0^2+2\,x\,y_0}\\\\
+q=k\,h\left(\frac{N_f}{N_d}\right)\\
+q=k\,y_0\\\\
+q=\textsf{discharge (cumecs/m)}\\
+k=\textsf{coefficient of permeability}\\
+N_f=\textsf{number of flow channels}\\
+N_d=\textsf{number of equipotential drops}\\
+N_f/N_d=\textsf{shape factor}
+ }$$</p>
+
+<h3>Phreatic Line for a Homogeneous Earth Dam without any Horizontal Drainage Blanket</h3>
+
+<p><span>Note</span><br>$$\displaylines{ 
+\textsf{Page 386 - Figure 12.18}\\\\
+a+\Delta\,a=\frac{y_0}{1-\cos\alpha}
+ }$$</p>
+
+<h3>Approximate Method for Checking the Stability of Earth Dams</h3>
+
+<p><span>Stability of U/s Slope</span><br>$$\displaylines{ 
+H_u=\frac{\omega_s\,H^2}{2}\,\tan^2\left[\,45°-\frac{\phi}{2}\,\right]+\frac{\omega\,h_1^2}{2}\\\\
+\tau_a=\frac{H_u}{b_u}\\\\
+R_u=W_u'+\tan\phi+c\,b_u\\\\
+\textsf{Factor of safety},\,F_s=\frac{R_u}{H_u}\gt 2\\\\
+\tau_{\textsf{max}}=2\,\tau_a\\\\
+\textsf{Maximum shear stress occurs at a point}\\\textsf{of distance of 0.4 }b_u.\\
+s_{\textsf{max}}=\omega_s'\,h\,\tan\phi+c\\\\
+\textsf{Factor of safety against maximum shear},\\
+F_s'=\frac{s_{\textsf{max}}}{\tau_{\textsf{max}}}\gt 1.5\\\\
+H_u=\textsf{horizontal force acting on U/s of dam}\\
+\omega_s=\textsf{saturated unit weight of soil in U/s}\\
+\omega=\textsf{unit weight of water}\\
+\omega_s'=\textsf{submerged unit weight of soil}\\
+H=\textsf{dam height}\\
+\phi=\textsf{angle of internal friction of soil}\\
+h_1=\textsf{vertical distance from phreatic line to}\\\textsf{base of dam}\\
+\tau_a=\textsf{average shear stress at base}\\
+b_u=\textsf{width of base of U/s of dam}\\
+R_u=\textsf{resisting force against horizontal}\\\textsf{shear stress}\\
+W_u'=\textsf{total effective weight of U/s of dam}\\
+h=\textsf{height at 0.4 }b_u
+ }$$</p>
+
+<p><span>Stability of D/s Slope</span><br>$$\displaylines{ 
+H_d=\frac{\omega_s\,H^2}{2}\,\tan^2\left[\,45°-\frac{\phi}{2}\,\right]+\frac{\omega\,h_1^2}{2}\\\\
+\tau_a=\frac{H_d}{b_d}\\\\
+R_d=W_d+\tan\phi+c\,b_d\\\\
+\textsf{Factor of safety},\,F_s=\frac{R_d}{H_d}\gt 2\\\\
+\tau_{\textsf{max}}=2\,\tau_a\\\\
+\textsf{Maximum shear stress occurs at a point}\\\textsf{of distance of 0.4 }b_d.\\
+s_{\textsf{max}}=\omega_s\,h\,\tan\phi+c\\\\
+\textsf{Factor of safety against maximum shear},\\
+F_s'=\frac{s_{\textsf{max}}}{\tau_{\textsf{max}}}\gt 1.5\\\\
+H_d=\textsf{horizontal force acting on D/s of dam}\\
+\omega_s=\textsf{weighted unit weight of soil in U/s}\\
+\omega=\textsf{unit weight of water}\\
+H=\textsf{dam height}\\
+\phi=\textsf{angle of internal friction of soil}\\
+h_1=\textsf{vertical distance from phreatic line to}\\\textsf{base of dam}\\
+\tau_a=\textsf{average shear stress at base}\\
+b_d=\textsf{width of base of D/s of dam}\\
+R_d=\textsf{resisting force against sliding}\\
+W_d=\textsf{total effective weight of D/s of dam}\\
+h=\textsf{height at 0.4 }b_d
+ }$$</p>
+
+<h3>Chapter - 14</h3>
+
+<h3>Spillways</h3>
+
+<p><span>Discharge Computation for an Ogee Spillway</span><br>$$\displaylines{ 
+\textsf{Assume }C_d=2.2,\,L'=L_e\\
+Q=C_d\,L_e\,H_e^{\frac{3}{2}}\\
+C_d=\textsf{Coefficient of discharge}\\\\
+\textsf{Effect of height of spillway above}\\\textsf{stream bed},\,H_D\\
+\frac{P}{H_D}=\frac{P}{H_e}\gt 2\Rightarrow\textsf{No effect on \(C_d\)}\\
+H_D\sim H_d\quad\textsf{(\(H_a\) neglected)}\\\\
+\textsf{Effect of actual head},\,H_e\\
+\textsf{If }H_e\sim H_d\Rightarrow\frac{H_e}{H_D}=1\Rightarrow\textsf{No effect on \(C_d\)}\\\\
+\textsf{Effect of upstream slope}\\
+\textsf{Assume u/s face of spillway as vertical.}\\
+\textsf{No effect on \(C_d\).}\\\\
+\textsf{Effect of downstream apron}\\
+h_d+d=P+H_D\\
+\frac{h_d+d}{H_D}\gt 1.7\Rightarrow\textsf{No effect on \(C_d\)}\\\\
+\therefore\textsf{Take \(C_d\) as 2.2.}\\\\
+K_p\Rightarrow\textsf{Table (14.3)}\\
+K_a\Rightarrow\textsf{Table (14.4)}\\\\
+\textsf{Effective length of crest, }L_e\\
+L_e=L'-2\,(\,N\,K_p+K_a\,)\,H_D\\\\
+\textsf{Downstream profile}\\
+x^n=K\,H_d^{n-1}\,y\\
+K,\,n\Rightarrow\textsf{Table (14.1)}\\
+\textsf{Velocity},\,v=\frac{Q}{A}\\
+\textsf{Velocity head},\,H_a=\frac{v^2}{2\,g}\\\\
+\textsf{Upstream Profile}\\
+y=\frac{0.724\,(\,x+0.27\,H_d\,)^{1.85}}{(\,H_d\,)^{0.85}}+0.126\,H_d\\-\,0.4315\,(\,H_d\,)^{0.375}\times (\,x+0.27\,H_d\,)^{0.625}\\\\
+x=0.27\,H_d\\
+y=0.126\,H_d
+ }$$</p>
 
 <br>
 </div>

@@ -75,14 +75,13 @@
     	text-align: center;
     	padding: 0.46rem;
     	width: auto;
-      display: none;
     }
     </style>
     </head>
   <body>
   <div class="container" >
     <p style="position: fixed; top: 0; z-index: 999; margin: 0; width: 100%; border-top: 0; text-align: center; padding: 0.64rem;">
-    Last updated:&emsp;02/02/2025 05:56:08 PM
+    Last updated:&emsp;09/03/2025 10:00:06 AM
     </p>
     <h3 style="color: #fff; font-size: 1rem;">V B.E. Civil Engineering Formulas (Sem I)</h3>
     <p id="count" ></p>
@@ -118,7 +117,7 @@
 
 </div>
 <script>
-var countDownDate = new Date("April 1, 2024 12:00:00").getTime();
+var countDownDate = new Date("March 24, 2025 9:00:00").getTime();
 var x = setInterval(function() {
 var now = new Date().getTime();
 var distance = countDownDate - now;
@@ -127,10 +126,10 @@ var hours = Math.floor((distance % (1000 * 60  * 60 * 24)) / (1000 * 60 * 60));
 var minutes = Math.floor((distance % (1000 * 60  * 60)) / (1000 * 60));
 var seconds = Math.floor((distance % (1000 * 60)) / 1000);
 document.getElementById("count").innerHTML = "<b>" + days + "d " + hours + "h "
-+ minutes + "m " + seconds + "s " + "</b> left to finish the exam.";
++ minutes + "m " + seconds + "s " + "</b> left to start the exam.";
 if (distance < 0) {
 	clearInterval(x);
-	document.getElementById("count").innerHTML = "The exam has finished!";
+	document.getElementById("count").innerHTML = "Exam Period.";
 }
 }, 1000);
 </script>

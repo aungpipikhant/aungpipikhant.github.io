@@ -11,9 +11,112 @@
 <div class="top">Structure (CE-51013)</div>
 <div class="container">
 
-<h3>Chapter - 1</h3>
+<h3>Chapter - 2</h3>
 
-<p><span>Test</span><br>$$\displaylines{ test }$$</p>
+<h3>Finite Element Method</h3>
+
+<p><span>Notes</span><br>$$\displaylines{ 
+\textsf{The stiffness matrix for spring element is}\\
+\hat{\underline{k}}=\begin{bmatrix}
+\,\,\,\,k & -k\,\,\,\\
+-k & \,\,\,\,k\,\,\,
+\end{bmatrix}\\\\
+\textsf{Global equation}\Rightarrow\underline{F}=\underline{K}\,\underline{d}\\
+\underline{F}=\textsf{Global nodal force matrix}\\
+\underline{K}=\textsf{Global stiffness matrix}\\
+\underline{d}=\textsf{Global nodal displacement matrix}\\\\
+\textsf{Local equation}\Rightarrow\hat{\underline{f}}=\hat{\underline{k}}\,\hat{\underline{d}}\\
+\textsf{For element 1 between node 1 and 2},\\
+\begin{Bmatrix}
+\hat{f}_{1x}\\
+\hat{f}_{2x}
+\end{Bmatrix}=
+\begin{bmatrix}
+\,\,\,\,k_1 & -k_1\,\,\,\\
+-k_1 & \,\,\,\,k_1\,\,\,
+\end{bmatrix}
+\begin{Bmatrix}
+\hat{d}_{1x}\\
+\hat{d}_{2x}
+\end{Bmatrix}
+ }$$</p>
+
+<h3>Chapter - 4</h3>
+
+<h3>Force Method of Analysis</h3>
+
+<p><span>Flexibility Method</span><br>$$\displaylines{ 
+\textsf{Given loads on coordinate system}\Rightarrow \{\,D\,\}\\
+\textsf{1 unit load on coordinate system}\Rightarrow [\,f\,]\\
+\textsf{Displacements \(\{\,D\,\}\) and \([\,f\,]\)}\Rightarrow\textsf{Appendix B}\\
+[\,f\,]=\textsf{Flexibility matrix}\\\\
+\textsf{Redundants},\,\{\,F\,\}=[\,f\,]^{-1}\{\,\Delta-D\,\}
+ }$$</p>
+
+<h3>Chapter - 5</h3>
+
+<h3>Displacement Method of Analysis</h3>
+
+<p><span>Stiffness Method</span><br>$$\displaylines{ 
+\textsf{Fixed-end forces \(\{\,F\,\}\) and \(\{\,A_r\,\}\)}\Rightarrow\textsf{Appendix C}\\\\
+\textsf{End-forces caused by end-displacements}\\
+[\,S\,],\,[\,A_u\,]\Rightarrow\textsf{Appendix D}\\\\
+\{\,D\,\}=[\,S\,]^{-1}\{\,-F\,\}\\
+\{\,A\,\}=\{\,A_r\,\}+[\,A_u\,]\{\,D\,\}\\\\
+\{\,A\,\}=\textsf{final forces in the member}\\
+\{\,A_r\,\}=\textsf{forces in the member}\\\quad\quad\textsf{in the restrained condition}\\
+[\,A_u\,]=\textsf{forces in the member corresponding}\\\textsf{to unit displacement}\\
+ }$$</p>
+
+<h3>Chapter - 6</h3>
+
+<h3>Use of Force and Displacement Methods</h3>
+
+<p><span>Notes</span><br>$$\displaylines{ 
+\textsf{\(f_{ij}\) is the displacement at coordinate i due to a}\\\textsf{force \(F_j\) = 1 at coordinate j, with no forces}\\\textsf{applied at the remaining coordinates.}\\\\
+\textsf{\(S_{ij}\) is the force at coordinate i when the}\\\textsf{structure is deformed such that \(D_j\) = 1 while}\\\textsf{the displacements are zero at the remaining}\\\textsf{coordinates.}\\\\
+[\,S\,]\Rightarrow\textsf{Reactions of Appendix E}\\
+[\,A_u\,]\Rightarrow\textsf{Moments of Appendix E}
+ }$$</p>
+
+<h3>Chapter - 20</h3>
+
+<h3>Structural Dynamics</h3>
+
+<p><span>Notes</span><br>$$\displaylines{ 
+\textsf{Mass},\,m=\frac{W}{g}\\
+\textsf{Stiffness},\,S=K\Rightarrow\textsf{Appendix E}\\
+\textsf{Natural angular frequency},\,\omega=\sqrt{\frac{S}{m}}\\
+\textsf{Natural period of vibration},\,T=\frac{2\,\pi}{\omega}\\
+\textsf{Amplitude},\,\bar{D}=D_{\text{max}}=\sqrt{D_0^2+\left(\,\frac{\dot{D}_0}{\omega}\,\right)^2}\\
+\textsf{Displacement},\,D_t=\frac{\dot{D}_0}{\omega}\,\sin\omega\,t+D_0\,\cos\omega\,t\\
+D_0=\textsf{Initial displacement}\\
+\dot{D}_0=\textsf{Velocity}\\\\
+m_1=m_2=m,\\
+[\,m\,]=\begin{bmatrix}
+m_1 & 0\\
+0 & m_2
+\end{bmatrix}=
+\begin{bmatrix}
+m & 0\\
+0 & m
+\end{bmatrix}=m
+\begin{bmatrix}
+1 & 0\\
+0 & 1
+\end{bmatrix}\\\\
+[\,m\,]^{-1}=\frac{1}{m}\,\begin{bmatrix}
+1 & 0\\
+0 & 1
+\end{bmatrix}\\\\
+[\,B\,]=[\,m\,]^{-1}[\,S\,]\\\\
+\left|\,[\,B\,]-\omega^2\,[\,I\,]\,\right|=0\\\\
+\left|\,[\,B\,]-\omega^2\,[\,I\,]\,\right|\,\{\,D\,\}=0\\\\
+I=\begin{bmatrix}
+1 & 0\\
+0 & 1
+\end{bmatrix}
+ }$$</p>
 
 <br>
 </div>

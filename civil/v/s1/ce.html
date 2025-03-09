@@ -13,7 +13,182 @@
 
 <h3>Chapter - 1</h3>
 
-<p><span>Test</span><br>$$\displaylines{ test }$$</p>
+<h3>Introduction</h3>
+
+<p><span>Equations</span><br>$$\displaylines{ 
+\textsf{Future amount},\,F=P\,(\,1+i\,)^n\\
+\textsf{Present amount},\,P=\frac{F}{(\,1+i\,)^n}\\
+i=\textsf{interest}\\\\
+\textsf{Functional forms}\\
+\left(\frac{F}{P},\,i,\,n\right)=(\,1+i\,)^n\\
+\left(\frac{P}{F},\,i,\,n\right)=\left(\frac{1}{1+i}\right)^n\\\\
+\textsf{Uniform amount}\\
+A=P\,\left(\frac{A}{P},\,i,\,n\right)\\\\
+A=P\,\left[\,\frac{i\,(\,1+i\,)^n}{(\,1+i\,)^n-1}\,\right]\\\\
+A=F\,\left(\frac{A}{F},\,i,\,n\right)\\\\
+A=F\,\left[\,\frac{1}{(\,1+i\,)^n-1}\,\right]\\\\
+\textsf{Rate of Return Analysis}\Rightarrow NPW=0
+ }$$</p>
+
+<h3>Chapter - 10</h3>
+
+<h3>Foundations</h3>
+
+<p><span>Determining Pile Load Capacity</span><br>$$\displaylines{ 
+R=\left(\,\frac{2\,E}{S+0.1}\,\right)\left(\,\frac{W_r+K\,W_p}{W_r+W_p}\,\right)\\\\
+R=\textsf{safe load (lb)}\\
+S=\textsf{average penetration per blow,}\\\textsf{last six blows (in)}\\
+E=\textsf{energy of hammer (ft-lb)}\\\\
+K=\textsf{coefficient of restitution}\\
+\textsf{0.2 for piles weighing 50 lb/ft or less}\\
+\textsf{0.4 for piles weighing 50 to 100 lb/ft}\\
+\textsf{0.6 for piles weighing over 100 lb/ft}\\\\
+W_r=\textsf{weight of hammer ram (lb)}\\
+W_p=\textsf{weight of pile, including driving}\\\textsf{appurtenances (lb)}
+ }$$</p>
+
+<p><span>Safe Load Capacity of Bulb Piles</span><br>$$\displaylines{ 
+L=\frac{W\times H\times B\times V^{2/3}}{K}\\\\
+L=\textsf{safe load capacity (tons)}\\
+W=\textsf{weight of hammar (tons)}\\
+H=\textsf{height of drop (ft)}\\
+B=\textsf{number of blows per cubic foot}\\
+V=\textsf{uncompacted volume of concrete (cu ft)}\\
+K=\textsf{dimensionless constant}
+ }$$</p>
+
+<h3>Chapter - 13</h3>
+
+<h3>Concrete Form Design</h3>
+
+<p><span>Formwork Design for Concrete Floor Slab</span><br>$$\displaylines{ 
+\textsf{Design load}\\
+\textsf{Assume concrete density}=150\,lb/ft^3\\
+\textsf{Live load}=50\,lb/sq\textsf{-}ft\\\\
+\textsf{Consider a uniformly loaded strip of}\\\textsf{sheathing 12 in wide in deck design.}\\\\
+\textsf{From table 13-5, for 3 or more spans},\\
+\textsf{(smaller control)}\\
+\textsf{Bending}\\
+\textsf{Wood sheathing}\Rightarrow l=4.46\,d\,\left(\frac{F_b\,b}{\omega}\right)^{1/2}\\
+\textsf{Wood joist/stringer}\Rightarrow l=10.95\,\left(\frac{F_b\,S}{\omega}\right)^{1/2}\\\\
+\textsf{Shear}\\
+\textsf{Wood}\Rightarrow l=13.3\,\frac{F_v\,A}{\omega}+2\,d\\\\
+\textsf{Deflection}\\
+\textsf{Deflection limit}=\frac{l}{360}\Rightarrow l=1.69\,\left(\frac{EI}{\omega}\right)^{1/3}\\\\
+A,\,S,\,d,\,I\Rightarrow\textsf{Table 13-7}\\\\
+\textsf{Max stringer span length},\\
+l=\frac{\textsf{Shore strenght}}{\textsf{Stringer load/unit length}}\\\\
+f_{c\perp}=\frac{P}{A}\\
+P=\textsf{Load/unit lenght of joist}\times\textsf{Joist span}\\
+A=\textsf{Joist width}\times\textsf{Stringer width}
+ }$$</p>
+
+<p><span>Formwork Design for Concrete Wall</span><br>$$\displaylines{ 
+C_w\Rightarrow\textsf{Table 13-1}\\
+C_c\Rightarrow\textsf{Table 13-2}\\\\
+p=C_w\,C_c\,\left(150+\frac{9000\,R}{T}\right)\\
+p=\textsf{lateral pressure}\\
+R=\textsf{pour rate}\\
+T=\textsf{concrete temperature}\\
+\textsf{Minimum pressure}=600\,C_w\\\\
+\textsf{Consider a strip 12 in wide.}\\\\
+\textsf{From table 13-5, for 3 or more spans},\\
+\textsf{(smaller control)}\\
+\textsf{Bending}\\
+\textsf{Plywood}\Rightarrow l=10.95\,\left(\frac{F_b\,KS}{\omega}\right)^{1/2}\\
+\textsf{Wood stud/wale}\Rightarrow l=10.95\,\left(\frac{F_b\,S}{\omega}\right)^{1/2}\\\\
+\textsf{Shear}\\
+\textsf{Plywood}\Rightarrow l=20\,\frac{F_s\,lb/Q}{\omega}+2\,d\\
+\textsf{Wood stud/wale}\Rightarrow l=13.3\,\frac{F_v\,A}{\omega}+2\,d\\\\
+\textsf{Deflection}\\
+\textsf{Deflection limit}=\frac{l}{360}\Rightarrow l=1.69\,\left(\frac{EI}{\omega}\right)^{1/3}\\\\
+\textsf{Plywood's }EI,\,F_b\,KS,\,F_s\,lb/Q\Rightarrow\textsf{Table 13-6}\\
+A,\,S,\,d,\,I\Rightarrow\textsf{Table 13-7}\\\\
+\textsf{Check Tie Load}\\
+P=\textsf{Wale spacing}\times\textsf{Tie spacing}\times P\\\\
+\textsf{Check Bearing}\\
+\textsf{Stud on Wales}\\
+\textsf{Load at each panel point (P)}\\
+=\textsf{Load/ft of stud}\times\textsf{Wale spacing (ft)}\\
+f_c=\frac{P}{A}\\\\
+\textsf{Tie Wedges on Wales}\\
+f_{c\perp}=\frac{P}{A}
+ }$$</p>
+
+<h3>Chapter - 14</h3>
+
+<h3>Masonry Construction</h3>
+
+<p><span>Number of Bricks</span><br>$$\displaylines{ 
+\textsf{Number of bricks}\\=\frac{\textsf{Net wall area}}{\textsf{Area of one brick}}\times\textsf{Waste factor}
+ }$$</p>
+
+<p><span>Quantity of Mortar Required</span><br>$$\displaylines{ 
+\textsf{Volume per brick}=t\times W\times(L+H+t)\\
+t=\textsf{joint thickness}\\
+W,\,L,\,H=\textsf{brick's dimensions}\\\\
+\textsf{Volume per wythe}=\textsf{Volume per brick}\\\times\,\textsf{Number of bricks required per wythe}\\\\
+\textsf{Volume between wythes}=\textsf{Joint thickness}\\\times\,\textsf{Net wall area}\\\\
+\textsf{Mortar required}=\textsf{Waste factor}\\\times\,\left(\textsf{Volume/wythe}+\textsf{Volume between wythes}\right)
+ }$$</p>
+
+<p><span>Wind Load on Fresh Masonry</span><br>$$\displaylines{ 
+h_s=\frac{d\,t}{q}\\
+h_s=\textsf{safe unbraced height}\\
+d=\textsf{weight of wall per unit of surface}\\\textsf{(Table 14-4)}\\
+t=\textsf{wall thickness}\\
+q=\textsf{wind force (Table 14-3)}
+ }$$</p>
+
+<h3>Chapter - 17</h3>
+
+<h3>Construction Economics</h3>
+
+<p><span>Straight-Line Method</span><br>$$\displaylines{ 
+D_n=\frac{\textsf{Cost}-\textsf{Salvage}\,(\,-\textsf{tires}\,)}{N}\\
+N=\textsf{equipment life (years)}\\
+n=\textsf{year of life (1, 2, 3, etc.)}
+ }$$</p>
+
+<p><span>Sum-of-the-Years'-Digits Method</span><br>$$\displaylines{ 
+D_n=\frac{\textsf{Year digit}}{\textsf{Sum of years' digits}}\\\times\,\textsf{Amount to be depreciated}\\\\
+\textsf{Sum of years' digits (for a 5-year life)}\\=1+2+3+4+5=15
+ }$$</p>
+
+<p><span>Double-Declining-Balance Method</span><br>$$\displaylines{ 
+D_n=\frac{2}{N}\times\textsf{Book value at beginning of year}
+ }$$</p>
+
+<p><span>IRS-Prescribed Methods</span><br>$$\displaylines{ 
+\textsf{MACRS Method}\\
+\textsf{Annual Depreciation Percentages}\\
+20\%,\,\,32\%,\,\,19.2\%,\,\,11.52\%,\,\,11.52\%,\,\,5.76\%
+ }$$</p>
+
+<p><span>Investment Cost</span><br>$$\displaylines{ 
+\textsf{Avarage investment}=\frac{\textsf{Initial cost}+\textsf{Salvage}}{2}
+ }$$</p>
+
+<p><span>Repair Cost</span><br>$$\displaylines{ 
+\textsf{Hourly repair cost}=\frac{\textsf{Year Digit}}{\textsf{Sum of years' digits}}\\\times\,\frac{\textsf{Lifetime repair cost}}{\textsf{Hours operated}}\\\\
+\textsf{Lifetime repair cost factor}\Rightarrow
+\textsf{Table 17-3}
+ }$$</p>
+
+<p><span>Fuel Cost</span><br>$$\displaylines{ 
+\textsf{Estimated Consumption}=\textsf{Fuel consumption}\\\times\,\textsf{Rated power}\\\\
+\textsf{Fuel consumption}\Rightarrow\textsf{Table 17-1}
+ }$$</p>
+
+<p><span>Service Cost</span><br>$$\displaylines{ 
+\textsf{Service cost}=\textsf{% of hourly fuel cost}\times\textsf{Fuel cost}\\\\
+\textsf{% of hourly fuel cost}\Rightarrow\textsf{Table 17-2}
+ }$$</p>
+
+<p><span>Tire Cost</span><br>$$\displaylines{ 
+\textsf{Estimated tire life}\Rightarrow\textsf{Table 17-4}\\\\
+\textsf{Tire cost}=1.15\times\frac{\textsf{Cost of a set of tires (\$)}}{\textsf{Expected tire life (h)}}
+ }$$</p>
 
 <br>
 </div>
