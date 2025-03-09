@@ -26,18 +26,18 @@
 \underline{K}=\textsf{Global stiffness matrix}\\
 \underline{d}=\textsf{Global nodal displacement matrix}\\\\
 \textsf{Local equation}\Rightarrow\hat{\underline{f}}=\hat{\underline{k}}\,\hat{\underline{d}}\\
-\textsf{For element 1 between node 1 and 2},\\
+\textsf{For element 1 between node 2 and 3},\\
 \begin{Bmatrix}
-\hat{f}_{1x}\\
-\hat{f}_{2x}
+\hat{f}_{2x}\\
+\hat{f}_{3x}
 \end{Bmatrix}=
 \begin{bmatrix}
 \,\,\,\,k_1 & -k_1\,\,\,\\
 -k_1 & \,\,\,\,k_1\,\,\,
 \end{bmatrix}
 \begin{Bmatrix}
-\hat{d}_{1x}\\
-\hat{d}_{2x}
+\hat{d}_{2x}\\
+\hat{d}_{3x}
 \end{Bmatrix}
  }$$</p>
 
@@ -73,6 +73,8 @@
 <h3>Use of Force and Displacement Methods</h3>
 
 <p><span>Notes</span><br>$$\displaylines{ 
+[\,S\,]=[\,f\,]^{-1}\\
+[\,f\,]=[\,S\,]^{-1}\\\\
 \textsf{\(f_{ij}\) is the displacement at coordinate i due to a}\\\textsf{force \(F_j\) = 1 at coordinate j, with no forces}\\\textsf{applied at the remaining coordinates.}\\\\
 \textsf{\(S_{ij}\) is the force at coordinate i when the}\\\textsf{structure is deformed such that \(D_j\) = 1 while}\\\textsf{the displacements are zero at the remaining}\\\textsf{coordinates.}\\\\
 [\,S\,]\Rightarrow\textsf{Reactions of Appendix E}\\
@@ -88,10 +90,10 @@
 \textsf{Stiffness},\,S=K\Rightarrow\textsf{Appendix E}\\
 \textsf{Natural angular frequency},\,\omega=\sqrt{\frac{S}{m}}\\
 \textsf{Natural period of vibration},\,T=\frac{2\,\pi}{\omega}\\
-\textsf{Amplitude},\,\bar{D}=D_{\text{max}}=\sqrt{D_0^2+\left(\,\frac{\dot{D}_0}{\omega}\,\right)^2}\\
+\textsf{Amplitude},\,\bar{D}=D_{\text{max}}=\sqrt{D_0^2+\left(\frac{\dot{D}_0}{\omega}\right)^2}\\
 \textsf{Displacement},\,D_t=\frac{\dot{D}_0}{\omega}\,\sin\omega\,t+D_0\,\cos\omega\,t\\
-D_0=\textsf{Initial displacement}\\
-\dot{D}_0=\textsf{Velocity}\\\\
+D_0=\textsf{initial displacement}\\
+\dot{D}_0=\textsf{velocity}\\\\
 m_1=m_2=m,\\
 [\,m\,]=\begin{bmatrix}
 m_1 & 0\\
