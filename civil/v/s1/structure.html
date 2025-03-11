@@ -21,7 +21,22 @@
 \,\,\,\,k & -k\,\,\,\\
 -k & \,\,\,\,k\,\,\,
 \end{bmatrix}\\\\
-\textsf{Global equation}\Rightarrow\underline{F}=\underline{K}\,\underline{d}\\
+\textsf{Global equation}\Rightarrow\underline{F}=\underline{K}\,\underline{d}\\\\
+\textsf{Example:}\quad\underline{K}\,\underline{d}=\underline{F}\\\\
+\begin{bmatrix}
+k&-k&0&0&0\\
+-k&2k&-k&0&0\\
+0&-k&2k&-k&0\\
+0&0&-k&2k&-k\\
+0&0&0&-k&k
+\end{bmatrix}
+\begin{Bmatrix}
+d_{1x}\\d_{2x}\\d_{3x}\\d_{4x}\\d_{5x}
+\end{Bmatrix}=
+\begin{Bmatrix}
+F_{1x}\\F_{2x}\\F_{3x}\\F_{4x}\\F_{5x}
+\end{Bmatrix}
+\\\\
 \underline{F}=\textsf{Global nodal force matrix}\\
 \underline{K}=\textsf{Global stiffness matrix}\\
 \underline{d}=\textsf{Global nodal displacement matrix}\\\\
@@ -64,7 +79,7 @@
 \{\,D\,\}=[\,S\,]^{-1}\{\,-F\,\}\\
 \{\,A\,\}=\{\,A_r\,\}+[\,A_u\,]\{\,D\,\}\\\\
 \{\,A\,\}=\textsf{final forces in the member}\\
-\{\,A_r\,\}=\textsf{forces in the member}\\\quad\quad\textsf{in the restrained condition}\\
+\{\,A_r\,\}=\textsf{forces in the member}\\\textsf{in the restrained condition}\\
 [\,A_u\,]=\textsf{forces in the member corresponding}\\\textsf{to unit displacement}\\
  }$$</p>
 
