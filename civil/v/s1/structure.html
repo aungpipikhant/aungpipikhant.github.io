@@ -65,6 +65,12 @@ F_{1x}\\F_{2x}\\F_{3x}\\F_{4x}\\F_{5x}
 \textsf{1 unit load on coordinate system}\Rightarrow [\,f\,]\\
 \textsf{Displacements \(\{\,D\,\}\) and \([\,f\,]\)}\Rightarrow\textsf{Appendix B}\\
 [\,f\,]=\textsf{Flexibility matrix}\\\\
+\textsf{Example:}\\
+\quad\quad\quad\textsf{case 1}\quad\textsf{case 2}\\
+[\,f\,]=\begin{bmatrix}
+f_{11}&f_{12}\\
+f_{21}&f_{22}
+\end{bmatrix}\\\\
 \textsf{Redundants},\,\{\,F\,\}=[\,f\,]^{-1}\{\,\Delta-D\,\}
  }$$</p>
 
@@ -76,6 +82,13 @@ F_{1x}\\F_{2x}\\F_{3x}\\F_{4x}\\F_{5x}
 \textsf{Fixed-end forces \(\{\,F\,\}\) and \(\{\,A_r\,\}\)}\Rightarrow\textsf{Appendix C}\\\\
 \textsf{End-forces caused by end-displacements}\\
 [\,S\,],\,[\,A_u\,]\Rightarrow\textsf{Appendix D}\\\\
+\textsf{Example }[\,S\,]:\\
+\quad\quad\quad\textsf{case 1}\quad\textsf{case 2}\quad\textsf{case 3}\\
+[\,S\,]=\begin{bmatrix}
+S_{11}&S_{12}&S_{13}\\
+S_{21}&S_{22}&S_{23}\\
+S_{31}&S_{32}&S_{33}
+\end{bmatrix}\\\\
 \{\,D\,\}=[\,S\,]^{-1}\{\,-F\,\}\\
 \{\,A\,\}=\{\,A_r\,\}+[\,A_u\,]\{\,D\,\}\\\\
 \{\,A\,\}=\textsf{final forces in the member}\\
