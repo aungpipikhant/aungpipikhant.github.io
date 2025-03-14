@@ -160,7 +160,7 @@ v_d\approx 18\,v_s\\\\
  }$$</p>
 
 <p><span>Coagulation Sedimentation Tank</span><br>$$\displaylines{ 
-\textsf{Alum and iron flocs absorb and entrain water}\\\textsf{and reduce the specific gravity to as little}\\\textsf{as 1.002. Diameter of alum and iron floc,}\\\textsf{d = 0.1 cm. Settling velocity at 26°C,}\\v_s=0.12\,cm/sec.\\\\
+\textsf{Alum and iron flocs absorb and entrain water}\\\textsf{and reduce the specific gravity to as little}\\\textsf{as 1.002. Diameter of alum and iron flocs,}\\\textsf{d = 0.1 cm. Settling velocity at 26°C,}\\v_s=0.12\,cm/sec.\\\\
 \textsf{Surface loading}=864000\,v_s\,\,litres/day/m^2\\\\
 \textsf{Design surface loading}\\=\textsf{52% of surface loading}\\\\
 \textsf{Surface area}=\frac{Q}{\textsf{Design surface loading}}\\\\
@@ -202,12 +202,16 @@ y=\textsf{depth of water}\\\\
 \textsf{Provide a free board of 5 cm.}
  }$$
 
-<p><span>🌹 Rose Equation for Head Loss</span><br>$$\displaylines{ 
+<p><span>Rose Equation for Head Loss</span><br>$$\displaylines{ 
 R=\frac{v_s\,d}{\nu}\\\\
 R\lt 1.9\Rightarrow C_D=\frac{24}{R}\\
-R\gt 1.9\Rightarrow C_D=\frac{b}{R^n}\\
-b,\,n\Rightarrow\textsf{Table 9.1}\\\\
-h_f=\frac{1.067\,v_s^2\,L}{g\,\phi\,e^4}\sum_{i=1}^n\,C_{Di}\,\frac{x_i}{d_i}
+R\gt 1.9\textsf{ to }500\Rightarrow C_D=\frac{b}{R^n}\\
+b=18.5,\,n=0.6\quad\textsf{(Table 9.1)}\\\\
+h_f=\frac{1.067\,v_s^2\,L}{g\,\phi\,e^4}\sum_{i=1}^n\,C_{Di}\,\frac{x_i}{d_i}\\\\
+\phi_s=\textsf{shape factor}\\
+e=\textsf{porosity}\\
+C_{Di}=\textsf{drag coefficient for }d_i\\
+x_i=\textsf{Wt. fraction of particles retained}\\
  }$$</p>
 
 <p><span>Carmen-Kozney Equation</span><br>$$\displaylines{ 
@@ -244,7 +248,7 @@ B.H.P.=\frac{Q\,\omega\,H}{75\,\eta}
 H_f=\frac{f\,L\,v^2}{2\,g\,d}=\frac{f\,L\,Q^2}{2\,g\,\left(\frac{\pi}{4}\right)^2\,d^5}
  }$$</p>
 
-<p><span>Bernouli's Theorem</span><br>$$\displaylines{ 
+<p><span>Bernoulli's Theorem</span><br>$$\displaylines{ 
 \textsf{Between B and D},\\
 Z_B+P_B=Z_D+P_D+H_f\\
 Z_B+P_B=Z_D+\frac{p_a}{\omega}+H_f
@@ -265,7 +269,10 @@ S=\frac{h_f}{L}=\frac{n^2\,V^2}{0.157\,D^{4/3}}
  }$$</p>
 
 <p><span>Hazen-William's Formula</span><br>$$\displaylines{ 
-V=0.354\,C\,D^{0.63}\,S^{0.54}
+V=0.354\,\,C\,D^{0.63}\,S^{0.54}\\\\
+\frac{4\,Q}{\pi\,D^2}=0.354\,\,C\,D^{0.63}\left(\frac{h_f}{L}\right)^{0.54}\\\\
+Q=0.278\,\,C\,D^{2.63}\left(\frac{h_f}{L}\right)^{0.54}\\\\
+h_f=10.7\,\left(\frac{Q}{C}\right)^{1.852}\frac{L}{D^{4.87}}
  }$$</p>
 
 <p><span>Slitchers Formula for f</span><br>$$\displaylines{ 
