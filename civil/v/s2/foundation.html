@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Foundation (CE-52015)</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="../style.css">
+    <script src="../../mathjax/es5/tex-mml-chtml.js"></script>
+    </head>
+  <body>
+<div class="top">Foundation (CE-52015)</div>
+<div class="container">
+
+<h3>Chapter 5</h3>
+
+<h3>Ultimate Bearing Capacity of Shallow Foundations</h3>
+
+<p><span>Terzaghi's Ultimate Bearing Capacity Equation</span><br>$$\displaylines{ 
+\textsf{Continuous Foundation Supported by a Soil}\\\textsf{with a Rigid Base at Shallow Depth}\\\\
+q_u=c'\,N_c+q\,N_q+\frac{1}{2}\,\gamma\,B\,N_{\gamma}\\\\
+q_u=\textsf{ultimate bearing capacity}\\
+c'=\textsf{cohesion of soil}\\\\
+\textsf{Mandel and Salencon (1972)}\\
+q_u=c'\,N_c^*+q\,N_q^*+\frac{1}{2}\,\gamma\,B\,N_{\gamma}^*\\
+N_c^*\,,\,N_q^*\,,\,N_{\gamma}^*=\textsf{modified bearing}\\\textsf{capacity factors (Figures 5.3, 5.4, 5.5)}
+\\\\
+\phi=\textsf{angle of internal friction}\\
+\gamma=\textsf{unit weight of soil}\\
+B=\textsf{width of foundation}\\
+\textsf{Uniform surcharge,}\,q=\gamma\,D_f\\
+D_f=\textsf{depth of foundaion}
+}$$</p>
+
+<p><span>Factor of Safety</span><br>$$\displaylines{ 
+FS\ge 3\\\\
+\textsf{Gross Allowable Bearing Capacity}\\
+q_{\textsf{all}}=\frac{q_u}{FS}\\\\
+\textsf{Gross Allowable Load}\\
+Q_{\textsf{all}}=\frac{q_u\, A}{FS}\\\\
+\textsf{Net Allowable Bearing Capacity}\\
+q_{u\textsf{ (net)}}=q_u-q
+}$$</p>
+
+<p><span>Rectangular Foundation on Granular Soil</span><br>$$\displaylines{ 
+q_u=q\,N_q^*\,F_{qs}^*+\frac{1}{2}\,\gamma\,B\,N_{\gamma}^*\,F_{\gamma s}^*\\\\
+F_{qs}^*\,,\,F_{\gamma s}^*=\textsf{modified shape factors}\\\\
+F_{qs}^*=1-m_1\left(\frac{B}{L}\right)\\\\
+F_{\gamma s}^*=1-m_2\left(\frac{B}{L}\right)\\\\
+m_1\,,\,m_2\Rightarrow\textsf{Figure 5.6}
+}$$</p>
+
+<p><span>Square Foundation on Saturated Clay</span><br>$$\displaylines{ 
+q_u=5.14\left(1+\frac{0.5\,\frac{B}{H}-0.707}{5.14}\right)\,c_u+q
+}$$</p>
+
+<p><span>Foundation on Layered Clay (Reddy and Srinivasan (1967))</span><br>$$\displaylines{ 
+\\\textsf{For undrained loading (\(\phi\) = 0 condition),}\\
+c_{u(1)}\,,\,c_{u(2)}=\textsf{shear strength of upper and}\\\quad\textsf{lower clay layers}\\\\
+q_u=c_{u(1)}\,N_c\,F_{cs}\,F_{cd}+q\\\\
+F_{cs}\,,\,F_{cd}\Rightarrow\textsf{Table 4.3 (Page 170)}\\
+N_q\Rightarrow\textsf{Table 4.2 (Page 169)}\\\\
+\textsf{For layered soils, the value of \(N_c\)}\\\textsf{is not a constant. Use Figure 5.8b.}
+}$$</p>
+
+<p><span>Stronger Soil Underlain by Weaker Soil (Meyorhof and Hanna (1978) and Meyerhof (1974))</span><br>$$\displaylines{ 
+\\\textsf{Special cases}\Rightarrow\textsf{Page 229}\\
+N_q\,,\,N_{\gamma}\Rightarrow\textsf{Table 4.2 (Page 169)}\\
+\textsf{Punching shear coefficient},\,K_s\Rightarrow\textsf{Figure 5.10}\\
+F_{qs}\,,\,F_{\gamma s}\Rightarrow\textsf{Table 4.3 (Page 170)}\\\\
+q_u\le q_t\quad\textsf{(OK)}
+}$$</p>
+
+<p><span>Weaker Soil Underlain by Stronger Soil (Meyorhof and Hanna (1978) and Meyerhof (1974))</span><br>$$\displaylines{ 
+\\q_2/q_1\gt 1\\
+q_1=c_1'\,N_{c(1)}+\frac{1}{2}\,\gamma_1\,B\,N_{\gamma(1)}\\
+q_2=c_2'\,N_{c(2)}+\frac{1}{2}\,\gamma_2\,B\,N_{\gamma(2)}\\\\
+q_t=c_1'\,N_{c(1)}\,F_{cs(1)}+\gamma_1\,D_f\,N_{q(1)}\,F_{qs(1)}\\+\,\frac{1}{2}\,\gamma_1\,B\,N_{\gamma(1)}\,F_{\gamma s(1)}\\\\
+q_b=c_2'\,N_{c(2)}\,F_{cs(2)}+\gamma_2\,D_f\,N_{q(2)}\,F_{qs(2)}\\+\,\frac{1}{2}\,\gamma_2\,B\,N_{\gamma(2)}\,F_{\gamma s(2)}\\\\
+q_u=q_t+(\,q_b-q_t\,)\left(\frac{H}{D}\right)^2\ge q_t\\\\
+D\approx B\textsf{ for loose sand and clay}\\
+D\approx 2B\textsf{ for dense sand}\\\\
+\textsf{Vesic (1975)}\\
+q_u=c_{u(1)}\,m\,N_c\,F_{cs}\,F_{cd}+q\\
+m\Rightarrow\textsf{Table 5.2, 5.3}
+}$$</p>
+
+<p><span>Bearing Capacity of Foundations on Top of a Slope (Meyerhof (1957))</span><br>$$\displaylines{ 
+\\\textsf{For purely granular soil, \(c'\) = 0},\\
+q_u=\frac{1}{2}\,\gamma\,B\,N_{\gamma q}\\
+N_{\gamma q}\Rightarrow\textsf{Figure 5.20}\\\\
+\textsf{For purely cohesive soil, \(\phi\) = 0}\\
+\textsf{(the undrained condition)},\\
+q_u=c_u\,\,N_{cq}\\
+B\lt H\Rightarrow N_s=0\\
+B\ge H\Rightarrow N_s=\frac{\gamma\,H}{c_u}\\
+N_{cq}\Rightarrow\textsf{Figure 5.21}
+}$$</p>
+
+<h3>Chapter 8</h3>
+
+<h3>Mat Foundations</h3>
+
+<p><span>Rectangular Combined Footing</span><br>$$\displaylines{ 
+A=\frac{Q_1+Q_2}{q_{\textsf{net(all)}}}\\\\
+X=\frac{Q_2\,L_3}{Q_1+Q_2}\\\\
+\textsf{For a uniform distribution of soil pressure}\\\textsf{under the foundation, the resultant of the}\\\textsf{column loads should pass through the}\\\textsf{centroid of the foundation.}\\
+L=2\,(\,L_2+X\,)\\
+L_1=L-L_2-L_3\\\\
+B=\frac{A}{L}
+}$$</p>
+
+<p><span>Trapezoidal Combined Footing</span><br>$$\displaylines{ 
+A=\frac{Q_1+Q_2}{q_{\textsf{net(all)}}}\\\\
+A=\frac{B_1+B_2}{2}\,L\\\\
+X=\frac{Q_2\,L_3}{Q_1+Q_2}\\\\
+X+L_2=\left(\frac{B_1+2\,B_2}{B_1+B_2}\right)\frac{L}{3}\\\\
+\frac{L}{3}\lt X+L_2\lt\frac{L}{2}
+}$$</p>
+
+<p><span>Bearing Capacity of Mat Foundation</span><br>$$\displaylines{ 
+\textsf{Constructed over saturated clay},\\
+q_{\textsf{net(u)}}=5.14\,c_u\left(1+\frac{0.195\, B}{L}\right)\left(1+0.4\frac{D_f}{B}\right)\\\\
+\textsf{Constructed over granular soil},\\
+q_{\textsf{net(all)}}=0.25\,N_{60}\left[1+0.33\left(\frac{D_f}{B}\right)\right]S_e\\\\
+N_{60}=\textsf{standard penetration resistence}\\
+S_e=\textsf{settlement}
+}$$</p>
+
+<p><span>Compensated Foundation</span><br>$$\displaylines{ 
+\textsf{For saturated clays},\\
+FS=\frac{5.14\,c_u\left(1+\frac{0.195\, B}{L}\right)\left(1+0.4\frac{D_f}{B}\right)}{\frac{Q}{A}-\gamma\,D_f} 
+}$$</p>
+
+<p><span>Primary Consolidation Settlement</span><br>$$\displaylines{ 
+q=\frac{Q}{A}-\gamma D_f\\\\
+\textsf{For }I_{a(H_1)}\,,\\
+m_2=\frac{B}{H_1}\quad\quad n_2=\frac{L}{H_1}\\
+\textsf{Use Figure (6.11)}\\\\
+\textsf{For }I_{a(H_2)}\,,\\
+m_2=\frac{B}{H_2}\quad\quad n_2=\frac{L}{H_2}\\
+\textsf{Use Figure (6.11)}\\\\
+\Delta \sigma'_{\textsf{av}(H_2/H_1)}=q_0\left[\,\frac{H_2\,I_{a(H_2)}-H_1\,I_{a(H_1)}}{H_2-H_1}\,\right]\\\\
+S_{c\,(p)}=\frac{C_c\,H_c}{1+e_0}\log \left(\,\frac{\sigma_0'+\Delta\sigma'_{\textsf{av}}}{\sigma_0'}\,\right)
+}$$</p>
+
+<p><span>Structural Design of Mat Foundations</span><br>$$\displaylines{ 
+Q=Q_1+Q_2+Q_3\,+...\\\\
+A=B\times L\\\\
+I_x=\frac{1}{12}BL^3\\\\
+I_y=\frac{1}{12}LB^3\\\\
+M_y=Q\,e_x\\\\
+e_x=x'-\frac{B}{2}\\\\
+x'=\frac{Q_1\,x_1'+Q_2\,x_2'+Q_3\,x_3'+...}{Q}\\\\
+y'=\frac{Q_1\,y_1'+Q_2\,y_2'+Q_3\,y_3'+...}{Q}\\\\
+e_y=y'-\frac{L}{2}\\\\
+M_x=Q\,e_y\\\\
+q=\frac{Q}{A}\pm\frac{M_y\,x}{I_y}\pm\frac{M_x\,y}{I_x}
+}$$</p>
+
+<h3>Chapter 9</h3>
+<h3>Pile Foundations</h3>
+
+<p><span>Point Bearing Capacity, \(Q_p\)</span><br>$$\displaylines{ 
+\textsf{Meyerhof's Method}\\\\
+Q_p=A_p\,q'N_q^*\le A_p\,q_l\\\\
+q'=\gamma L\\\\
+q_l=0.5\,p_a\,N_q^*\tan\phi'\\\\
+N_q^*\Rightarrow\textsf{Table (9.5)}\\\\\\
+\textsf{Vesic's Method}\\\\
+Q_p=A_p\,\bar{\sigma}_0'\,N_{\sigma}^*\\\\
+\bar{\sigma}_0'=\left(\frac{1+2K_0}{3}\right)\,q'\\\\
+K_0=1-\sin\phi'\\\\
+\frac{E_s}{p_a}=m\\
+m=250\quad\textsf{(medium dense soil)}\\\\
+\mu_s=0.1+0.3\left(\frac{\phi'-25}{20}\right)\\\\
+\Delta=0.005\left(1-\frac{\phi'-25}{20}\right)\frac{q'}{p_a}\\\\
+I_r=\frac{E_s}{2(1+\mu_s)\,q'\tan\phi'}\\\\
+I_{rr}=\frac{I_r}{1+I_r\,\Delta}\\\\N_{\sigma}^*\Rightarrow\textsf{Table (9.7)}\\\\
+\textsf{Coyle and Castello's Method}\\\\
+Q_p=q'N_q^*A_p\\
+N_q^*\Rightarrow\textsf{Figure (9.15)}
+}$$</p>
+
+<p><span>Frictional Resistance, \(Q_s\)</span><br>$$\displaylines{ 
+\textsf{Using equations (9.41) and (9.42)}\\
+L'=15D\\
+f=K\sigma_0'\tan\delta'\\
+Q_s=f_{\textsf{av}}\,pL'\\\\
+\textsf{Using equatioin (9.44)}\\
+Q_s=K\,\bar{\sigma}_0'\tan(0.8\phi')\,pL\\
+K\Rightarrow\textsf{Figure (9.17)}\\\\
+Q_{\textsf{all}}=\frac{Q_p+Q_s}{FS}
+}$$</p>
+
+<p><span>Frictional (Skin) Resistance in Clay</span><br>$$\displaylines{ 
+\alpha\textsf{ Method}\\\\
+Q_s=\sum\alpha\, C_u \,p\,\Delta L\\
+p=\pi D\\
+\alpha\Rightarrow\textsf{Table (9.10)}\\\\
+\lambda\textsf{ Method}\\\\
+Q_s=p\,L\,f_{\textsf{av}}\\\\
+\bar{\sigma}_0'=\frac{A_1+A_2+A_3}{L}\\\\
+c_u=\frac{c_{u(1)}\,L_1+c_{u(2)}\,L_2+c_{u(3)}\,L_3}{L}\\\\
+\lambda\Rightarrow\textsf{Table (9.9)}\\
+f_{\textsf{av}}=\lambda\,(\bar{\sigma}_0'+2\,c_u)\\\\
+\beta\textsf{ Method}\\\\
+Q_s=\sum f\,p\,\Delta L\\\\
+\textsf{For normally consolidated clay,}\\
+f=(1-\sin\phi_R')\tan\phi_R'\,\sigma_0'\\\\
+\textsf{For overconsolidated clay,}\\
+f=(1-\sin\phi_R')\tan\phi_R'\,\sqrt{OCR}\,\,\sigma_0'\\\\
+Q_u=Q_p+Q_s\\
+Q_{\textsf{all}}=\frac{Q_u}{FS}
+}$$</p>
+
+<p><span>Group Piles</span><br>$$\displaylines{ 
+\sum Q_u=n_1n_2\left[\,9A_p\,c_{u(p)}+\sum \alpha\, p\,c_u\,\Delta L\,\right]\\\\
+\alpha\Rightarrow\textsf{Table (9.10)}\\
+N_c^*\Rightarrow\textsf{Figure (9.48)}\\\\
+\sum Q_u\\=L_g\,B_g\,c_{u(p)}\,N_c^*+\sum 2\,(L_g+B_g)\,c_u\,\Delta L\\\\
+\textsf{(smaller control)}\\\\
+\sum Q_{\textsf{all}}=\frac{\sum Q_u}{FS}
+}$$</p>
+
+<p><span>Consolidation Settlement of Group Piles</span><br>$$\displaylines{ 
+\textsf{Settlement of clay layer i}\\\\
+\Delta S_{c\,(i)}=\left[\,\frac{C_{c\,(i)}\,H_i}{1+e_{0(i)}}\,\right]\log\left[\,\frac{\sigma'_{0(i)}+\Delta\sigma'_{(i)}}{\sigma'_{0(i)}}\,\right]\\\\
+\Delta\sigma'_{(i)}=\frac{Q_g}{(L_g+z_i)(B_g+z_i)}
+}$$</p>
+
+<h3>Chapter 14</h3>
+<h3>Sheet-Pile Walls</h3>
+
+<p><span>Notes</span><br>$$\displaylines{ 
+K_a=\tan^2 \left(\,45-\frac{\phi'}{2}\,\right)\\
+K_p=\tan^2 \left(\,45+\frac{\phi'}{2}\,\right)\\\\
+\textsf{Other formulas are in the data book.}
+}$$</p>
+
+<p><span>Holding Capacity of Anchor Plates in Sand</span><br>$$\displaylines{ 
+K_p\,\sin\delta'=\frac{W+\frac{1}{2}\,\gamma\, H^2\,K_a\sin\phi'}{\frac{1}{2}\,\gamma\, H^2}\\\\
+P'_{\textsf{ult}}=\frac{1}{2}\,\gamma\, H^2\,(\,K_p\cos\delta'-K_a\cos\phi'\,)\\\\
+\textsf{Assume the sand to be loose, }C_{ov}=14\\
+P'_{\textsf{us}}=\left[\,\frac{C_{ov}+1}{C_{oc}+\left(\frac{H}{h}\right)}\,\right]\,P'_{\textsf{ult}}\\\\
+\frac{B_e-B}{H+h}\Rightarrow\textsf{Figure (14.40)}\\\\
+P'_{\textsf{ult}}=P'_{\textsf{us}}\,B_e
+}$$</p>
+
+<h3>Chapter 15</h3>
+<h3>Braced cuts</h3>
+
+<p><span>Notes</span><br>$$\displaylines{ 
+K_a=\tan^2 \left(\,45-\frac{\phi'}{2}\,\right)\\\\
+\sigma_a=0.65\,\gamma\,H\,K_a\\\\
+\textsf{The strut loads}\\
+P_A=A\times s\\
+P_B=(B_1+B_2)(s)\\
+P_C=C\times s\\\\
+\textsf{The maximum moments for the wales}\\
+\textsf{At level A, }M_\textsf{max}=\frac{(A)(s^2)}{8}\\
+\textsf{At level B, }M_\textsf{max}=\frac{(B_1+B_2)(s^2)}{8}\\
+\textsf{At level C, }M_\textsf{max}=\frac{(C)(s^2)}{8}\\\\
+\textsf{Section modulus, }S=\frac{M_\textsf{max}}{\sigma_\textsf{all}}
+}$$</p>
+
+<br>
+</div>
+<script>
+	document.querySelectorAll(".container span, .container h3").forEach(a => a.className = 'foundation');
+</script>
+<script src="mathjax/es5/tex-mml-chtml.js"></script>
+</body>
+</html>

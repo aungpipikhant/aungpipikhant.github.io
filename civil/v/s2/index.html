@@ -1,1 +1,137 @@
-<h1>Coming soon...</h1>
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Semester II</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="../style.css" />
+    <style>
+    body {
+    	background: #000;
+    }
+    .container { 
+    	padding-top: 2.8rem;
+    	background: #000;
+    }
+    .btn {
+ 	    font-weight: bold;
+ 	    font-size: 0.856rem;
+ 	    padding-bottom: 0.64rem;
+ 	    box-shadow: inset 0 -0.19rem 0rem rgba(0,0,0,0.3);
+    }
+    a { -webkit-tap-highlight-color: transparent; }
+    a:hover { filter: brightness(73%);; }
+    .appk {
+    	width: 70%;
+    	border-radius: 1rem;
+    	border-top-left-radius: 2rem;
+    	padding: 0.64rem;
+    	display: flex;
+    	flex-direction: column;
+    	margin-bottom: 1rem;
+    	margin-top: 1.9rem;
+    	background: #252525;
+    	border: 0.3px solid #555;
+    }
+    .profile {
+    	display: flex;
+    	flex-direction: row;
+    	align-items: center;
+    	margin-bottom: 0.64rem;
+    }
+    .hydraulic {
+    	color: white;
+  	    background: #0099C0;
+    }
+    .steel {
+    	background: #006AA6;
+    	color: white;
+    }
+    .ee {
+    	background: #919155;
+    	color: white;
+    }
+    .foundation {
+    	background: #643303;
+    	color: white;
+    }
+    .estimate {
+    	background: #466482;
+    	color: white;
+    }
+    .ce {
+    	background: #826446;
+ 	    color: white;
+    }
+    span {
+    	background: none;
+    	left: 10%;
+    }
+    .container a img {
+    	width: 1rem;
+    }
+    #count {
+    	color: white;
+    	text-align: center;
+    	padding: 0.46rem;
+    	width: auto;
+    }
+    </style>
+    </head>
+  <body>
+  <div class="container" >
+    <p style="position: fixed; top: 0; z-index: 999; margin: 0; width: 100%; border-top: 0; text-align: center; padding: 0.64rem;">
+    Last updated:&emsp;11/09/2025 11:11:22 PM
+    </p>
+    <h3 style="color: #fff; font-size: 1rem;">V B.E. Civil Engineering Formulas (Sem II)</h3>
+    <p id="count" ></p>
+	
+	<!-- svgrepo -->
+    <a href="ce.html" class="btn ce"><span><img style="transform: scale(111%);" src="../../assets/ce.svg" /></span>C.E. (CE-52012)</a>
+    
+    <a href="foundation.html" class="btn foundation"><span><img style="transform: scale(110%);" src="../../assets/foundation.svg" /></span>Foundation (CE-52015)</a>
+    
+    <!-- Svg Vector Icons : http://www.onlinewebfonts.com/icon -->
+    <a href="steel.html" class="btn steel"><span><img style="transform: scale(87%);" src="../../assets/steel.svg" /></span>Steel (CE-52024)</a>
+    
+    <a href="ee.html" class="btn ee"><span><img style="transform: scale(109%);" src="../../assets/earth.svg" /></span>E.E. (CE-52018)</a>
+
+    <a href="hydraulic.html" class="btn hydraulic"><span><img style="transform: scale(104%); margin-left: 0.1rem;" src="../../assets/hydraulic.svg" /></span>Hydraulic (CE-52016)</a>
+
+    <a href="estimate.html" class="btn estimate"><span><img style="transform: scale(136%);" src="../../assets/estimate.svg" /></span>Estimate (CE-52022)</a>
+	
+  <div class="appk">
+		<div class="profile">
+			<img style="margin-right: 0.82rem; border-radius: 50%; width: 3rem; height: 3rem; background: #fff;" alt="i" src="../../assets/me.jpg" />
+			<div class="name-link">
+			<a href="https://www.facebook.com/aungpipikhant" style="width: 100%; font-size: 0.856rem; justify-content: left; color: #fff; padding:0; margin:0; font-weight:bold;">Aung Paing Paing Khant&nbsp;
+			<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#fff" width="1rem" >
+			<path fill-rule="evenodd" d="M2.25 12c0-5.385 4.365-9.75 9.75-9.75s9.75 4.365 9.75 9.75-4.365 9.75-9.75 9.75S2.25 17.385 2.25 12zm13.36-1.814a.75.75 0 10-1.22-.872l-3.236 4.53L9.53 12.22a.75.75 0 00-1.06 1.06l2.25 2.25a.75.75 0 001.14-.094l3.75-5.25z" clip-rule="evenodd" />
+			</svg></a>
+			<a href="https://www.facebook.com/aungpipikhant" style="width: 100%; font-size: 0.82rem; color: #00c0a8; padding:0;margin:0; justify-content: left; ">View profile</a>
+			</div>
+		</div>
+		<hr color="#555" size="0.1rem">
+		<font color="#eee" style="text-align: justify; line-height: 1.6; margin-top: 0.64rem; font-size: 0.82rem;">This website is designed to help civil engineering students memorize formulas. If you notice any mistakes in formulas, let me know, and I'll fix them. 🥰</font>
+	</div>
+
+</div>
+<script>
+var countDownDate = new Date("September 23, 2025 09:00:00").getTime();
+var x = setInterval(function() {
+var now = new Date().getTime();
+var distance = countDownDate - now;
+var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+var hours = Math.floor((distance % (1000 * 60  * 60 * 24)) / (1000 * 60 * 60));
+var minutes = Math.floor((distance % (1000 * 60  * 60)) / (1000 * 60));
+var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+document.getElementById("count").innerHTML = "<b>" + days + "d " + hours + "h "
++ minutes + "m " + seconds + "s " + "</b> left to start the exam.";
+if (distance < 0) {
+	clearInterval(x);
+	document.getElementById("count").innerHTML = "Exam period.";
+}
+}, 1000);
+</script>
+  </body>
+  </html>

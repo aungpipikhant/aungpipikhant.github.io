@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Steel (CE-52024)</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="../style.css">
+    <script src="../../mathjax/es5/tex-mml-chtml.js"></script>
+    </head>
+  <body>
+<div class="top">Steel (CE-52024)</div>
+<div class="container">
+
+<h3>Chapter 8</h3>
+<h3>Torsion</h3>
+
+<p><span>Notes</span><br>$$\displaylines{ 
+M_{ux}=\frac{\omega_u\,L^2}{8}\quad\quad\textsf{(For UD Load)}\\\\
+m_u=\omega_u\times e\\\\
+\textsf{By using flexure analogy,}\\
+\textsf{Lateral bending moment on one flange}\\
+M_f=\frac{P_H\,L^2}{8}=\frac{\omega_u\,L^2}{8h}\\\\
+\textsf{Modified flexure analogy, }M_f=\beta\times \frac{\omega_u\,L^2}{8h}\\
+M_{uy}=2M_f\\\\
+\textsf{According to LRFD,}\\
+\frac{M_{ux}}{S_x}+\frac{M_{uy}}{S_y}\le \phi_b\,F_y\\
+S_x\textsf{ (required)}\ge \frac{M_{ux}}{\phi_b\,F_y}+\frac{M_{uy}}{\phi_b\,F_y}\times\frac{S_x}{S_y}\\\\
+\textsf{From steel manual,}\\
+\lambda =\sqrt{\frac{GJ}{EC_w}}\\
+\beta\Rightarrow\textsf{Table 8.6.3}\\\\
+f_{un}=\frac{M_{ux}}{S_x}+\frac{M_{uy}}{S_y}\le\phi_b\,F_y\\\\
+\textsf{Consider the torsion effect,}\\
+\textsf{Factored concentrated torsional moment, }T_u\\
+P_H=\frac{T_u}{h}\\\\
+M_f\,h\textsf{ (at ends)}=\frac{T_u\,ab^2}{L^2}+\frac{T_u\,a^2b}{L^2}\\\\
+\textsf{In the positive moment zone (midspan region)}\\
+M_f\,h\textsf{ (at concentrated load)}=\frac{T_u\,L}{3}-120\\\\
+f_{un}=\frac{M_f}{S_y/2}\quad\textsf{(torsion only)}
+}$$</p>
+
+<h3>Chapter 9</h3>
+<h3>Lateral-Torsional Buckling of Beams</h3>
+
+<p><span>9.9.6 Determining Service Live Load for Welded I-Shaped Section</span><br>$$\displaylines{ 
+\\\textsf{(a) Compute cross-sectional properties}\\
+A=b\times d+2\,(b\times d)\\\\
+I_x=\left(\,\frac{bd^3}{12}\,\right)_1-\left(\,\frac{bd^3}{12}\,\right)_2\\\\
+Z_x=\left(\,\frac{bd^2}{4}\,\right)_1-\left(\,\frac{bd^2}{4}\,\right)_2\\\\
+S_x=\frac{I_x}{d/2}=\frac{I_x}{c}\\\\
+I_y=2\left(\,\frac{bd^3}{12}\,\right)\\\\
+r_y=\sqrt{\frac{I_y}{A}}\\\\
+J=\frac{\sum bt^3}{3}\\\\
+C_w=\frac{I_y\,h^2}{4}\\\\
+X_1=\frac{\pi}{S_x}\sqrt{\frac{E\,G\,J\,A}{2}}\\\\
+X_2=4\,\frac{C_w}{I_y}\left(\,\frac{S_x}{G\,J}\,\right)^2\\\\
+\textsf{(b) Investigate the local flange buckling and}\\\textsf{local web buckling limit state}\\
+\lambda =\frac{b_f}{2t_f}\gt\lambda_p=\frac{65}{\sqrt{F_y}}\textsf{ for flange}\\
+\lambda =\frac{h}{t_w}\gt\lambda_p=\frac{640}{\sqrt{F_y}}\textsf{ for web}\\
+\lambda_p\Rightarrow\textsf{Table 9.6.1}\\\\
+\textsf{The section is not compact. Check slenderness}\\\textsf{ratio limit \(\lambda_r\) for flange local buckling.}\\\\
+k_c=\frac{4}{\sqrt{h/t_w}}\quad\textsf{(Table 9.6.2)}\\\\
+\lambda_r=\frac{162}{\sqrt{(F_{yf}-16.5)/k_c}}\\\\
+\textsf{For web local buckling,}\\
+\lambda_r=\frac{970}{\sqrt{F_y}}\\\\
+\lambda_p\lt \lambda_{\textsf{flange}}\lt \lambda_r\\
+\lambda_p\lt \lambda_{\textsf{web}}\lt \lambda_r\\
+\textsf{The section is not compact.}\\\\
+M_n=M_p-(M_p-M_r)\left(\,\frac{\lambda-\lambda_p}{\lambda_r-\lambda_p}\,\right)\\\\
+\textsf{(c) Compute \(M_p\) and \(M_r\)}\\
+M_p=Z_x\,F_y\\
+M_r=(F_y-F_r)\,S_x\\\\
+F_r=10\,ksi\quad\textsf{(rolled shapes)}\\
+F_r=16.5\,ksi\quad\textsf{(welded shapes)}\\\\
+\textsf{(d) Compute the nominal moment strength \(M_n\)}\\\textsf{based on the limit state of local buckling}\\\textsf{of the flange.}\\\\
+\textsf{(e) Compute the nominal moment strength \(M_n\)}\\\textsf{based on the limit state of local buckling}\\\textsf{of the web.}\\\\
+\textsf{(f) Examine the lateral-torsional buckling}\\\textsf{limit state}\\
+L_p=\frac{300}{\sqrt{F_y}}\,r_y\\\\
+L_r=\frac{r_y\,X_1}{(F_y-F_r)}\,\sqrt{1+\sqrt{1+X_2\,(F_y-F_r)^2}}\\\\
+L_p\lt L_b\lt L_r\\\textsf{Use \(C_b\) = 1}\\\\
+M_n=\\C_b\left[M_p-(M_p-M_r)\left(\,\frac{\lambda-\lambda_p}{\lambda_r-\lambda_p}\,\right)\right]\le M_p\\\\
+\textsf{Maximum }M_u=\phi M_n\\
+M_u=1.2M_D+1.6M_L\\\\\omega_L=\frac{8M_L}{L^2}
+}$$</p>
+
+<p><span>9.14.1 Designing a W Section to Serve as a Crane Support Girder</span><br>$$\displaylines{ 
+\\\textsf{(a) Compute factored moment}\\
+\textsf{Assume own weight}=130\,lb\\
+\textsf{DL moment}=\frac{\omega L^2}{8}\\
+M_{ux}=1.2\,\textsf{DL moment}+1.6\,\textsf{LL moment}\\
+M_{uf}=1.6\,M_f\\
+M_{uy}=2\,M_{uf}\\\\
+\textsf{(b) Select a section}\\
+\textsf{Required }S_x\ge \frac{M_{ux}}{\phi_b\,F_y}+\frac{M_{uy}}{\phi_b\,F_y}\left(\frac{S_x}{S_y}\right)\\\\
+\textsf{(c) Check the strength}\\
+f_{un}=\frac{M_{ux}}{S_x}+\frac{M_{uy}}{S_y}\le \phi_b\,F_y\\\\
+\textsf{Check the lateral torsional buckling limit state.}\\
+\phi_b\,M_{nx}\ge m_{ux}\\
+L_p=\frac{300}{\sqrt{F_y}}\,r_y\\\\
+L_r=\frac{r_y\,X_1}{(F_y-F_r)}\,\sqrt{1+\sqrt{1+X_2\,(F_y-F_r)^2}}\\\\
+L_p\lt L_b\lt L_r\\\textsf{Use \(C_b\) = 1}\\\\
+M_n=\\C_b\,\left[M_p-(M_p-M_r)\left(\,\frac{\lambda-\lambda_p}{\lambda_r-\lambda_p}\,\right)\right]\le M_p\\\\
+M_p=Z_x\,F_y\\
+M_r=(F_y-F_r)\,S_x
+}$$</p>
+
+<h3>Chapter 10</h3>
+<h3>Continuous Beams</h3>
+
+<p><span>Equilibrium Method</span><br>$$\displaylines{ 
+\textsf{Elastic moment, }M_y=S_x\,F_y\\
+\textsf{Plastic moment, }M_p=Z_x\,F_y\\\\
+\textsf{For rectangular section,}\\
+\textsf{Elastic section modulus, }S_x=\frac{bd^2}{6}\\
+\textsf{Plastic section modulus, }Z_x=\frac{bd^2}{4}\\\\
+\textsf{Shape factor, }\xi=\frac{M_p}{M_y}=\frac{Z_x}{S_x}\\\\
+\Delta_p=\Delta_y\times\frac{Z_x}{S_x}\\\\
+\theta=\textsf{rotation (curvature)}\\
+jL=\textsf{inelastic length}\\
+j=1-\frac{1}{\xi}\\\\
+\textsf{Deflection}\\\\
+\textsf{Simply supported}\Rightarrow\Delta_y=\frac{W_n\,L^3}{48EI}\\\\
+\textsf{Both-ends fixed}\Rightarrow\Delta_y=\frac{W_n\,L^3}{192EI}\\\\
+\textsf{a ≠ b and both-ends fixed (3 stages)}\\ M_A=\frac{W_1\,ab^2}{L^2}\quad\quad M_C=\frac{W_1\,a^2b}{L^2}\\\\
+\textsf{(Stage 1) Plastic hinge occurs at A}\\\textsf{Both-ends fixed}\Rightarrow\Delta_1=\frac{W_1\,a^3\,b^3}{3L^3EI}\\\\
+\textsf{(Stage 2) Plastic hinge occurs at B}\\\textsf{One-end fixed and the other end pinned,}\\\Delta_2=\frac{W_2\,a^2\,b^3(3L+a)}{12L^3EI}\\\\
+\textsf{(Stage 3) Plastic hinge occurs at C}\\\textsf{ Cantilever}\Rightarrow\Delta_3=\frac{W_3\,L^3}{3EI}\\\\
+W_n=W_1+W_2+W_3
+}$$</p>
+
+<p><span>Plastic Limit Load</span><br>$$\displaylines{ 
+\textsf{Energy Method or Virtual Work Method}\\\\
+\textsf{External workdone}=\textsf{Internal workdone}\\
+\textsf{External workdone }(W_E)\\=\textsf{Force}\times\textsf{Displacement}=P\times\delta\\\\
+\textsf{Internal workdone }(W_I)\\=\textsf{Moment}\times\textsf{Rotation}=M_p\times n\theta
+}$$</p>
+
+<h3>Chapter 11</h3>
+<h3>Plate Girders</h3>
+
+<p><span>Simply Supported Welded Plate Girder</span><br>$$\displaylines{ 
+\omega_u=1.2DL+1.6LL\\
+W_u=1.2DL+1.6LL\\\\
+\textsf{Determination of web plate size for positive}\\
+\textsf{moment region}\\
+\textsf{Required }M_n=\frac{M_u}{\phi}\\\\
+\textsf{From Table 11.3.1,}\\
+F_y=36\,ksi\Rightarrow R_{PG}\,F_{cr}=34\,ksi\\
+\frac{a}{h}\le 1.5\Rightarrow \beta_w=\frac{h}{t_w}=333\\
+\frac{a}{h}\gt 1.5\Rightarrow \beta_w=\frac{h}{t_w}=322\\\\
+F_y=60\,ksi\Rightarrow R_{PG}\,F_{cr}=48\,ksi\\\\
+h=\sqrt[3]{\frac{3\,(\textsf{reqd; }M_n)\,\beta_w}{2\,R_{PG}\,F_{cr}}}\\\\
+\textsf{Check}\\
+\frac{V_u}{A_w}\le 16\quad\quad \frac{h}{t_w}\lt \beta\\\\
+\textsf{Determination of flange plates for positive}\\\textsf{moment}\\
+\textsf{Required flange area, }A_f=\frac{M_u}{\phi\, R_{PG}\,F_{cr}}=\frac{A_w}{6}\\\\
+A_f=b_f\,t_f\\\\
+\textsf{Check local buckling, }\lambda=\frac{65}{\sqrt{F_y}}\\\\
+\lambda_f=\frac{b_f}{2\,t_f}\lt \lambda_p\\\\I=\frac{bd^3}{12}+Ad^2\\\\
+S_x=\frac{I}{y_c}\\\\
+\phi M_n=\phi\, F_{cr}\,R_{PG}\,S_x\ge M_u
+}$$</p>
+
+
+<h3>Chapter 16</h3>
+<h3>Composite Steel-Concrete Construction</h3>
+
+<p><span>16.6.1 Without Temporary Shoring</span><br>$$\displaylines{ 
+\textsf{For an interior girder,}\\
+b_e=\frac{L}{4}\quad\quad b_E=b_0\\
+\textsf{(smaller control)}\\\\
+\textsf{The width of the equivalent steel}=\frac{b_E}{n}\\
+I_x=I_0+Ay^2\\\\
+\bar{y}=\frac{\sum Ay}{\sum A}\\\\
+I_{tr}=I_x-A\bar{y}^2\\\\
+S_{\textsf{top}}=\frac{I_{tr}}{y_t}\\\\
+S_{\textsf{bottom}}=\frac{I_{tr}}{y_b}\\\\
+M_D=\frac{\omega_D\,L^2}{8}\\\\
+f_{\textsf{top}}=\frac{M_D}{S_{\textsf{top}}\,\textsf{(non composite)}}\\\\
+f_{\textsf{bot;}}=\frac{M_D}{S_{\textsf{bot;}}\,\textsf{(non composite)}}\\\\
+f_{\textsf{top}}=\frac{M_L}{n\,S_{\textsf{top}}\,\textsf{(composite)}}\\\\
+f_{\textsf{bot;}}=\frac{M_L}{S_{\textsf{bot;}}\,\textsf{(composite)}}
+}$$</p>
+
+<p><span>16.7.2 Nominal Moment Strength of Fully Composite Sections</span><br>$$\displaylines{ 
+\\\textsf{Assume Plastic Neutral Axis (PNA) is}\\\textsf{within the slab.}\\\\
+\textsf{Case (1)}\Rightarrow a=\frac{A_s\,F_y}{0.85\,f_c'\,b_E}\\\\
+a\gt t_s\Rightarrow\textsf{PNA will be within the steel section.}\\
+\therefore\textsf{Case (2) applies.}\\\\
+C_c=0.85\,f_c'\,b_E\,t_s\\\\
+C_s=\frac{A_s\,F_y-C_c}{2}\\\\
+d_f=\frac{C_s}{b_f\,F_y}\\\\
+d_2'=d-\bar{y}+\frac{t_s}{2}\\\\
+d_2''=d-\bar{y}-\frac{d_f}{2}\\\\
+M_n=C_c\,d_2'+C_s\,d_2''
+}$$</p>
+
+<br>
+</div>
+<script>
+	document.querySelectorAll(".container span, .container h3").forEach(a => a.className = 'steel');
+</script>
+<script src="mathjax/es5/tex-mml-chtml.js"></script>
+</body>
+</html>
