@@ -21,7 +21,7 @@ R_i=\textsf{rainfall intensity (mm/hr)}\\
 t=\textsf{time of concentration (min)}\\\\
 \textsf{For W.W.F, }Q=28AIR_i\\Q=\frac{1}{360}CR_iA=\frac{1}{360}A_iR_i\\\\
 \textsf{Lloyed Davis Formula}\\
-Q=\frac{r}{6t_c}P\\\\
+Q=\frac{r}{6\,t_c}P\\\\
 \textsf{Average coefficient of runoff, }C_{\textsf{avg}}=\frac{\sum AC}{\sum A}
 }$$</p>
 
@@ -30,7 +30,7 @@ Q=\frac{r}{6t_c}P\\\\
 
 <p><span>Hydraulic Elements of Circular Sewers</span><br>$$\displaylines{ 
 \textsf{Central Angle}\\
-\cos\frac{1}{2}\theta=1-\frac{2d}{D}\\\\
+\cos\frac{1}{2}\theta=1-\frac{2\,d}{D}\\\\
 \textsf{Depth}\\
 d=\frac{D}{2}\left(\,1-\cos\frac{\theta}{2}\,\right)\\\\
 \textsf{Area}\\
@@ -48,8 +48,8 @@ A=\frac{\pi D^2}{4}\quad\quad P=\pi D\\\\
 \textsf{Proportional Hydraulic Mean Depth}\\
 \frac{r}{R}=\left[\,1-\frac{360°\sin\theta}{2\pi\theta}\,\right]\\\\
 \frac{q_{\textsf{max}}}{Q}=\frac{v}{V}\times\frac{a}{A}\\\\
-Q=\frac{1}{N}AR^{\frac{2}{3}}S^{\frac{1}{2}}\\
-V=\frac{1}{N}R^{\frac{2}{3}}S^{\frac{1}{2}}\\\\
+Q=\frac{1}{N}\,A\,R^{\frac{2}{3}}\,S^{\frac{1}{2}}\\
+V=\frac{1}{N}\,R^{\frac{2}{3}}\,S^{\frac{1}{2}}\\\\
 \frac{v}{V}=\frac{N}{n}\left(\frac{r}{R}\right)^{\frac{2}{3}}\\\\
 \frac{q}{Q}=\left(\frac{N}{n}\right)\left(\frac{a}{A}\right)\left(\frac{r}{R}\right)^{\frac{2}{3}}
 
@@ -65,7 +65,7 @@ q_s=\left(\frac{N}{n}\right)\left(\frac{a}{A}\right)\left(\frac{r}{R}\right)^{\f
 <h3>Construction of Sewers</h3>
 
 <p><span>Loads on Sewers</span><br>$$\displaylines{ 
-B_c=D+2t\\
+B_c=D+2\,t\\
 \frac{H}{B_d}\lt 2B_c\\
 \therefore\textsf{Trench formula is applicable.}\\\\
 C_d=\frac{1-e^{-2K\mu'H/B_d}}{2K\mu'}\\\\
@@ -79,8 +79,12 @@ W_c=C_d\,\gamma\,B_d^2\\\\
 
 <p><span>Notes</span><br>$$\displaylines{ 
 y_t=L_0(1-10^{-Kt})\\\\
-BOD_5=y_5=L_0-L_5=L_0(1-10^{-Kt})\\\\
-K_T=K_{20}\,\theta^{T-20}\\\\
+BOD_5=y_5=L_0-L_5=L_0\,(1-10^{-Kt})\\\\
+K_T=K_{20}\,\theta^{T-20°}\\
+\theta=1.056\quad\textsf{(for T = 20° to 30°)}\\
+\theta=1.135\quad\textsf{(for T = 4° to 20°)}\\
+\theta=1.047\quad\textsf{(constant value)}
+\\\\
 K=\frac{K'}{2.303}
 }$$</p>
 
@@ -91,17 +95,17 @@ K=\frac{K'}{2.303}
 (DO)_{\textsf{mix}}=\frac{(DO)_s\,Q_s+(DO)_e\,Q_e}{Q_s+Q_e}\\\\
 (y_{\textsf{mix}})_5=\frac{y_s\,Q_s+y_e\,Q_e}{Q_s+Q_e}\\\\
 \textsf{Initial \(DO\) deficit}\\=D_0=\textsf{Saturation \(DO\)}-(DO)_{\textsf{mix}}\\\\
-(y_{\textsf{mix}})_5=L_0(1-10^{-Kt})\\\\
+(y_{\textsf{mix}})_5=L_0\,(1-10^{-Kt})\\\\
 \textsf{At the end of 1 day,}\\
-D_1=\frac{KL_0}{R-K}[\,10^{-KT}-10^{-Rt}\,]+D_0\,10^{-Rt}\\
+D_1=\frac{KL_0}{R-K}[\,10^{-KT}-10^{-Rt}\,]+D_0\,10^{-Rt}\\\\
 K=\textsf{deoxygenation constant}\\
 R=\textsf{reoxygenation constant}\\\\
 (DO)_1=\textsf{Saturation \(DO\)}-D_1\\\\
 \textsf{Critical time,}\\
 t_c=\frac{1}{K(f_s-1)}\log_{10}\left[f_s\left\{1-(f_s-1)\frac{D_0}{L_0}\right\}\right]\\\\
 \textsf{Location, }x_c=\textsf{velocity}\times\textsf{time}\\\\
-K_T'=K_{20}'\,\theta^{T-20}\\
-R_T'=R_{20}'\,\theta^{T-20}\\\\
+K_T'=K_{20}'\,\theta^{T-20°}\\
+R_T'=R_{20}'\,\theta^{T-20°}\\\\
 \textsf{Critical deficit, }D_c=\frac{K'}{R'}\,L_0\,e^{-K't_c}
 }$$</p>
 
