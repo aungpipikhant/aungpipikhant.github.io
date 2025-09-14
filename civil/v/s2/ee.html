@@ -55,7 +55,7 @@ a=\frac{\pi D^2}{4}\left[\,\frac{\theta}{360°}-\frac{\sin\theta}{2\pi}\,\right]
 \textsf{Proportional Area}\\
 \frac{a}{A}=\left[\,\frac{\theta}{360°}-\frac{\sin\theta}{2\pi}\,\right]\\\\
 \textsf{Wetted Perimeter}\\
-P=\pi D\,\frac{\theta}{360°}\\\\r=\frac{a}{p}\quad\quad q=\frac{1}{N}\,a\,r^{\frac{2}{3}}S^{\frac{1}{2}}\\\\
+p=\pi D\,\frac{\theta}{360°}\\\\r=\frac{a}{p}\quad\quad q=\frac{1}{N}\,a\,r^{\frac{2}{3}}S^{\frac{1}{2}}\\\\
 \textsf{When the sewer runs full, }R=\frac{D}{4}\\
 A=\frac{\pi D^2}{4}\quad\quad P=\pi D\\\\
 \textsf{Proportional Discharge}\\
@@ -73,7 +73,7 @@ V=\frac{1}{N}\,R^{\frac{2}{3}}\,S^{\frac{1}{2}}\\\\
 }$$</p>
 
 <p><span>For Self-Cleansing Flow</span><br>$$\displaylines{ 
-S_s=\left(\frac{R}{r}\right)S\\\\
+s_s=\left(\frac{R}{r}\right)S\\\\
 v_s=\frac{N}{n}\left(\frac{r}{R}\right)^{\frac{1}{6}}V\\\\
 q_s=\left(\frac{N}{n}\right)\left(\frac{a}{A}\right)\left(\frac{r}{R}\right)^{\frac{1}{6}}Q
 }$$</p>
@@ -96,7 +96,7 @@ W_c=C_d\,\gamma\,B_d^2\\\\
 
 <p><span>Notes</span><br>$$\displaylines{ 
 y_t=L_0(1-10^{-Kt})\\\\
-BOD_5=y_5=L_0-L_5=L_0\,(1-10^{-Kt})\\\\
+BOD_5=y_5=L_0-L_5=L_0\,(1-10^{-K(5)})\\\\
 K_T=K_{20}\,\theta^{T-20°}\\
 \theta=1.056\quad\textsf{(for T = 20° to 30°)}\\
 \theta=1.135\quad\textsf{(for T = 4° to 20°)}\\
@@ -114,12 +114,13 @@ K=\frac{K'}{2.303}
 \textsf{Initial \(DO\) deficit}\\=D_0=\textsf{Saturation \(DO\)}-(DO)_{\textsf{mix}}\\\\
 (y_{\textsf{mix}})_5=L_0\,(1-10^{-Kt})\\\\
 \textsf{At the end of 1 day,}\\
-D_1=\frac{KL_0}{R-K}[\,10^{-KT}-10^{-Rt}\,]+D_0\,10^{-Rt}\\\\
+D_1=\frac{KL_0}{R-K}[\,10^{-Kt}-10^{-Rt}\,]+D_0\,10^{-Rt}\\\\
 K=\textsf{deoxygenation constant}\\
 R=\textsf{reoxygenation constant}\\\\
 (DO)_1=\textsf{Saturation \(DO\)}-D_1\\\\
 \textsf{Critical time,}\\
-t_c=\frac{1}{K(f_s-1)}\log_{10}\left[f_s\left\{1-(f_s-1)\frac{D_0}{L_0}\right\}\right]\\\\
+t_c=\frac{1}{K(f_s-1)}\,\log_{10}\left[f_s\left\{1-(f_s-1)\frac{D_0}{L_0}\right\}\right]\\\\
+t_c=\frac{1}{R'-K'}\,\log_{e}\frac{R'}{K'}\left[1-\frac{D_0\,(R'-K')}{K'\,L_0}\right]\\\\
 \textsf{Location, }x_c=\textsf{velocity}\times\textsf{time}\\\\
 K_T'=K_{20}'\,\theta^{T-20°}\\
 R_T'=R_{20}'\,\theta^{T-20°}\\\\
