@@ -15,10 +15,17 @@
 <h3>Planning and Layout of Distribution Systems</h3>
 
 <p><span>Duty or Outlet Discharge Factor (O.D.F.)</span><br>$$\displaylines{ 
-\textsf{Duty}=\frac{8.64\times\textsf{Kor period}}{\textsf{Kor depth}}\\\\
-D=\frac{8.64\times B}{FIR}\\\\
+\textsf{Outlet discharge factor (ODF) (ha/cumecs)}\\=\frac{8.64\times\textsf{Kor period (d)}}{\textsf{Kor depth (m)}}\\\\
 \textsf{Outlet discharge}=\frac{\textsf{Area}}{\textsf{Outlet discharge factor}}\\\\
-\textsf{Discharge}=\frac{\textsf{Area}}{\textsf{Duty}}
+\textsf{Discharge}=\frac{\textsf{Area}}{\textsf{Duty}}\\\\
+\textsf{Discharge required at the head}\\=\frac{\textsf{Maximum discharge}}{\textsf{Time factor}}\\\\
+\textsf{Design discharge}\\=\frac{\textsf{Discharge required at the head}}{\textsf{Capacity factor}}\\\\
+\textsf{Field irrigation requirements,}\\
+FIR=\frac{\textsf{Consumptive use}}{\textsf{Water application efficiency}}\\\\
+D=\frac{8.64\times B}{FIR}\\
+B=30\,days\Rightarrow D=\frac{259.2}{FIR}\\\\
+\textsf{Capacity factor}\\
+=\frac{\textsf{Mean monthly discharge}}{\textsf{Maximum monthly discharge}}
 }$$</p>
 
 <h3>Chapter 22</h3>
@@ -44,10 +51,12 @@ R=\frac{A}{P}\quad\quad R=\frac{5}{2}\frac{V^2}{f}
 }$$</p>
 
 <p><span>Meyer-Peter's Equations</span><br>$$\displaylines{ 
+\textsf{Neglect the side friction}\Rightarrow\frac{Q_s}{Q}=1\\\\
 \textsf{Quantity of bed load transported}=Q_s\\
 \textsf{Regime perimeter, }P=4.75\,\sqrt{Q}\\
 \textsf{Rate of bed load transported, }q_s=\frac{Q_s}{P}\\\\
 N'=\frac{(\,k_s\,)^{\frac{1}{6}}}{24}\\\\
+N_a=0.0225\,f^\frac{1}{4}\\\\
 \textsf{Bed shear, }\tau_b=\omega DS\\\\
 \textsf{Critical shear stress, }\tau_c=0.047\,(\,\omega_s-\omega\,)\,d\\\\
 q_s=47500\,\left[\,\tau_b\left(\frac{N'}{N}\right)^{\frac{3}{2}}-\tau_c\,\right]^\frac{3}{2}\\\\
