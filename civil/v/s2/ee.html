@@ -97,7 +97,8 @@ W_c=C_d\,\gamma\,B_d^2\\\\
 <p><span>Notes</span><br>$$\displaylines{ 
 y_t=L_0(1-10^{-Kt})\\\\
 BOD_5=y_5=L_0-L_5=L_0\,(1-10^{-K(5)})\\\\
-K_T=K_{20}\,\theta^{T-20°}\\
+K_T=K_{20}\,\theta^{T-20°}\\\\
+\textsf{Temperature coefficients}\\
 \theta=1.056\quad\textsf{(for T = 20° to 30°)}\\
 \theta=1.135\quad\textsf{(for T = 4° to 20°)}\\
 \theta=1.047\quad\textsf{(constant value)}
@@ -110,11 +111,15 @@ K=\frac{K'}{2.303}
 
 <p><span>Notes</span><br>$$\displaylines{ 
 (DO)_{\textsf{mix}}=\frac{(DO)_s\,Q_s+(DO)_e\,Q_e}{Q_s+Q_e}\\\\
-(y_{\textsf{mix}})_5=\frac{y_s\,Q_s+y_e\,Q_e}{Q_s+Q_e}\\\\
+(y_{\textsf{mix}})_5=\frac{y_s\,Q_s+y_e\,Q_e}{Q_s+Q_e}\\
+L_0=\textsf{ultimate BOD of mixture}\\\\
 \textsf{Initial \(DO\) deficit}\\=D_0=\textsf{Saturation \(DO\)}-(DO)_{\textsf{mix}}\\\\
-(y_{\textsf{mix}})_5=L_0\,(1-10^{-Kt})\\\\
+\textsf{(base 10)}\\
+y_t=L_0\,(1-10^{-Kt})\\\\
+\textsf{(base e)}\\
+y_t=L_0\,(1-e^{-K't})\\\\
 \textsf{Streeter-Phelps Equation}\\
-\textsf{DO deficit,}\\
+DO\textsf{ deficit,}\\
 \textsf{(base 10)}\\
 D_t=\frac{KL_0}{R-K}[\,10^{-Kt}-10^{-Rt}\,]+D_0\,10^{-Rt}\\\\
 \textsf{(base e)}\\
@@ -131,7 +136,11 @@ t_c=\frac{1}{R'-K'}\,\log_{e}\frac{R'}{K'}\left[1-\frac{D_0\,(R'-K')}{K'\,L_0}\r
 \textsf{Location, }x_c=\textsf{velocity}\times\textsf{time}\\\\
 K_T'=K_{20}'\,\theta^{T-20°}\\
 R_T'=R_{20}'\,\theta^{T-20°}\\\\
-\textsf{Critical deficit, }D_c=\frac{K'}{R'}\,L_0\,e^{-K't_c}
+\textsf{Critical deficit}\\
+\textsf{(base 10)}\\
+D_c=\frac{K}{R}\,L_0\,(10)^{-Kt_c}\\\\
+\textsf{(base e)}\\
+D_c=\frac{K'}{R'}\,L_0\,e^{-K't_c}
 }$$</p>
 
 <br>
