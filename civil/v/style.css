@@ -70,6 +70,10 @@ span {
    	color: #0073C0;
    	background: rgba(0,115,192,0.23);
    } 
+   .structure {
+   	color: #915582;
+   	background: rgba(130,70,100,0.32);
+   } 
    .ee {
    	color: #919155;
    	background: rgba(145,145,85,0.23);
